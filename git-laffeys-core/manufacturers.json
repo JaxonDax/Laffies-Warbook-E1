@@ -1,0 +1,11 @@
+[
+  {
+    "id": "DAX",
+    "name": "Workshop",
+    "logo_url": "https://wiki.eveuniversity.org/images/e/e0/Logo_faction_drifters.png",
+    "light": "#000000",
+    "dark": "#993333",
+    "quote": "Test",
+    "description": "Test"
+  }
+]

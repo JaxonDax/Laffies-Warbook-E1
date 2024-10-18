@@ -1,0 +1,212 @@
+[
+  {
+    "id": "LAFF_LMG",
+    "name": "Light Machine Gun",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>An relaiable LMG made by GMS</div>",
+    "mount": "Auxiliary",
+    "type": "Rifle",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [ {"id": "tg_reliable", "val": 1}
+    ]
+  },
+  {
+    "id": "LAFF_MG",
+    "name": "Machine Gun",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>An relaiable MG made by GMS</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [ {"id": "tg_reliable", "val": 2}]
+  },
+  {
+    "id": "LAFF_Mariana_Rifle",
+    "name": "Assault Rifle MK.2",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": 2,
+    "description": "<div>An improved rifle made by GMS to fit for any situation</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "actions": [
+      {
+        "name": "Swap Magazine",
+        "activation": "Quick Action",
+        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+      }],
+    "damage": [
+      {
+        "type": "Variable",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "tags": [ {"id": "tg_reliable", "val": 3}, {"id": "tg_accurate"}]
+  },  
+  {
+    "id": "LAFF_Mariana_Pistol",
+    "name": "Pistol MK.2",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": 1,
+    "description": "<div>An improved pistol made by GMS to fit for any situation</div>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "actions": [
+      {
+        "name": "Swap Magazine",
+        "activation": "Free Action",
+        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+      }],
+    "damage": [
+      {
+        "type": "Variable",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 6
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "tg_accurate"}]
+  },
+  {
+    "id": "LAFF_Mariana_Modular_Rifle",
+    "name": "Modular Rifle",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": 3,
+    "description": "<div>An Modular rifle made by GMS to fit for any situation</div>",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "no_mods": false,
+    "sp": 1,
+    "barrage": true,
+    "skirmish": true,
+    "actions": [
+      {
+        "name": "Swap Magazine",
+        "activation": "Quick Action",
+        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+      },
+      {
+        "name": "Configure Weapon",
+        "activation": "Full Action",
+        "detail": "Change your weapon to any of the profiles"
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Basic Configuration",
+        "damage": [
+          {
+            "override": true,
+            "type": "Variable",
+            "val": "2d6+2"
+          }
+        ],
+        "range": [
+          {
+            "override": true,
+            "type": "Range",
+            "val": "12"
+          }
+        ],
+        "effect": "Basic Rifle Configuration",
+        "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]
+      },
+      {
+        "name": "Sniper Configuration",
+        "damage": [
+          {
+            "type": "Variable",
+            "val": "1d6+6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "20"
+          }
+        ],
+        "effect": "Sniper Rifle Configuration",
+        "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]
+      },
+      {
+        "name": "Shot Gun Configuration",
+        "damage": [
+          {
+            "type": "Variable",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": "4"
+          }
+        ],
+        "effect": "Shot Gun Configuration",
+        "tags": [{"id": "tg_reliable", "val": 2} ]
+      }]
+  }
+]

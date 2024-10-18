@@ -1,0 +1,80 @@
+[
+  {
+    "id": "LAFF_mariana",
+    "license_id": "LAFF_mariana",
+    "source": "GMS",
+    "license_level": 2,
+    "name": "Mariana",
+    "mechtype": ["Balanced"],
+    "description": "Named after the Mariana Trench, the deepest point on Earth, the Mariana reflects GMS’s commitment to creating a frame capable of operating under immense pressure—both literal and metaphorical. This frame is designed for those who need more than just durability and firepower; it’s for Lancers who demand flexibility in the chaos of battle. Whether fighting in open space or in the depths of alien environments, the Mariana can handle it all. GMS saw the success of the Everest and decided to push the limits of what a standard frame could offer. The Mariana was designed to be the Everest MK II, incorporating years of field data, pilot feedback, and evolving battlefield needs. It's not just a frame for rookies learning the ropes—it’s built for seasoned veterans who need a platform that can be fine-tuned to their unique combat style. The inclusion of enhanced mod slots and more streamlined repair capabilities ensures that the Mariana can be refitted and rearmed with ease, making it ideal for extended campaigns where support might be limited.",
+    "mounts": ["Flex", "Flex", "Heavy"],
+    "stats": {
+      "size": 2, 
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 9,
+      "heatcap": 7,
+      "repcap": 6,
+      "sensor_range": 12,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Replaceable parts",
+        "use": "",
+        "description": "While resting, the Mariana can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
+      },
+      {
+        "name": "Durable Boosters",
+        "use": "",
+        "description": "The Mariana has a propulsion system suitable for use in low or zero gravity and underwater environments. In those environments, you can fly and are not Slowed. You may also boost as a free action while not using the boosters as a EVA."
+      },
+      {
+        "name": "In-Built Redundancy",
+        "use": "",
+        "description": "The Mariana has many in built systems and mounts that allow it for 1 structure damage ignore all effects."
+      }
+    ],
+    "core_system": {
+      "name": " 'Everest' COMP/CON",
+      "active_name": "Protocol 1 & 2",
+      "active_effect": "Choose one of the two protocol's",
+      "activation": "",
+      "description": "The mech has an inbuilt comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. This AI does not count to your total AI count and can be replaced with an NHP to create a variant personal mech.",
+      "deactivation": "",
+      "use": "",
+      "passive_name": "Protocol 3 - Protect the Pilot",
+        "passive_effect": "When your mech is destroyed due to a failed structure save, the pilot automatically ejects and lands within range 8 (your choice of location). The mech then regains full HP and stays active for 2 rounds as an autonomous unit, prioritizing any immediate threats to the pilot. Once the 2 rounds are up the mech falls on the spot having completed it duty.",
+      "passive_actions": [],
+      "active_actions": [
+        {
+          "name": "Protocol 1 - Engage Defensive Maneuvers",
+          "activation": "Reaction",
+          "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion and Resistance to all ranged attacks for the next 2 rounds."
+        },
+        {
+          "name": "Protocol 2 - Offensive Override",
+          "activation": "Protocol",
+          "detail": "For the next 2 turns, gain an extra quick action and you can use Barrage as a Quick Action once during this period.",
+          "frequency": "2/mission"
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": [{"id": "tg_ai"},{ "id": "tg_no_cascade"}]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 25
+  }
+  
+]

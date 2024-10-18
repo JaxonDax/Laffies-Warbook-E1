@@ -1,0 +1,133 @@
+[
+  {
+    "id": "LAFF_systems_base_hacking_kit_v2",
+    "name": "Base Hacking Kit V2",
+    "sp": "0",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": "0",
+    "effect": "Your Mech gains the ability to use basic hacking functions",
+    "description": "Made to give basic hacking actions in Foundry",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_indestructible"}
+    ],
+    "license_id": "",
+    "actions": [
+      {
+        "name": "BOLSTER",
+        "activation": "Quick Tech",
+        "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems. To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time."
+      },
+      {
+        "name": "SCAN",
+        "activation": "Quick Tech",
+        "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy. To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly: 1. Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on). 2. One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on. 3. Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech. Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update."
+      },
+      {
+        "name": "Lock On",
+        "activation": "Quick Tech",
+        "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points. To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition."
+      },
+      {
+        "name": "Fragment Signal",
+        "activation": "Invade",
+        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.<br><span class='horus--subtle'>[Feeding false truths to the enemy]</span>"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_integrity_response_drones_system",
+    "name": "Integrity Response Drones System (IRDS)",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "1",
+    "effect": "Deploy a drone to either yourself or an allied mech within sensor range. Drone will automaticly repair allies nearby.",
+    "sp": "3",
+    "description": "Developed by GENERAL MASSIVE SYSTEMS (GMS) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Integrity Response Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "In a Burst 1 Area friendly mechs gain 1d6+2 HP at the start of their turn.",
+        "actions": [
+          {
+            "name": "Move Drone",
+            "activation": "Quick",
+            "detail": "The drone can be moved to any point within Sensors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LAFF_damage_control",
+    "name": "Damage Control",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "1",
+    "effect": "Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "sp": "1",
+    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_assault_damage_control",
+    "name": "Assault Damage Control",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "3",
+    "effect": "PASSIVE: Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "sp": "3",
+    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module <br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_recharge", "val": 6},
+      {"id": "tg_heat_self", "val": 5}
+    ],
+    "actions": [
+      {
+        "name": "Activate assault damage control",
+        "activation": "Free",
+        "detail": "Once activated the damage control gives the user resistance to all damage for 3 Rounds."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_reinforced_structure",
+    "name": "Reinforced Structure",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": "0",
+    "effect": "Gain 1 extra structure by sacrificing system space",
+    "sp": "2",
+    "description": "<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }, {"id": "tg_indestructible"}
+    ]
+  }
+]
