@@ -1,0 +1,632 @@
+[
+  {
+    "id": "LAFF_systems_ancillary_armor_repairer_aar",
+    "name": "Ancillary Armor Repairer (AAR)",
+    "source": "STC",
+    "license": "STC",
+    "license_id": "",
+    "license_level": "0",
+    "effect": "Restores armor HP using stored repair charges. Requires additional materials (reserves) for full recharge. CAN NOT BE USED ON 0.5 SIZE MECHS",
+    "sp": "2",
+    "description": "Originally developed by field engineers seeking to replicate battlefield triage methods for heavy mechs, the Ancillary Armor Repairer rapidly became a favored system among frontline combatants. Its ability to provide quick, reactive armor repair has made it an indispensable tool in prolonged battles where staying operational can mean the difference between victory and defeat. However, the system's dependency on repair charges makes it less reliable in long, attrition-heavy conflicts without access to external resources. <br><span class='horus--subtle'>[CAN NOT BE USED ON 0.5 SIZE MECHS]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate AAR - 1 Charge",
+        "activation": "Quick Action",
+        "detail": "Comsume 1 charge and heal 1d3 HP"
+      },
+      {
+        "name": "Activate AAR - 2 Charges",
+        "activation": "Quick Action",
+        "detail": "Comsume 2 charge and heal 2d4 HP"
+      },
+      {
+        "name": "Activate AAR - 3 Charges",
+        "activation": "Quick Action",
+        "detail": "Comsume 3 charge and heal 3d6 HP and take 1 HEAT"
+      },
+      {
+        "name": "Activate AAR - 4 Charges",
+        "activation": "Quick Action",
+        "detail": "Comsume 4 charge and heal 4d7 HP and take 3 HEAT"
+      },
+      {
+        "name": "Restock",
+        "activation": "Quick Action",
+        "detail": "Consume 1 repair capacity and regain all charges"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_systems_base_hacking_kit_v2",
+    "name": "Base Hacking Kit V2",
+    "sp": "0",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": "0",
+    "effect": "Your Mech gains the ability to use basic hacking functions",
+    "description": "Made to give basic hacking actions in Foundry",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_indestructible"}
+    ],
+    "license_id": "",
+    "actions": [
+      {
+        "name": "BOLSTER",
+        "activation": "Quick Tech",
+        "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems. To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time."
+      },
+      {
+        "name": "SCAN",
+        "activation": "Quick Tech",
+        "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy. To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly: 1. Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on). 2. One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on. 3. Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech. Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update."
+      },
+      {
+        "name": "Lock On",
+        "activation": "Quick Tech",
+        "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points. To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition."
+      },
+      {
+        "name": "Fragment Signal",
+        "activation": "Invade",
+        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.<br><span class='horus--subtle'>[Feeding false truths to the enemy]</span>"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_systems_remote_ancillary_armor_repairer_raar",
+    "name": "Remote Ancillary Armor Repairer (RAAR)",
+    "source": "STC",
+    "license": "STC",
+    "license_id": "",
+    "license_level": "0",
+    "effect": "Restores armor HP using stored repair charges. Requires additional materials (reserves) for full recharge.",
+    "sp": "3",
+    "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 5
+      }
+    ],
+    "actions": [
+      {
+        "name": "Remote Repair",
+        "activation": "Quick Action",
+        "detail": "Target an allied mech within range. That mech regains 1d6+3 HP.",
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          }
+        ]
+      },
+      {
+        "name": "Restock",
+        "activation": "Quick Action",
+        "detail": "Consume 1 repair capacity and regain all charges"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_systems_ecm_electronic_countermeasures",
+    "name": "ECM (Electronic Countermeasures)",
+    "source": "IPS-N",
+    "license": "IPS-N",
+    "license_id": "",
+    "license_level": "0",
+    "effect": "ECM provides electronic protection by removing debuffs (conditions) from the user or allied mechs within range, offering temporary relief from disabling effects.",
+    "sp": "2",
+    "description": "First designed by IPS-NORTHSTAR engineers to counteract enemy lock-ons and electronic warfare, the ECM system became a battlefield staple for mechs engaged in heavy combat zones. Pirate factions like the Guristas quickly adapted this technology for their own purposes, using it to evade hostile targeting in ambushes.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_recharge",
+        "val": 5
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate ECM",
+        "activation": "Full  Action",
+        "detail": "Select an allied mech within range (including yourself). Remove one condition affecting the target, such as Lock On, Impaired, or Slowed. The pilot chooses which condition to remove.(cant be an effect that is self inflicted or global ask DM to make it clearer in edge cases)",
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LAFF_systems_laser_painter",
+    "name": "Laser Painter",
+    "source": "SCC",
+    "license": "SCC",
+    "license_id": "",
+    "license_level": "0",
+    "effect": "A continuous targeting laser that provides a permanent lock-on to a single enemy, allowing all allies to benefit from this for as long as the laser remains active.",
+    "sp": "2",
+    "description": "Initially deployed by Smith-Shimano Corporation (SSC) as a tool for orbital strike coordination, the Laser Painter gained popularity among PMC groups for its ability to maintain a continuous lock-on during skirmishes. While SSC markets it for its precision, pirate groups like the Angel Cartel have been known to modify these for guerrilla warfare.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Paint Target",
+        "activation": "Quick Action",
+        "detail": "As long as the laser is maintained, the target gains the Lock On condition. This condition persists until the target is no longer within line of sight or range. Allies may benefit from this Lock On, but only as long as the laser is active.",
+        "range": [
+          {
+            "type": "Range",
+            "val": 50
+          }
+        ]
+      },
+      {
+        "name": "Maintain target Painter",
+        "activation": "Protocol",
+        "detail": "Keep Laser Painter active",
+        "range": [
+          {
+            "type": "Range",
+            "val": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LAFF_systems_sensor_dampener",
+    "name": "Sensor Dampener",
+    "source": "SER",
+    "license": "SER",
+    "license_id": "",
+    "license_level": "0",
+    "effect": "Disrupts enemy targeting systems, reducing their sensor range and making it harder for them to acquire targets. ",
+    "sp": "3",
+    "description": "This tech was repurposed by the Serpentis, initially stolen from Harrison Armory R&D labs. Sensor Dampeners reduce enemy targeting capabilities by limiting their sensor range, forcing them to operate in closer quarters.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_recharge",
+        "val": 5
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate Sensor Dampener",
+        "activation": "Full  Action",
+        "detail": "Targets affected by the Sensor Dampener suffer a -1 Difficulty on ranged attacks and Sensor Range is halved for 3 rounds. ",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LAFF_integrity_response_drones_system",
+    "name": "Integrity Response Drones System (IRDS)",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "1",
+    "effect": "Deploy a drone to either yourself or an allied mech within sensor range. Drone will automaticly repair allies nearby.",
+    "sp": "3",
+    "description": "Developed by GENERAL MASSIVE SYSTEMS (GMS) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Integrity Response Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "In a Burst 1 Area friendly mechs gain 1d6+2 HP at the start of their turn.",
+        "actions": [
+          {
+            "name": "Move Drone",
+            "activation": "Quick",
+            "detail": "The drone can be moved to any point within Sensors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LAFF_armor_hardener_kinetic",
+    "name": "Armor Hardener Kinetic",
+    "source": "STC",
+    "license": "Crusader",
+    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "license_level": "1",
+    "effect": "An enhanced version of the standard kinetic armor plating. Uses advanced magnetic field generators to strengthen the Armor Plating integrity.",
+    "sp": "3",
+    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_heat_self", "val": 3}
+    ],
+    "actions": [
+      {
+        "name": "Activate armor hardener",
+        "activation": "Protocol",
+        "detail": "Once activated at the start of your turn you take 50% less Kinetic damage untill the start of your next turn."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_armor_hardener_explosive",
+    "name": "Armor Hardener Explosive",
+    "source": "STC",
+    "license": "Crusader",
+    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "license_level": "2",
+    "effect": "An enhanced version of the standard explosive armor plating. Uses advanced magnetic field generators to strengthen the Armor Plating integrity.",
+    "sp": "3",
+    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_heat_self", "val": 3}
+    ],
+    "actions": [
+      {
+        "name": "Activate armor hardener",
+        "activation": "Protocol",
+        "detail": "Once activated at the start of your turn you take 50% less Explosive damage untill the start of your next turn."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_armor_hardener_energy",
+    "name": "Armor Hardener Energy",
+    "source": "STC",
+    "license": "Crusader",
+    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "license_level": "2",
+    "effect": "An enhanced version of the standard Energy armor plating. Uses advanced magnetic field generators to strengthen the Armor Plating integrity.",
+    "sp": "3",
+    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_heat_self", "val": 3}
+    ],
+    "actions": [
+      {
+        "name": "Activate armor hardener",
+        "activation": "Protocol",
+        "detail": "Once activated at the start of your turn you take 50% less Energy damage untill the start of your next turn."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_damage_control",
+    "name": "Damage Control",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "1",
+    "effect": "Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "sp": "1",
+    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_assault_damage_control",
+    "name": "Assault Damage Control",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "3",
+    "effect": "PASSIVE: Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "sp": "3",
+    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module <br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_recharge", "val": 6},
+      {"id": "tg_heat_self", "val": 5}
+    ],
+    "actions": [
+      {
+        "name": "Activate assault damage control",
+        "activation": "Free",
+        "detail": "Once activated the damage control gives the user resistance to all damage for 3 Rounds."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_reinforced_structure",
+    "name": "Reinforced Structure",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": "0",
+    "effect": "Gain 1 extra structure by sacrificing system space",
+    "sp": "2",
+    "description": "<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }, {"id": "tg_indestructible"}
+    ]
+  },
+  {
+    "id": "LAFF_armor_hardener_flex",
+    "name": "Flex Armor Hardener",
+    "source": "STC",
+    "license": "Crusader",
+    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "license_level": "3",
+    "effect": "Flex Armor Hardeners contain advanced nanite membranes capable of being reprogrammed mid-fight using swappable scripts. When unscripted this system provides resistances to Kinetic, Thermal and Energy damage types, and when loaded with a script it provides greatly enhanced resistance to one specific damage type.",
+    "sp": "4",
+    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_heat_self", "val": 3}
+    ],
+    "actions": [
+      {
+        "name": "Activate armor hardener",
+        "activation": "Protocol",
+        "detail": "Once activated at the start of your turn you take less damage untill the start of your next turn. You start with no script loaded. Unscripted 25% resistance. Scripted 50% resistance."
+      },
+      {
+        "name": "Change resistance script",
+        "activation": "Quick Action",
+        "detail": "Choose one of the 3 damage types you are resistant too. Unscripted 25% resistance. Scripted 50% resistance."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_sensor_booster",
+    "name": "Sensor Booster",
+    "source": "STC",
+    "license": "Monitor",
+    "license_id": "LAFF_monitor",
+    "license_level": "1",
+    "effect": "Gain +2 Sensor range",
+    "sp": "2",
+    "description": "The Sensor Booster is an advanced suite of additional detection equipment designed to enhance a mech’s ability to detect, identify, and target objects and signals at long range. This system boosts the mech’s base sensor range, providing the pilot with heightened situational awareness and the ability to pinpoint threats or opportunities more effectively. The booster replaces standard sensor systems, focusing on extending the range and precision of detection while sacrificing other utility modules. Originally developed by Steel Core (STC) for covert scouting units and long-range support mechs.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "bonuses": [
+      {
+      "id": "sensor",
+      "val": 2
+    }],
+    "actions":[
+      {
+        "name": "Deep Scan",
+        "activation": "Quick Action",
+        "detail": "Scan an enemy mech and gain all current stats, items and abilities of the mech while getting to know what its current orders are. Also gain any public records on the mech. Gain 2 Heat while you perform this action. If used against items gain an detailed analysis if possible"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_53R3N17Y_shard_omega",
+    "name": "53R3N17Y's Shard Ω",
+    "type": "Tech",
+    "source": "STC",
+    "license": "Monitor",
+    "license_id": "LAFF_monitor",
+    "license_level": "1",
+    "effect": "This shard gives you access to some of 53R3N17Y's self made hacking programs",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions":[
+      {
+        "name": "Assisted Aim",
+        "activation": "Quick Tech",
+        "detail": "Target a ally in sensor range and give them +1 accuracy for a single attack"
+      },
+      {
+        "name": " Sharing is caring :3",
+        "activation": "Quick Tech",
+        "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, any time the target gains heat until the end of the Monitor's next turn, all of their allied characters within range 5 also gain the same amount of heat."
+      }
+    ]
+  },
+  {
+    "id": "LAFF_53R3N17Y_shard_delta",
+    "name": "53R3N17Y's Shard Δ",
+    "type": "Tech",
+    "source": "STC",
+    "license": "Monitor",
+    "license_id": "LAFF_monitor",
+    "license_level": "2",
+    "effect": "This shard gives you access to some of 53R3N17Y's self made hacking programs",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions":[
+      {
+        "name": "Piggy back",
+        "activation": "Full Tech",
+        "detail": "Hack an enemy allowing you to hack from their sensor range and Line of Sight for 3 rounds"
+      },
+      {
+        "name": "Emotional Damage",
+        "activation": "Invade",
+        "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, the target takes the standard 2 heat immediately and then a further 1d4 Heat at the start of the Monitor's next turn.",
+        "on_crit": "<div>Heat dealt by Emotional Damage on the Monitor's next turn increases by 2d4 heat if the target is in the Danger Zone.</div>"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_53R3N17Y_shard_lamda",
+    "name": "53R3N17Y's Shard λ",
+    "type": "Tech",
+    "source": "STC",
+    "license": "Monitor",
+    "license_id": "LAFF_monitor",
+    "license_level": "3",
+    "effect": "This shard gives you access to some of 53R3N17Y's self made hacking programs",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions":[
+      {
+        "name": "Watchfull Eye",
+        "activation": "Quick Action",
+        "detail": "The Monitor targets a single enemy mech within Sensor range. On a successful tech attack, the target is marked and cant hide or be invisible. Gain the Eye for an Eye Reaction Option for 3 rounds."
+      },
+      {
+        "name": "Eye for an Eye",
+        "activation": "Reaction",
+        "frequency": "2/encounter",
+        "trigger": "An enemy marked by Watchfull Eye hacks (successfully or not) an ally within sensor range and line of sight",
+        "detail": "The Monitor may hack any targets within range 8 of the target as a free action"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_targeting_systems",
+    "name": "Targeting Systems",
+    "source": "STC",
+    "license": "Monitor",
+    "license_id": "LAFF_monitor",
+    "license_level": "2",
+    "effect": "Gain the ability to multi lock on",
+    "sp": "2",
+    "description": "The Targeting Systems module is an advanced multi-lock system developed by STC, capable of simultaneously engaging multiple hostiles within sensor range. This system is designed for mechs that prioritize battlefield control, allowing pilots to disrupt and track several enemies at once, giving their squadmates a significant advantage by distributing accurate targeting data. With the ability to track up to three enemies at a time, the Targeting Systems put pressure on the opposition, forcing them to split their defenses across multiple vectors. However, the intensity of using such a complex system generates significant heat, requiring pilots to balance its powerful benefits with heat management.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions":[
+      {
+        "name": "Multi Lock",
+        "activation": "Full Tech",
+        "detail": "Atempt to lock on 3 hostiles of your choice wihtin sensor range."
+      }
+    ]
+  },
+  {
+    "id": "laff_style_ammocase",
+    "name": "Estio's Ammo Case",
+    "source": "STC",
+    "license": "Crusader",
+    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "license_level": 1,
+    "description": "LORE",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost.",
+    "ammo": [
+      {
+        "name": "A.I.S",
+        "detail": "Anti-Infantry-Shrappnel. Despite its name, Anti-Infantry Shrapnel is also designed to target smaller, more fragile mechs. When fired within the weapon's range, you can choose to detonate the round, creating a Burst 4 cone where the shrapnel lands. Any target in cover is unaffected, but any target under size 1 not in cover takes double damage if hit.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      }
+    ]
+  },
+  {
+    "id": "LAFF_sensor_personalisation",
+    "name": "Sensor Personalisation",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": "",
+    "effect": "A personalisation that gives +1 Sensor Range",
+    "sp": "0",
+    "description": "",
+    "tags": [{"id": "tg_exotic"}],
+    "bonuses": [
+      {
+      "id": "sensor",
+      "val": 1
+    }]
+      }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "LAFF_artillery_calculator_nhp",
+        "name": "Artillery COMP/CON",
+        "source": "STC", 
+        "sp": 4,
+        "description": "Lore", 
+        "effect": "Gives Accuracy to any Heavy and Superheavy Cannon", 
+        "tags": [{"id": "tg_exotic"}, {"id": "tg_ai"}, {"id": "tg_no_cascade"} ],
+        "allowed_types": ["Cannon"],
+        "allowed_sizes": ["Heavy", "Superheavy"], 
+        "restricted_types": ["Rifle", "Launcher", "CQB", "Nexus", "Melee"],
+        "restricted_sizes": ["Aux", "Main"], 
+        "added_tags": [{"id": "tg_accurate"}]
+      },
+      {
+        "id": "LAFF_accurate_personalisation",
+        "name": "Accurate Personalisation",
+        "source": "EXOTIC", 
+        "sp": 0,
+        "description": "Lore", 
+        "effect": "Gives Accuracy to any personal weapon ASK THE GM TO USE THIS", 
+        "tags": [{"id": "tg_exotic"}],
+        "allowed_types": ["Cannon", "Rifle", "Launcher", "CQB", "Nexus", "Melee"],
+        "allowed_sizes": ["Heavy", "Superheavy", "Aux", "Main"], 
+        "restricted_types": [],
+        "restricted_sizes": [], 
+        "added_tags": [{"id": "tg_accurate"}]
+      }
+
+
+]
