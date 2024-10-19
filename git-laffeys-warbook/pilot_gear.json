@@ -1,0 +1,22 @@
+[
+{
+  "id": "LAFF_Weapon_Stylesarmgun",
+  "name": "Integrated minigun",
+  "type": "Weapon",
+  "description": "An intergrated minigun inside the lancers armour",
+  "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic.",
+  "tags": [{"ID": "tg_ordnance"}, {"ID": "LAFF_tags_loading_{val}", "val": 3}],
+  "range": [
+    {
+        "type": "Range",
+        "val": 10
+      }
+  ],
+  "damage": [
+    {
+        "type": "Kinetic",
+        "val": "5"
+      }
+  ]
+}
+]

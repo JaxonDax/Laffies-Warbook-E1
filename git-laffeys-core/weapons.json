@@ -137,7 +137,6 @@
     "license_level": 3,
     "description": "<div>An Modular rifle made by GMS to fit for any situation</div>",
     "mount": "Heavy",
-    "type": "Rifle",
     "no_mods": false,
     "sp": 1,
     "barrage": true,
@@ -172,7 +171,8 @@
           }
         ],
         "effect": "Basic Rifle Configuration",
-        "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]
+        "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}],
+        "type": "Rifle"
       },
       {
         "name": "Sniper Configuration",
@@ -189,7 +189,8 @@
           }
         ],
         "effect": "Sniper Rifle Configuration",
-        "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]
+        "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}],
+        "type": "Rifle"
       },
       {
         "name": "Shot Gun Configuration",
@@ -206,7 +207,8 @@
           }
         ],
         "effect": "Shot Gun Configuration",
-        "tags": [{"id": "tg_reliable", "val": 2} ]
+        "tags": [{"id": "tg_reliable", "val": 2} ],
+        "type": "CQB"
       }]
   }
 ]

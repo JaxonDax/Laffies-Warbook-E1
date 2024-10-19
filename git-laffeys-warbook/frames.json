@@ -223,7 +223,7 @@
       "active_name": "Protocol 1 & 2",
       "active_effect": "Choose one of the two protocol's",
       "activation": "",
-      "description": "The mech has an inbuilt comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. This AI does not count to your total AI count and can be replaced with an NHP to create a variant personal mech.",
+      "description": "The mech has an inbuilt advanced comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. This AI does not count to your total AI count and can be replaced with an NHP to create a variant personal mech.",
       "deactivation": "",
       "use": "",
       "passive_name": "Protocol 3 - Protect the Pilot",
@@ -253,5 +253,4 @@
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": 25
   }
-  
 ]

@@ -403,6 +403,12 @@
       {
         "id": "tg_unique"
       }, {"id": "tg_indestructible"}
+    ],
+    "bonuses": [
+      {
+        "id": "structure",
+        "val": 1
+      }
     ]
   },
   {
