@@ -32,12 +32,12 @@
       {
         "name": "Activate AAR - 3 Charges",
         "activation": "Quick Action",
-        "detail": "Comsume 3 charge and heal 3d6 HP and take 1 HEAT"
+        "detail": "Comsume 3 charge and heal 3d6 HP and take 3 HEAT"
       },
       {
         "name": "Activate AAR - 4 Charges",
         "activation": "Quick Action",
-        "detail": "Comsume 4 charge and heal 4d7 HP and take 3 HEAT"
+        "detail": "Comsume 4 charge and heal 4d7 HP and take 5 HEAT"
       },
       {
         "name": "Restock",

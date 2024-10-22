@@ -96,22 +96,13 @@
     "source": "GMS",
     "license": "Mariana",
     "license_id": "LAFF_mariana",
-    "license_level": "3",
-    "effect": "PASSIVE: Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "license_level": "2",
+    "effect": "PASSIVE: Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 2 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
     "sp": "3",
-    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module <br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
+    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S<br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {"id": "tg_recharge", "val": 6},
-      {"id": "tg_heat_self", "val": 5}
-    ],
-    "actions": [
-      {
-        "name": "Activate assault damage control",
-        "activation": "Free",
-        "detail": "Once activated the damage control gives the user resistance to all damage for 3 Rounds."
       }
     ]
   },
@@ -128,6 +119,35 @@
       {
         "id": "tg_unique"
       }, {"id": "tg_indestructible"}
+    ]
+  },
+  {
+    "id": "LAFF_armor_hardener_flex",
+    "name": "Flex Armor Hardener",
+    "source": "GMS",
+    "license": "Mariana",
+    "license_id": "LAFF_mariana",
+    "license_level": "3",
+    "effect": "Gain resistances to a spesfic damage type",
+    "sp": "4",
+    "description": "Flex Armor Hardeners contain advanced nanite membranes capable of being reprogrammed mid-fight using swappable scripts. When unscripted this system provides resistances to Kinetic, Thermal and Energy damage types, and when loaded with a script it provides greatly enhanced resistance to one specific damage type.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {"id": "tg_heat_self", "val": 2}
+    ],
+    "actions": [
+      {
+        "name": "Activate armor hardener",
+        "activation": "Protocol",
+        "detail": "Once activated at the start of your turn choose a damage type you are resistant to."
+      },
+      {
+        "name": "Change resistance script",
+        "activation": "Quick Action",
+        "detail": "Choose one of the 3 damage types to change your resistance."
+      }
     ]
   }
 ]
