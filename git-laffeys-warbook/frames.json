@@ -312,5 +312,60 @@
       "activation": "Full Action",
       "integrated": ["LAFF_Naga_integrated"]
     }
+  },
+  {
+    "id": "LAFF_404_not_found",
+    "license_id": "ERR///_404_Mech_Not_Found",
+    "source": "Horus",
+    "license_level": 2,
+    "name": "ERR/// 404 Mech Not Found",
+    "mechtype": ["Strategic"],
+    "description": "Stop trying to find me <br><span class='horus--subtle'>[Solitude]</span> </div>",
+    "mounts": ["Why", "Many", "O_O"],
+    "stats": {
+      "size": 1, 
+      "structure": 999,
+      "stress": 999,
+      "armor": 999,
+      "hp": 404,
+      "evasion": 20,
+      "edef": 999,
+      "heatcap": 999,
+      "repcap": 404,
+      "sensor_range": 999,
+      "tech_attack": 999,
+      "save": 1,
+      "speed": 999,
+      "sp": 999
+    },
+    "traits": [
+      {
+        "name": "Does not exist",
+        "use": "",
+        "description": "This frame does not exist yet it does"
+      }
+    ],
+    "core_system": {
+      "name": "STOP LOOKING",
+      "active_name": "",
+      "active_effect": "",
+      "activation": "",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "passive_name": "",
+        "passive_effect": "",
+      "passive_actions": [],
+      "active_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 25
   }
 ]
