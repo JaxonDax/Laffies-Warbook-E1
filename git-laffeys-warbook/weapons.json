@@ -87,12 +87,12 @@
         "type": "Energy",
         "val": "4d4"
       },
-      {"type": "Burn", "val": 4}
+      {"type": "Burn", "val": 5}
     ],
     "range": [
       {
         "type": "Line",
-        "val": 8
+        "val": 10
       }
     ],
     "tags": [
@@ -349,5 +349,170 @@
         "effect": "Shot Gun Configuration",
         "tags": [{"id": "tg_reliable", "val": 2} ]
       }]
+  },
+  {
+    "id": "401aa282-6-45a3-b8342bjksdfkjhkljhhdsf5437-10c7bcf68cd9",
+    "name": "Ragnarok Heavy Assault Cannon",
+    "source": "STC",
+    "license": "Crusader",
+    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "license_level": 3,
+    "description": "<div> Based off ofThe Leviathan Heavy Assault Cannon (HAC) STC has recreated a variant of this gun for its CEO making it compatiable for the Crusader frame.</div>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "profiles": [
+      {
+        "name": "Standard",
+        "damage": [
+          {
+            "override": true,
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "override": true,
+            "type": "Range",
+            "val": "8"
+          }
+        ],
+        "effect": "Unlike other Superheavy weapons, the Ragnarok can be used with Skirmish. You can spin up this weapon’s barrels as a quick action.",
+        "actions": [
+          {
+            "name": "Spin Up Ragnarok",
+            "activation": "Quick Action",
+            "detail": "Spin up the barrels of the Ragnarok Heavy Assault Cannon, Slowing your mech and allowing use of its Spin-Up Mode profile."
+          }]
+      },
+      {
+        "name": "Spin-Up Mode",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "4d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "8"
+          }
+        ],
+        "effect": "While spinning, you are Slowed and can no longer use the Ragnarok with Skirmish. You can cease this effect as a protocol.",
+        "actions": [
+          {
+            "name": "Cease Spin-Up",
+            "activation": "Quick Action",
+            "detail": "Spin up the barrels of the Ragnarok Heavy Assault Cannon, Slowing your mech and allowing use of its Spin-Up Mode profile."
+          }],
+          "tags": [{"id": "tg_reliable", "val": 2} ]
+      }]
+
+  },
+  {
+    "id": "LAFF_Naga_integrated",
+    "name": "Mortal Reminder",
+    "mount": "Ship-class",
+    "type": "Spool Weapon",
+    "skirmish": false,
+    "barrage": false,
+    "effect": "Mortal Reminder needs to be set up in stages",
+    "actions": [
+      {
+        "name": "Fire Mortal Reminder",
+        "activation": "Full",
+        "detail": "Fire Mortal reminder and reset back to charge 0"
+      }
+    ],
+    "Tags": [{"ID": "tg_ap"}],
+    "profiles": [
+      {
+        "name": "Deploy Rail gun stabilizers",
+        "damage": [
+          {
+            "override": true,
+            "val": "N/A"
+          }
+        ],
+        "range": [
+          {
+            "override": true,
+            "type": "Range",
+            "val": "N/A"
+          }
+        ],
+        "effect": "Cannot Be Fired"
+      },
+      {
+        "name": "Charge Rail: 1",
+        "range": [
+          {
+            "type": "Line",
+            "val": 20
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "3d6"
+          }
+        ],
+        "effect": "Set yourself to 3 HEAT (not counting heat you gained prior). Requires Lock on for valid target."
+      },
+      {
+        "name": "Charge Rail: 2",
+        "range": [
+          {
+            "type": "Line",
+            "val": 30
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "4d6"
+          }
+        ],
+        "effect": "Set yourself to 7 HEAT (not counting heat you gained prior). Requires Lock on for valid target. Ignore cover, shoot though terrain."
+      },
+      {
+        "name": "Charge Rail: 3",
+        "range": [
+          {
+            "type": "Line",
+            "val": 40
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "5d6"
+          }
+        ],
+        "effect": "Set yourself to 15 HEAT (not counting heat you gained prior). Requires Lock on for valid target. All targets adjacent to the Line must make an Agility save or take half damage if passed then no damage. Additionally ignore cover, shoot though terrain."
+      },
+      {
+        "name": "Safety override",
+        "range": [
+          {
+            "type": "Line",
+            "val": 40
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "3d20"
+          }
+        ],
+        "effect": "Set yourself to 15 HEAT, take 1 Stress damge and mark the gun as destroyed once you fire. Gain reliable 20. All targets adjacent to the Line take the same damage rolled if they fail the agility safe if they pass the safe then take half damage. Additionally ignore cover, shoot though terrain. Requires lock on."
+      }
+    ],
+    "license_id": ""
   }
 ]

@@ -92,7 +92,7 @@
     "license": "STC",
     "license_id": "",
     "license_level": "0",
-    "effect": "Restores armor HP using stored repair charges. Requires additional materials (reserves) for full recharge.",
+    "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
     "sp": "3",
     "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
     "tags": [
@@ -108,7 +108,7 @@
       {
         "name": "Remote Repair",
         "activation": "Quick Action",
-        "detail": "Target an allied mech within range. That mech regains 1d6+3 HP.",
+        "detail": "Target an allied mech within range. That mech regains 1d4+4 HP.",
         "range": [
           {
             "type": "Range",
@@ -164,7 +164,7 @@
     "id": "LAFF_systems_laser_painter",
     "name": "Laser Painter",
     "source": "SCC",
-    "license": "SCC",
+    "license": "",
     "license_id": "",
     "license_level": "0",
     "effect": "A continuous targeting laser that provides a permanent lock-on to a single enemy, allowing all allies to benefit from this for as long as the laser remains active.",
@@ -612,7 +612,7 @@
     "ammo": [
       {
         "name": "A.I.S",
-        "detail": "Anti-Infantry-Shrappnel. Despite its name, Anti-Infantry Shrapnel is also designed to target smaller, more fragile mechs. When fired within the weapon's range, you can choose to detonate the round, creating a Burst 4 cone where the shrapnel lands. Any target in cover is unaffected, but any target under size 1 not in cover takes double damage if hit.",
+        "detail": "Anti-Infantry-Shrappnel. Despite its name, Anti-Infantry Shrapnel is also designed to target smaller, more fragile mechs. When fired within the weapon's range, you can choose to detonate the round, creating a Blast 1 where the ammo detonates and a Cone 4 towards the target. Any target in cover is unaffected, but any target under size 1 not in cover takes double damage if hit.",
         "allowed_sizes": ["Main"],
         "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       }
@@ -634,5 +634,25 @@
       "id": "sensor",
       "val": 1
     }]
-      }
+    },
+    {
+      "id": "LAFF_grizzai",
+      "name": "Vangeance NHP",
+      "type": "AI",
+      "sp": 0,
+      "license_id": "",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_ai"
+        }
+      ],
+      "source": "EXOTIC",
+      "license": "",
+      "license_level": 0,
+      "effect": "Only for Voltia. +1d4 Damage for your prototype weapon. +1d6 Damage to all attacks, but with increasing HEAT depending on weapon size: Auxiliary: +1 HEAT Main: +2 HEAT Heavy: +3 HEAT Super Heavy: +4 HEAT",
+      "description": "“engeance doesn’t fully understand the concept of you as its “creator,” but it does recognize you as one of its primary caretakers and supporters. This connection creates a fundamental bond between you both. Personality-wise, Vengeance has a playful streak, sometimes going against the rules and finding enjoyment in its own ways. One noticeable quirk is that Vengeance rarely shuts down anymore. Instead, when not engaged in combat, you might catch it on the Omni-Net, amusing itself with various games or exploring other oddities online.  When Vengeance cascades, its personality shifts drastically. It loses reason, becoming singularly focused on destroying anything it perceives as an enemy, even if that means ignoring tactical considerations. If an enemy is either out of reach or obstructed by an ally, Vengeance may become aggressive towards those allies in its line of sight. While cascading, I’ll play Vengeance as highly aggressive, using overcharge and deploying every available ability to maximize damage output."      
+    }
 ]

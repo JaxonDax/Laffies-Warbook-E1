@@ -1,61 +1,48 @@
 [
   {
     "id": "LAFF_talents_dawncore_drive",
-    "name": "Dawncore Drive",
+    "name": "Dawn Core",
     "icon": "NUCLEAR CAVALIER",
     "terse": "Improve your survivability by replacing your reactor with an Dawncore drive",
     "description": "Laffey testing desc",
     "ranks": [
       {
         "name": "Dawncore Tier 1",
-        "description": "While flying, you get the following benefits:<ul><li>You make all Agility checks and saves with +1 Accuracy.</li><li>Any time an attack misses you, you may fly up to 2 spaces in any direction as a reaction.</li></ul>",
-        "synergies": [
+        "description": "<ul><li>Dangerous Efficiency: The Dawn Core performs best when on the edge. Gain +1 Accuracy on all attack rolls and Systems checks while you are in the danger zone (above half your Heat Cap).</li><li>Critical Heat Cap: You gain +2 Heat Cap.</li></ul>",
+        "bonus": [
           {
-            "locations": [
-              "agility, active_effects"
-            ],
-            "detail": "Make all Agility checks and saves with +1 Accuracy."
-          }
-        ],
-        "actions": [
-          {
-            "name": "Acrobatics",
-            "activation": "Reaction",
-            "trigger": "Any time an attack misses you.",
-            "detail": "You may fly up to 2 spaces in any direction."
-          }
-        ]
+          "id": "heatcap",
+          "val": 2
+        }]
       },
       {
         "name": "Dawncore Tier 2",
-        "description": "When you Boost while flying, you may move an additional 1d6 spaces, but take heat equal to half that amount.",
-        "synergies": [
-          {
-            "locations": [
-              "boost"
-            ],
-            "detail": "When you Boost while flying, you may move an additional 1d6 spaces, but take heat equal to half that amount."
-          }
-        ]
+        "description": "<ul><li>Thermal Surge: While in the danger zone, the Dawn Core channels excess Heat into your systems. You gain +1 Speed and +1 Evasion while above half your Heat Cap.</li><li>Heat Sink Overclock: When you start your turn in the danger zone, clear 1 Heat at the end of your turn.</li></ul>"
       },
       {
         "name": "Dawncore Tier 3",
-        "description": "As a quick action on your turn, you may <b>spin up your thrusters</b>. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the <b>Supersonic</b> Reaction.",
-        "actions": [
-          {
-            "name": "Spin Up Thrusters",
-            "activation": "Quick",
-            "detail": "As a quick action on your turn, you may spin up your thrusters. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the Supersonic reaction."
-          },
-          {
-            "name": "Supersonic",
-            "activation": "Reaction",
-            "frequency": "1/round",
-            "init": "Requires activation of the <b>Spin Up Thrusters</b> quick action on your turn. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, you may use this reaction.",
-            "trigger": "Your target’s turn ends.",
-            "detail": "You fly to a space free and adjacent to them. There must be a path to do so but you can move even if the nominated character is no longer within your movement range or line of sight. This ignores engagement and does not provoke reactions."
-          }
-        ]
+        "description": "<ul><li>Radiant Overload: While in the danger zone, all of your attacks deal +2 bonus damage.</li><li>Emergency Stabilizer: Once per scene, if you would overheat, you can immediately clear 4 Heat and avoid the overheat, but your mech becomes Exposed until the end of your next turn.</li></ul>"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_talents_lucky_bastard",
+    "name": "Lucky Bastard",
+    "icon": "NUCLEAR CAVALIER",
+    "terse": "Is luck a talent? some say it is. Luck helps you with surviving on the field or making impossible shots.",
+    "description": "Some pilots seem to be blessed by fate, always dodging incoming fire by the skin of their teeth or landing improbable hits when it matters most. Whether by instinct or sheer dumb luck, the Lucky Bastard always seems to survive.",
+    "ranks": [
+      {
+        "name": "Lucky Clover",
+        "description": "<ul><li>Fortune’s Favor: Once per scene, you can reroll a failed Attack Roll or Dodge Roll (on an attack targeting you). You must use the new result.</li><li>Close Call: When an attack misses you by 1 or 2 points, you gain +1 or 2 evasion. till the start of your next turn.</li></ul>"
+      },
+      {
+        "name": "Good Karma",
+        "description": "<ul><li>Lucky Strike: When you roll a natural 20 on an Attack Roll, you can add +1 Difficulty to your target's next attack until the end of their next turn.</li><li>Narrow Escape: Once per scene, when you are hit by an attack, you may roll a 1d6. On a 5-6, you halve the damage taken.</li></ul>"
+      },
+      {
+        "name": "Lady Luck's first born",
+        "description": "<ul><li>Impossible Dodge: Once per scene, when an attack would hit you, you may roll a 1d6. On a 5-6, you automatically dodge the attack, taking no damage or effects. On a 1-4, you take the hit but only take half damage.</li><li>Blessing of the Dice: Once per scene, you can turn any natural roll of 1 into a 20 on an Attack Roll or Dodge Roll. You are then “Cursed” and cannot roll a natural 20 for the rest of the scene.</li></ul>"
       }
     ]
   }
