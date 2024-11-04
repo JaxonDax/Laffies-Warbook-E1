@@ -4,16 +4,11 @@
     "name": "Dawn Core",
     "icon": "NUCLEAR CAVALIER",
     "terse": "Improve your survivability by replacing your reactor with an Dawncore drive",
-    "description": "Laffey testing desc",
+    "description": "Become a star",
     "ranks": [
       {
         "name": "Dawncore Tier 1",
-        "description": "<ul><li>Dangerous Efficiency: The Dawn Core performs best when on the edge. Gain +1 Accuracy on all attack rolls and Systems checks while you are in the danger zone (above half your Heat Cap).</li><li>Critical Heat Cap: You gain +2 Heat Cap.</li></ul>",
-        "bonus": [
-          {
-          "id": "heatcap",
-          "val": 2
-        }]
+        "description": "<ul><li>Dangerous Efficiency: The Dawn Core performs best when on the edge. Gain +1 Accuracy on all attack rolls and Systems checks while you are in the danger zone (above half your Heat Cap).</li><li>Critical Heat Cap: You gain +2 Heat Cap.</li></ul>"
       },
       {
         "name": "Dawncore Tier 2",
@@ -43,6 +38,27 @@
       {
         "name": "Lady Luck's first born",
         "description": "<ul><li>Impossible Dodge: Once per scene, when an attack would hit you, you may roll a 1d6. On a 5-6, you automatically dodge the attack, taking no damage or effects. On a 1-4, you take the hit but only take half damage.</li><li>Blessing of the Dice: Once per scene, you can turn any natural roll of 1 into a 20 on an Attack Roll or Dodge Roll. You are then “Cursed” and cannot roll a natural 20 for the rest of the scene.</li></ul>"
+      }
+    ]
+  },
+  {
+    "id": "LAFF_talents_cyborg",
+    "name": "Cyborg",
+    "icon": "NUCLEAR CAVALIER",
+    "terse": "Becoming closer with your mech has never becomes easier as you are connected in more ways than one.",
+    "description": "Some mechanics claim they can talk to their machines - but you take it literally. more than just cosmetic changes your augments mean your mech is like an extention of your body. was it a back-ally surgeon or a blacksite engineer? did you pay in manna or blood? was it your decision or someone else's? either way there is no going back now.",
+    "ranks": [
+      {
+        "name": "Neural Link",
+        "description": "When a hostile character attacks you as a reaction on your turn roll a 1d6. On a 4+ the attack misses."
+      },
+      {
+        "name": "Volition Override",
+        "description": "When your mech is Stunned or Jammed you may still move up to half of your speed as a standard move and take one quick action. All actions, saves, have a +2 difficulty and cause you to take 1 Heat."
+      },
+      {
+        "name": "Full Cerebral Sync",
+        "description": "When your mech is destroyed you may choose to keep it active though sheer force of will. You are instead recuded to 1 HP. You can not recover or lose HP while this effect is active. At the end of each of your turns whenever you take damage roll 1d20+Grit. on a 10+ your mech remains active otherwise it is immediately destroyed. at the end of each of your turns while this ability is active you gain +1 cumulative difficulty on subsequent rolls. You may only use this ability once per full repair."
       }
     ]
   }

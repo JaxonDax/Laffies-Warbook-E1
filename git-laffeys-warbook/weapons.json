@@ -337,7 +337,7 @@
         "damage": [
           {
             "type": "Variable",
-            "val": "1d6+2"
+            "val": "3d4"
           }
         ],
         "range": [
@@ -510,43 +510,77 @@
             "val": "3d20"
           }
         ],
-        "effect": "Set yourself to 15 HEAT, take 1 Stress damge and mark the gun as destroyed once you fire. Gain reliable 20. All targets adjacent to the Line take the same damage rolled if they fail the agility safe if they pass the safe then take half damage. Additionally ignore cover, shoot though terrain. Requires lock on."
+        "effect": "Set yourself to 15 HEAT, take 1 Stress dammage and mark the gun as destroyed once you fire. Gain reliable 20 against anyone in the line. All targets adjacent to the line must roll a agility safe or take damage if they pass they only take half the damage (reliable does not count). Additionally ignore cover, shoot though terrain. Requires lock on. (Once the weapon is destroyed due to the safey override you can only repair this with 3 repair capacity.)"
       }
     ],
     "license_id": ""
   },
   {
-    "id": "LAFF_whygun",
-    "name": "Why",
-    "source": "Horus",
-    "license": "ERR/// 404 Mech Not Found",
-    "license_id": "ERR///_404_Mech_Not_Found",
-    "license_level": 1,
-    "description": "<div>Stop looking for awnsers <br><span class='horus--subtle'>[Faurulle]</span> </div>",
-    "mount": "Why",
-    "type": "Why",
+    "id": "LAFF_combat_shotgun_mk2",
+    "name": "Combat Shotgun MK.2",
+    "source": "STC",
+    "license": "Thalia",
+    "license_id": "LAFF_Thalia",
+    "license_level": 2,
+    "description": "<div>An improved shotgun made by STC to fit for any situation</div>",
+    "mount": "Main",
+    "type": "CQB",
     "no_mods": false,
-    "sp": 999,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "actions": [
+      {
+        "name": "Swap Magazine",
+        "activation": "Quick Action",
+        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+      }],
     "damage": [
       {
         "type": "Variable",
-        "val": "5d100"
+        "val": "2d4+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "cone",
+        "val": 5
+      }
+    ],
+    "tags": [ {"id": "tg_reliable", "val": 4}]
+  },
+  {
+    "id": "LAFF_monitor_jammer",
+    "name": "Jammer Rifle",
+    "source": "STC",
+    "license": "Monitor",
+    "license_id": "LAFF_monitor",
+    "license_level": 3,
+    "description": "<div>LORE</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "no_mods": true,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "actions": [
+      {
+        "name": "Jam",
+        "activation": "Quick Action",
+        "detail": "Use your Jammer Rifle against an hostile enemy within range and line of sight. If hit the target needs to make a systems save. if they fail the target becomes Jammed untill the end of the next round. On crit the target is jammed for 2 rounds."
+      }],
+    "damage": [
+      {
+        "type": "Variable",
+        "val": "N/A"
       }
     ],
     "range": [
       {
         "type": "Range",
-        "val": 999
+        "val": 12
       }
     ],
-    "tags": [
-      {
-        "id": "tg_ap",
-        "name": "Armor-Piercing (AP)",
-        "description": "Damage dealt by this weapon ignores Armor."
-      }
-    ]
+    "tags": [ {"id": "tg_heat_self", "val": 2}]
   }
 ]

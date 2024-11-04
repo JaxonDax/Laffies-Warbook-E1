@@ -89,26 +89,23 @@
     "id": "LAFF_systems_remote_ancillary_armor_repairer_raar",
     "name": "Remote Ancillary Armor Repairer (RAAR)",
     "source": "STC",
-    "license": "STC",
-    "license_id": "",
-    "license_level": "0",
+    "license": "Thalia",
+    "license_id": "LAFF_Thalia",
+    "license_level": 1,
     "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
     "sp": "3",
     "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
     "tags": [
       {
-        "id": "tg_unique"
-      },
-      {
         "id": "tg_limited",
-        "val": 5
+        "val": 3
       }
     ],
     "actions": [
       {
         "name": "Remote Repair",
         "activation": "Quick Action",
-        "detail": "Target an allied mech within range. That mech regains 1d4+4 HP.",
+        "detail": "Target an allied mech within range. That mech regains 1d4+2 HP.",
         "range": [
           {
             "type": "Range",
@@ -124,52 +121,14 @@
     ]
   },
   {
-    "id": "LAFF_systems_ecm_electronic_countermeasures",
-    "name": "ECM (Electronic Countermeasures)",
-    "source": "IPS-N",
-    "license": "IPS-N",
-    "license_id": "",
-    "license_level": "0",
-    "effect": "ECM provides electronic protection by removing debuffs (conditions) from the user or allied mechs within range, offering temporary relief from disabling effects.",
-    "sp": "2",
-    "description": "First designed by IPS-NORTHSTAR engineers to counteract enemy lock-ons and electronic warfare, the ECM system became a battlefield staple for mechs engaged in heavy combat zones. Pirate factions like the Guristas quickly adapted this technology for their own purposes, using it to evade hostile targeting in ambushes.",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_recharge",
-        "val": 5
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
-    "actions": [
-      {
-        "name": "Activate ECM",
-        "activation": "Full  Action",
-        "detail": "Select an allied mech within range (including yourself). Remove one condition affecting the target, such as Lock On, Impaired, or Slowed. The pilot chooses which condition to remove.(cant be an effect that is self inflicted or global ask DM to make it clearer in edge cases)",
-        "range": [
-          {
-            "type": "Range",
-            "val": 10
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "LAFF_systems_laser_painter",
     "name": "Laser Painter",
-    "source": "SCC",
-    "license": "",
-    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
     "license_level": "0",
     "effect": "A continuous targeting laser that provides a permanent lock-on to a single enemy, allowing all allies to benefit from this for as long as the laser remains active.",
     "sp": "2",
-    "description": "Initially deployed by Smith-Shimano Corporation (SSC) as a tool for orbital strike coordination, the Laser Painter gained popularity among PMC groups for its ability to maintain a continuous lock-on during skirmishes. While SSC markets it for its precision, pirate groups like the Angel Cartel have been known to modify these for guerrilla warfare.",
+    "description": "LORE",
     "tags": [
       {
         "id": "tg_unique"
@@ -205,56 +164,19 @@
     ]
   },
   {
-    "id": "LAFF_systems_sensor_dampener",
-    "name": "Sensor Dampener",
-    "source": "SER",
-    "license": "SER",
-    "license_id": "",
-    "license_level": "0",
-    "effect": "Disrupts enemy targeting systems, reducing their sensor range and making it harder for them to acquire targets. ",
-    "sp": "3",
-    "description": "This tech was repurposed by the Serpentis, initially stolen from Harrison Armory R&D labs. Sensor Dampeners reduce enemy targeting capabilities by limiting their sensor range, forcing them to operate in closer quarters.",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_recharge",
-        "val": 5
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 3
-      }
-    ],
-    "actions": [
-      {
-        "name": "Activate Sensor Dampener",
-        "activation": "Full  Action",
-        "detail": "Targets affected by the Sensor Dampener suffer a -1 Difficulty on ranged attacks and Sensor Range is halved for 3 rounds. ",
-        "range": [
-          {
-            "type": "Cone",
-            "val": 10
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "LAFF_integrity_response_drones_system",
     "name": "Integrity Response Drones System (IRDS)",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": "1",
-    "effect": "Deploy a drone to either yourself or an allied mech within sensor range. Drone will automaticly repair allies nearby.",
+    "source": "STC",
+    "license": "Thalia",
+    "license_id": "LAFF_Thalia",
+    "license_level": 1,
+    "effect": "Deploy a drone to either yourself or an allied mech within range 4. The Drone will automaticly repair allies nearby.",
     "sp": "3",
-    "description": "Developed by GENERAL MASSIVE SYSTEMS (GMS) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+    "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
     "tags": [
       {
         "id": "tg_limited",
-        "val": 2
+        "val": 1
       }
     ],
     "deployables": [
@@ -263,17 +185,11 @@
         "name": "Integrity Response Drone",
         "activation": "Quick",
         "size": 0.5,
-        "hp": 5,
+        "hp": 3,
         "edef": 10,
         "evasion": 10,
-        "detail": "In a Burst 1 Area friendly mechs gain 1d6+2 HP at the start of their turn.",
-        "actions": [
-          {
-            "name": "Move Drone",
-            "activation": "Quick",
-            "detail": "The drone can be moved to any point within Sensors."
-          }
-        ]
+        "detail": "In a Burst 1 Area friendly mechs gain 1d4+4 HP at the start of their turn.",
+        "actions": []
       }
     ]
   },
@@ -492,12 +408,12 @@
       {
         "name": "Assisted Aim",
         "activation": "Quick Tech",
-        "detail": "Target a ally in sensor range and give them +1 accuracy for a single attack"
+        "detail": "Target a ally in sensor range and give them +1 accuracy for all attacks"
       },
       {
         "name": " Sharing is caring :3",
         "activation": "Quick Tech",
-        "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, any time the target gains heat until the end of the Monitor's next turn, all of their allied characters within range 5 also gain the same amount of heat."
+        "detail": "The Monitor makes a quick tech action against a character within Sensors. On a success, any time the target gains heat until the end of the Monitor's next turn, all of their allied characters within range 5 also gain the same amount of heat."
       }
     ]
   },
@@ -526,8 +442,7 @@
       {
         "name": "Emotional Damage",
         "activation": "Invade",
-        "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, the target takes the standard 2 heat immediately and then a further 1d4 Heat at the start of the Monitor's next turn.",
-        "on_crit": "<div>Heat dealt by Emotional Damage on the Monitor's next turn increases by 2d4 heat if the target is in the Danger Zone.</div>"
+        "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, the target takes the standard 2 heat immediately and then a further 1d3 Heat at the start of the Monitor's next turn. Heat dealt by Emotional Damage on the Monitor's next turn increases by 2d3 heat if the target is not in the Danger Zone."
       }
     ]
   },
@@ -551,14 +466,12 @@
       {
         "name": "Watchfull Eye",
         "activation": "Quick Action",
-        "detail": "The Monitor targets a single enemy mech within Sensor range. On a successful tech attack, the target is marked and cant hide or be invisible. Gain the Eye for an Eye Reaction Option for 3 rounds."
+        "detail": "The Monitor targets a single enemy mech within Sensor range. On a successful tech attack, the target is Locked on and cant hide or be invisible untill the lock on has been consumed."
       },
       {
-        "name": "Eye for an Eye",
-        "activation": "Reaction",
-        "frequency": "2/encounter",
-        "trigger": "An enemy marked by Watchfull Eye hacks (successfully or not) an ally within sensor range and line of sight",
-        "detail": "The Monitor may hack any targets within range 8 of the target as a free action"
+        "name": "Nuh uh",
+        "activation": "Invade",
+        "detail": "The Monitor targets a single enemy mech within Sensor range. On a successful tech attack, the target needs to pass a systems save or become stunned untill the end of their next turn. If the target passes the system safe they are impaired untill the end of their next turn. Each character can only be Stunned by this effect once per scene."
       }
     ]
   },
@@ -652,7 +565,145 @@
       "source": "EXOTIC",
       "license": "",
       "license_level": 0,
-      "effect": "Only for Voltia. +1d4 Damage for your prototype weapon. +1d6 Damage to all attacks, but with increasing HEAT depending on weapon size: Auxiliary: +1 HEAT Main: +2 HEAT Heavy: +3 HEAT Super Heavy: +4 HEAT",
-      "description": "“engeance doesn’t fully understand the concept of you as its “creator,” but it does recognize you as one of its primary caretakers and supporters. This connection creates a fundamental bond between you both. Personality-wise, Vengeance has a playful streak, sometimes going against the rules and finding enjoyment in its own ways. One noticeable quirk is that Vengeance rarely shuts down anymore. Instead, when not engaged in combat, you might catch it on the Omni-Net, amusing itself with various games or exploring other oddities online.  When Vengeance cascades, its personality shifts drastically. It loses reason, becoming singularly focused on destroying anything it perceives as an enemy, even if that means ignoring tactical considerations. If an enemy is either out of reach or obstructed by an ally, Vengeance may become aggressive towards those allies in its line of sight. While cascading, I’ll play Vengeance as highly aggressive, using overcharge and deploying every available ability to maximize damage output."      
+      "effect": "Only for Voltia. Passive (Non-Cascade): +1d4 Damage for your prototype weapon. Cascade Mode: +1d6 Damage to all attacks, but with gaining HEAT depending on weapon size used to attack: Auxiliary: +1 HEAT Main: +2 HEAT Heavy: +3 HEAT Super Heavy: +4 HEAT",
+      "description": "Vangeance doesn’t fully understand the concept of you as its “creator,” but it does recognize you as one of its primary caretakers and supporters. This connection creates a fundamental bond between you both. Personality-wise, Vengeance has a playful streak, sometimes going against the rules and finding enjoyment in its own ways. One noticeable quirk is that Vengeance rarely shuts down anymore. Instead, when not engaged in combat, you might catch it on the Omni-Net, amusing itself with various games or exploring other oddities online.  When Vengeance cascades, its personality shifts drastically. It loses reason, becoming singularly focused on destroying anything it perceives as an enemy, even if that means ignoring tactical considerations. If an enemy is either out of reach or obstructed by an ally, Vengeance may become aggressive towards those allies in its line of sight. While cascading, I’ll play Vengeance as highly aggressive, using overcharge and deploying every available ability to maximize damage output."      
+    },
+    {
+      "id": "LAFF_irds_thalia",
+      "name": "IRDS Thalia Variant",
+      "effect": "Deploy a drone to either yourself or an allied mech within sensor range. Drone will automaticly repair allies nearby.",
+      "sp": 0,
+      "license_id": "",
+      "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 2
+        }
+      ],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Integrity Response Drone",
+          "activation": "Quick",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "In a Burst 2 Area friendly mechs gain 1d4+4+ENGINEERING SKILL HP at the start of their turn.",
+          "actions": [
+            {
+              "name": "Move Drone",
+              "activation": "Quick",
+              "detail": "The drone can be moved to any point within Sensors."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LAFF_raar_thalia",
+      "name": "RAAR Thalia Variant",
+      "license_id": "",
+      "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
+      "sp": 0,
+      "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_limited",
+          "val": 3
+        }
+      ],
+      "actions": [
+        {
+          "name": "Remote Repair",
+          "activation": "Quick Action",
+          "detail": "Target an allied mech within range. That mech regains 1d4+4+ENGINEERING SKILL HP.",
+          "range": [
+            {
+              "type": "Range",
+              "val": 15
+            }
+          ]
+        },
+        {
+          "name": "Restock",
+          "activation": "Quick Action",
+          "detail": "Consume 1 repair capacity and regain all charges"
+        }
+      ]
+    },
+    {
+      "id": "LAFF_wabu_shield",
+      "name": "Wabu Shield",
+      "source": "STC",
+      "license": "Thalia",
+      "license_id": "LAFF_Thalia",
+      "license_level": 3,
+      "effect": "If an ally within range 8 is taking structure damage as a reaction you may move up to them ignoring engagement and give them 10 over shield possibly negating any further damage. ",
+      "sp": 4,
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_unique"
+        }
+      ],
+      "actions": [
+        {
+          "name": "Activate WABU",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "init": "Must not be stunned, Immobilized, jammed or grappled.", 
+          "trigger": "Ally takes structure damage within range 8", 
+          "detail": "You may move up to the ally giving +1 difficulty to any engagements and any overwatch reactions. Once at the ally give them 10 over shield possibly negating any further damage."
+        }
+      ]
+    },
+    {
+      "id": "LAFF_3d_parts_printer",
+      "name": "3D Parts Printer",
+      "source": "STC",
+      "license": "Thalia",
+      "license_id": "LAFF_Thalia",
+      "license_level": 3,
+      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. No rule superceeds this.</li>",
+      "sp": 5,
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_limited",
+          "val": 2
+        }
+      ]
+    },
+    {
+      "id": "LAFF_dawn_core",
+      "name": "Dawncore Drive",
+      "type": "Reactor",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": "0",
+      "sp": 0,
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {"id": "tg_indestructible"}
+      ],
+      "effect": "You gain +2 Heat Cap. ONLY TO BE USED WITH THE DAWN CORE RANK I TALENT",
+      "description": "<span class='horus--subtle'>[Overdrive]</span><br>Gained from the <i>Dawncore: Rank I</i> pilot talent.",
+      "license_id": "",
+      "bonuses": [
+        {
+          "id": "heatcap",
+          "val": 2
+        }
+      ]
     }
 ]

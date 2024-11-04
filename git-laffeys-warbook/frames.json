@@ -116,7 +116,7 @@
       {
         "name": "Fragile",
         "use": "",
-        "description": "<div>Gain +1 difficulty on Hull checks and saves.</div><div><br></div>"
+        "description": "<div>Gain +1 difficulty on Hull and Engineering checks and saves.</div><div><br></div>"
       },
       {
         "name": "Scout Frame",
@@ -132,12 +132,17 @@
         "name": "Full-Spectrum Sensor Suite",
         "use": "",
         "description": "<div>The Monitor may Lock On as a protocol. Whenever an allied character within Range 10 consumes any Lock On, their attack is not affected by cover.</div><div><br></div>"
+      },
+      {
+        "name": "Intergrated Sensor Booster and Targeting System.",
+        "use": "",
+        "description": "The monitior has an intergraded Sensor Booster and Targeting System. You may not add more to the frame."
       }
     ],
     "core_system": {
       "name": "Dissolution Sequencer",
       "active_name": "Obfuscation Manifold",
-      "active_effect": "Gain 8 Sensor range. Gain access to special tech options <br><span class='horus--subtle'>[unleashed shall i be and they will only know darkness henceforth]</span>",
+      "active_effect": "Gain 5 Sensor range. Gain access to special tech options <br><span class='horus--subtle'>[unleashed shall i be and they will only know darkness henceforth]</span>",
       "activation": "Protocol",
       "description": "<p>All systems and sensor boosters overload increasing the mechs offensive tech abilities.</p>",
       "deactivation": "Free",
@@ -222,7 +227,7 @@
       "name": " 'Everest' COMP/CON",
       "active_name": "Protocol 1 & 2",
       "active_effect": "Choose one of the two protocol's",
-      "activation": "",
+      "activation": "Protocol",
       "description": "The mech has an inbuilt advanced comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. This AI does not count to your total AI count and can be replaced with an NHP to create a variant personal mech.",
       "deactivation": "",
       "use": "",
@@ -232,7 +237,7 @@
       "active_actions": [
         {
           "name": "Protocol 1 - Engage Defensive Maneuvers",
-          "activation": "Reaction",
+          "activation": "Protocol",
           "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion and Resistance to all ranged attacks for the next 2 rounds."
         },
         {
@@ -314,58 +319,52 @@
     }
   },
   {
-    "id": "LAFF_404_not_found",
-    "license_id": "ERR///_404_Mech_Not_Found",
-    "source": "Horus",
+    "id": "LAFF_Thalia",
     "license_level": 2,
-    "name": "ERR/// 404 Mech Not Found",
-    "mechtype": ["Strategic"],
-    "description": "Stop trying to find me <br><span class='horus--subtle'>[Solitude]</span> </div>",
-    "mounts": ["Why", "Many", "O_O"],
+    "source": "STC",
+    "name": "Thalia",
+    "mechtype": ["Support", "Striker"],
+    "y_pos": 32,
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "description": "LORE",
+    "mounts": ["Aux/Aux", "Flex"],
     "stats": {
-      "size": 1, 
-      "structure": 999,
-      "stress": 999,
-      "armor": 999,
-      "hp": 404,
-      "evasion": 20,
-      "edef": 999,
-      "heatcap": 999,
-      "repcap": 404,
-      "sensor_range": 999,
-      "tech_attack": 999,
-      "save": 1,
-      "speed": 999,
-      "sp": 999
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 10
     },
     "traits": [
       {
-        "name": "Does not exist",
-        "use": "",
-        "description": "This frame does not exist yet it does"
+        "name": "Combat medic",
+        "description": "Thalia and all allies adjacent to the Thalia gain +1 accuracy to HULL, SYSTEM and ENGINEERING saving throws."
+      },
+      {
+        "name": "Assisted Repair",
+        "description": "as a prepared action Thalia may give adjacent allies the quick action to repair to full HP. (The allie uses their own repair cap at their regular cost)"
+      },
+      {
+        "name": "Intergrated IRDS and RAAR",
+        "description": "You gain 2 intergrated Systems. RAAR Thalia Variant and IRDS Thalia Variant."
       }
     ],
     "core_system": {
-      "name": "STOP LOOKING",
-      "active_name": "",
-      "active_effect": "",
-      "activation": "",
-      "description": "",
-      "deactivation": "",
-      "use": "",
-      "passive_name": "",
-        "passive_effect": "",
-      "passive_actions": [],
-      "active_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "y_pos": 25
+      "name": "Cryptbloom",
+      "description": "LORE",
+      "active_name": "Superior Repair",
+      "active_effect": "For the rest of the encounter the Thalia may use any repair actions twice as a quick action. Or you may choose as a full action to repair an ally's system or weapon using 1 RAAR charge. ",
+      "activation": "Protocol",
+      "integrated": ["LAFF_irds_thalia", "LAFF_raar_thalia"]
+    }
   }
 ]
