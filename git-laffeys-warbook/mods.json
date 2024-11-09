@@ -2,7 +2,9 @@
     {
         "id": "LAFF_artillery_calculator_nhp",
         "name": "Artillery COMP/CON",
-        "source": "STC", 
+        "source": "EXOTIC",
+        "license": "EXOTIC",
+        "license_id": "EXOTIC",
         "sp": 4,
         "description": "Lore", 
         "effect": "Gives Accuracy to any Heavy and Superheavy Cannon", 
@@ -16,7 +18,9 @@
       {
         "id": "LAFF_accurate_personalisation",
         "name": "Accurate Personalisation",
-        "source": "EXOTIC", 
+        "source": "EXOTIC",
+        "license": "EXOTIC",
+        "license_id": "EXOTIC",
         "sp": 0,
         "description": "Lore", 
         "effect": "Gives Accuracy to any personal weapon ASK THE GM TO USE THIS", 

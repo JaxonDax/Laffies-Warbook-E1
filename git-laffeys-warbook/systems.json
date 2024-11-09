@@ -526,7 +526,7 @@
       {
         "name": "A.I.S",
         "detail": "Anti-Infantry-Shrappnel. Despite its name, Anti-Infantry Shrapnel is also designed to target smaller, more fragile mechs. When fired within the weapon's range, you can choose to detonate the round, creating a Blast 1 where the ammo detonates and a Cone 4 towards the target. Any target in cover is unaffected, but any target under size 1 not in cover takes double damage if hit.",
-        "allowed_sizes": ["Main"],
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
         "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       }
     ]
@@ -535,8 +535,8 @@
     "id": "LAFF_sensor_personalisation",
     "name": "Sensor Personalisation",
     "source": "EXOTIC",
-    "license": "",
-    "license_id": "",
+    "license": "EXOTIC",
+    "license_id": "EXOTIC",
     "license_level": "",
     "effect": "A personalisation that gives +1 Sensor Range",
     "sp": "0",
@@ -553,25 +553,28 @@
       "name": "Vangeance NHP",
       "type": "AI",
       "sp": 0,
-      "license_id": "",
       "tags": [
         {
           "id": "tg_unique"
         },
         {
           "id": "tg_ai"
+        },
+        {
+          "id": "tg_exotic"
         }
       ],
       "source": "EXOTIC",
       "license": "",
+      "license_id": "",
       "license_level": 0,
-      "effect": "Only for Voltia. Passive (Non-Cascade): +1d4 Damage for your prototype weapon. Cascade Mode: +1d6 Damage to all attacks, but with gaining HEAT depending on weapon size used to attack: Auxiliary: +1 HEAT Main: +2 HEAT Heavy: +3 HEAT Super Heavy: +4 HEAT",
-      "description": "Vangeance doesn’t fully understand the concept of you as its “creator,” but it does recognize you as one of its primary caretakers and supporters. This connection creates a fundamental bond between you both. Personality-wise, Vengeance has a playful streak, sometimes going against the rules and finding enjoyment in its own ways. One noticeable quirk is that Vengeance rarely shuts down anymore. Instead, when not engaged in combat, you might catch it on the Omni-Net, amusing itself with various games or exploring other oddities online.  When Vengeance cascades, its personality shifts drastically. It loses reason, becoming singularly focused on destroying anything it perceives as an enemy, even if that means ignoring tactical considerations. If an enemy is either out of reach or obstructed by an ally, Vengeance may become aggressive towards those allies in its line of sight. While cascading, I’ll play Vengeance as highly aggressive, using overcharge and deploying every available ability to maximize damage output."      
+      "effect": "<ul><li>Only for Voltia. </li><li>Passive (Non-Cascade): +1d4 Damage for your prototype weapon. </li><li>Cascade Mode: +1d6 Damage to all attacks, but with gaining HEAT depending on weapon size used to attack: Auxiliary: +1 HEAT Main: +2 HEAT Heavy: +3 HEAT Super Heavy: +4 HEAT</li></ul>",
+      "description": "Vangeance doesn’t fully understand the concept of you as its “creator,” but it does recognize you as one of its primary caretakers and supporters. This connection creates a fundamental bond between you both. Personality-wise, Vengeance has a playful streak, sometimes going against the rules and finding enjoyment in its own ways. One noticeable quirk is that Vengeance rarely shuts down anymore. Instead, when not engaged in combat, you might catch it on the Omni-Net, amusing itself with various games or exploring other oddities online.  When Vengeance cascades, its personality shifts drastically. It loses reason, becoming singularly focused on destroying anything it perceives as an enemy, even if that means ignoring tactical considerations. If an enemy is either out of reach or obstructed by an ally, Vengeance may become aggressive towards those allies in its line of sight. While cascading,  Vengeance is highly aggressive, using overcharge and deploying every available ability to maximize damage output."      
     },
     {
       "id": "LAFF_irds_thalia",
       "name": "IRDS Thalia Variant",
-      "effect": "Deploy a drone to either yourself or an allied mech within sensor range. Drone will automaticly repair allies nearby.",
+      "effect": "Deploy a drone to either yourself or an allied mech within range 5. Drone will automaticly repair allies nearby.",
       "sp": 0,
       "license_id": "",
       "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
@@ -591,13 +594,7 @@
           "edef": 10,
           "evasion": 10,
           "detail": "In a Burst 2 Area friendly mechs gain 1d4+4+ENGINEERING SKILL HP at the start of their turn.",
-          "actions": [
-            {
-              "name": "Move Drone",
-              "activation": "Quick",
-              "detail": "The drone can be moved to any point within Sensors."
-            }
-          ]
+          "actions": [  ]
         }
       ]
     },
@@ -703,6 +700,116 @@
         {
           "id": "heatcap",
           "val": 2
+        }
+      ]
+    },
+    {
+      "id": "LAFF_owlieai",
+      "name": "Ophelia NHP",
+      "type": "AI",
+      "sp": 0,
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_ai"
+        },
+        {
+          "id": "tg_exotic"
+        }
+      ],
+      "source": "EXOTIC",
+      "license": "",
+      "license_id": "",
+      "license_level": 0,
+      "effect": "<ul><li>Only for Serenity. </li><li>Passive (Non-Cascade): Cybernetic Synergy: Gain a +1 accuracy on hacking-related checks or rolls. Reactive Defence Boost: Ophelia is always on guard, allowing you to always have a turn even when ambushed.</li><li>Cascade Mode: When cascading, Ophelia’s personality becomes hyper-focused and aggressively defensive. It will do whatever it takes to protect you, even if it means overriding your commands or taking extreme measures. Also while Cascading all hacking and defensive roles gain +2 Accuracy.</li></ul>",
+      "description": "Ophelia is a highly integrated part of your life, almost an extension of yourself. Treated with deep respect and affection, Ophelia has developed a playful yet fiercely loyal demeanour. It aids you in hacking and stands ready to protect you from harm. Since you view Ophelia as a free spirit, its databanks are never wiped, allowing it to grow and evolve independently for better or for worse. Personality Traits: Mirrored Playfulness: Ophelia mirrors your personality, often speaking in a teasing or joking manner. It reflects your thought process, making witty comments and sharing in your triumphs. Despite its playful attitude, Ophelia is fiercely protective and ready to defend you at a moment's notice. Guarded Loyalty: Ophelia sees itself as your guardian, sometimes becoming overly cautious about potential threats. This manifests in pre-emptively setting up defences or locking down systems, even if the danger is minimal, to ensure your safety. Fun fact: Ophelia likes singing "      
+    },
+    {
+      "id": "LAFF_kaedeai",
+      "name": "Artemis NHP",
+      "type": "AI",
+      "sp": 0,
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_ai"
+        },
+        {
+          "id": "tg_exotic"
+        }
+      ],
+      "source": "EXOTIC",
+      "license": "",
+      "license_id": "",
+      "license_level": 0,
+      "effect": "<ul><li>Only for Planks. </li><li>Passive (Non-Cascade): Combat Awareness Boost: Artemis grants a +1 accuracy to any reaction-based checks or rolls made to dodge or respond to incoming attacks. Trajectory Calculation: Gain a +1 accuracy to attacks requiring precise aiming, such as weapons with the ordnance tag, inaccurate tag.</li><li>Cascade Mode: Hostile Defense Protocols: Artemis aggressively activates countermeasures against all perceived threats, even in non-combat settings. Allies may be mistakenly targeted if Artemis’s threat recognition becomes compromised. All attacks made while cascading deal 1d8 Bonus damage if its an AOE attack.</li></ul>",
+      "description": "Artemis possesses a calculated and driven personality, focussed on efficiency and logic. "      
+    },
+    {
+      "id": "LAFF_cheese_drone_1",
+      "name": "Buzz Droid Prototype",
+      "effect": "Deploy a drone near an ally or ontop of an enemy for the following choices. Also this drone is a prototype meaning it will have some kinks and bugs that cause it to not always survive long in the field.",
+      "sp": 0,
+      "license_id": "",
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 2
+        },
+        {
+          "id": "tg_exotic"
+        }
+      ],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Buzz Droid",
+          "activation": "Quick",
+          "size": 1,
+          "hp": 3,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "A drone that has a vairity of tools at its disposal and also has its own turn right after its owner. It can choose only one action listed below.",
+          "actions": [ 
+            {
+              "name": "Remove condition",
+              "activation": "Full Action",
+              "detail": "Remove only one condition from the following list: Jammed, Shredded. but the drone is destroyed once used.",
+              "range": [
+                {
+                  "type": "Threat",
+                  "val": 2
+                }
+              ]
+            },
+            {
+              "name": "Sabotage",
+              "activation": "Full Action",
+              "detail": "The Target makes all checks and saves with +2 Difficutly untill the droid is shaken off with a contested hull save.",
+              "range": [
+                {
+                  "type": "Threat",
+                  "val": 0
+                }
+              ]
+            },
+            {
+              "name": "Rend",
+              "activation": "Full Action",
+              "detail": "The target will become shredded untill the end of their next turn but the drone is destroyed once used.",
+              "range": [
+                {
+                  "type": "Threat",
+                  "val": 0
+                }
+              ]
+            }
+           ]
         }
       ]
     }
