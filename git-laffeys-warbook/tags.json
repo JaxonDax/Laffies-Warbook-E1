@@ -3,5 +3,10 @@
     "id": "LAFF_tags_loading_{val}",
     "name": "Loading {VAL}",
     "description": "This weapon must be reloaded after expending the magazine. Mechs can reload with Stabilize and some systems."
+  },
+  {
+    "id": "LAFF_upgraded_{val}",
+    "name": "MK.{VAL}",
+    "description": "This weapon has been upgraded from its base version dealing either more damage having other effects ect."
   }
 ]

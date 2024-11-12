@@ -157,7 +157,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6"
+        "val": "1d4+1"
       }
     ],
     "range": [
@@ -563,16 +563,12 @@
     "sp": 0,
     "barrage": true,
     "skirmish": true,
-    "actions": [
-      {
-        "name": "Jam",
-        "activation": "Quick Action",
-        "detail": "Use your Jammer Rifle against an hostile enemy within range and line of sight. If hit the target needs to make a systems save. if they fail the target becomes Jammed untill the end of the next round. On crit the target is jammed for 2 rounds."
-      }],
+    "on_hit": "the target needs to make a systems save. if they fail the target becomes Jammed untill the end of the next round.", 
+    "on_crit": "the target is jammed for 2 rounds instead of 1 if they fail a a system save.", 
     "damage": [
       {
-        "type": "Variable",
-        "val": "N/A"
+        "type": "Energy",
+        "val": "1d4"
       }
     ],
     "range": [

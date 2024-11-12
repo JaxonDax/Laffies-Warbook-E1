@@ -700,6 +700,9 @@
         {
           "id": "heatcap",
           "val": 2
+        },
+        {
+          "id": "tg_exotic"
         }
       ]
     },
@@ -751,7 +754,7 @@
     },
     {
       "id": "LAFF_cheese_drone_1",
-      "name": "Buzz Droid Prototype",
+      "name": "Buzz Droid Swarm Prototype",
       "effect": "Deploy a drone near an ally or ontop of an enemy for the following choices. Also this drone is a prototype meaning it will have some kinks and bugs that cause it to not always survive long in the field.",
       "sp": 0,
       "license_id": "",
@@ -768,48 +771,96 @@
       "deployables": [
         {
           "type": "Drone",
-          "name": "Buzz Droid",
+          "name": "Buzz Droid Swarm",
           "activation": "Quick",
-          "size": 1,
+          "size": 0.5,
           "hp": 3,
           "edef": 10,
           "evasion": 10,
-          "detail": "A drone that has a vairity of tools at its disposal and also has its own turn right after its owner. It can choose only one action listed below.",
+          "detail": "A swarm of drones that has a vairity of tools at its disposal and also has its own turn right after its owner. It can choose only one action listed below.",
           "actions": [ 
             {
               "name": "Remove condition",
               "activation": "Full Action",
-              "detail": "Remove only one condition from the following list: Jammed, Shredded. but the drone is destroyed once used.",
-              "range": [
-                {
-                  "type": "Threat",
-                  "val": 2
-                }
-              ]
+              "detail": "Remove only one condition from the following list: Jammed, Shredded. but the drone is destroyed once used."
             },
             {
               "name": "Sabotage",
               "activation": "Full Action",
-              "detail": "The Target makes all checks and saves with +2 Difficutly untill the droid is shaken off with a contested hull save.",
-              "range": [
-                {
-                  "type": "Threat",
-                  "val": 0
-                }
-              ]
+              "detail": "The Target makes all checks and saves with +2 Difficutly untill the droid is shaken off with a contested hull save."
             },
             {
               "name": "Rend",
               "activation": "Full Action",
-              "detail": "The target will become shredded untill the end of their next turn but the drone is destroyed once used.",
-              "range": [
-                {
-                  "type": "Threat",
-                  "val": 0
-                }
-              ]
+              "detail": "The target will become shredded untill the end of their next turn but the drone is destroyed once used."
             }
            ]
+        }
+      ]
+    },
+    {
+      "id": "LAFF_sensor_booster_Monitor",
+      "name": "Sensor Booster Monitor",
+      "license_id": "",
+      "effect": "Gain +2 Sensor range",
+      "sp": "0",
+      "description": "The Sensor Booster is an advanced suite of additional detection equipment designed to enhance a mech’s ability to detect, identify, and target objects and signals at long range. This system boosts the mech’s base sensor range, providing the pilot with heightened situational awareness and the ability to pinpoint threats or opportunities more effectively. The booster replaces standard sensor systems, focusing on extending the range and precision of detection while sacrificing other utility modules. Originally developed by Steel Core (STC) for covert scouting units and long-range support mechs.",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_heat_self",
+          "val": 2
+        }
+      ],
+      "bonuses": [
+        {
+        "id": "sensor",
+        "val": 2
+      }],
+      "actions":[
+        {
+          "name": "Deep Scan",
+          "activation": "Quick Action",
+          "detail": "Scan an enemy mech and gain all current stats, items and abilities of the mech while getting to know what its current orders are. Also gain any public records on the mech. Gain 2 Heat while you perform this action. If used against items gain an detailed analysis if possible"
+        }
+      ]
+    },
+    {
+      "id": "LAFF_targeting_systems_Monitor",
+      "name": "Targeting Systems Monitor",
+      "license_id": "",
+      "effect": "Gain the ability to multi lock on",
+      "sp": "0",
+      "description": "The Targeting Systems module is an advanced multi-lock system developed by STC, capable of simultaneously engaging multiple hostiles within sensor range. This system is designed for mechs that prioritize battlefield control, allowing pilots to disrupt and track several enemies at once, giving their squadmates a significant advantage by distributing accurate targeting data. With the ability to track up to three enemies at a time, the Targeting Systems put pressure on the opposition, forcing them to split their defenses across multiple vectors. However, the intensity of using such a complex system generates significant heat, requiring pilots to balance its powerful benefits with heat management.",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_heat_self",
+          "val": 2
+        }
+      ],
+      "actions":[
+        {
+          "name": "Multi Lock",
+          "activation": "Full Tech",
+          "detail": "Atempt to lock on 3 hostiles of your choice wihtin sensor range."
+        }
+      ]
+    },
+    {
+      "id": "LAFF_damage_control_Intergrated",
+      "name": "Marianna In-Built Redundancy System",
+      "license_id": "",
+      "effect": "mark as destroyed once the Marianna In-Built Redundancy trait has been used.",
+      "sp": "0",
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_indestructible"
         }
       ]
     }

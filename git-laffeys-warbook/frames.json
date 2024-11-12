@@ -174,7 +174,7 @@
       "passive_synergies": [],
       "deployables": [],
       "counters": [],
-      "integrated": ["LAFF_sensor_booster", "LAFF_targeting_systems"],
+      "integrated": ["LAFF_sensor_booster_Monitor", "LAFF_targeting_systems_Monitor"],
       "special_equipment": [],
       "tags": []
     },
@@ -220,7 +220,7 @@
       {
         "name": "In-Built Redundancy",
         "use": "",
-        "description": "The Mariana has many in built systems and mounts that allow it for 1 structure damage ignore all effects."
+        "description": "The Mariana has many in built systems and mounts that allow it to ignore all effects from the first structure damage it takes."
       }
     ],
     "core_system": {
@@ -237,21 +237,22 @@
       "active_actions": [
         {
           "name": "Protocol 1 - Engage Defensive Maneuvers",
-          "activation": "Protocol",
+          "activation": "Reaction",
+          "frequency": "2/encounter", 
+          "trigger": "When hit with an ranged/melee attack", 
           "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion and Resistance to all ranged attacks for the next 2 rounds."
         },
         {
           "name": "Protocol 2 - Offensive Override",
           "activation": "Protocol",
-          "detail": "For the next 2 turns, gain an extra quick action and you can use Barrage as a Quick Action once during this period.",
-          "frequency": "2/mission"
+          "detail": "Once Protocol 2 is activated Barrage becomes a quick action for only two instances until the end of the next round."
         }
       ],
       "passive_bonuses": [],
       "passive_synergies": [],
       "deployables": [],
       "counters": [],
-      "integrated": [],
+      "integrated": ["LAFF_damage_control_Intergrated"],
       "special_equipment": [],
       "tags": [{"id": "tg_ai"},{ "id": "tg_no_cascade"}]
     },
@@ -326,7 +327,7 @@
     "mechtype": ["Support", "Striker"],
     "y_pos": 32,
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "description": "LORE",
+    "description": "The Thalia frame, forged by Steel Core’s finest engineers, was conceived as the ultimate battlefield medic, offering frontline repairs to allies in critical moments. Named after the ancient figure of grace and rejuvenation, Thalia embodies a dual philosophy: combining durability with unparalleled support capabilities to sustain allies in even the most hostile conditions. Originally developed during a series of brutal campaigns, the Thalia became essential in long battles where repair stations were scarce. Steel Core engineers equipped it with breakthrough technology, including the Integrity Response Drone System (IRDS) and Remote Automated Armor Restoration (RAAR), enabling it to provide rapid, in-field repair without compromising its own combat capabilities. These systems were an innovation in field support: the IRDS drone could be deployed to handle repairs autonomously while the pilot attended to more urgent matters, while the RAAR enabled Thalia to shore up the defenses of critically damaged mechs and restore operational efficiency in seconds.",
     "mounts": ["Aux/Aux", "Flex"],
     "stats": {
       "size": 1,
