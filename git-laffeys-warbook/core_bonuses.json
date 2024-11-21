@@ -16,13 +16,35 @@
         "id": "LAFF_reinforced_frame",
         "name": "Reinforced Frame 2",
         "source": "STC",
-        "effect": "Gain +5 HP",
+        "effect": "Gain +3 HP",
         "description": "The addition of redundant shock-absorption systems increases the survivability of pilots in combat, flight, and industrial situations.",
         "bonuses": [
           {
             "id": "hp",
-            "val": 5
+            "val": 3
           }
         ]
+      },
+      {
+        "id": "LAFF_Well_Maintained_Weapons",
+        "name": "Well Maintained Weapons",
+        "source": "GMS",
+        "effect": "Give reliable +2 to one weapon. This stacks with regular reliable.",
+        "description": "Being diligent in maintaining your weapons allows comes with benefits. You can always count on them when to fight is rough",
+        "mounted_effect": "One weapon equipped to this mount gains reliable +2. This stacks with regular reliable."
+      },
+      {
+        "id": "LAFF_Signal_Amplifiers",
+        "name": "Signal Amplifiers",
+        "source": "GMS",
+        "effect": "Immunity from Jammed condition as you treat is as Impaired",
+        "description": "Augments the sensor and electronics suite of the mech. Due to an increased sensor strength you treat Jammed as it as Impaired."
+      },
+      {
+        "id": "LAFF_Grabby_Hands",
+        "name": "Grabby Hands",
+        "source": "IPS-N",
+        "effect": "1/Turn: When a mech ends their turn within Threat 3 of you, you may pull them adjacent to you as a reaction.",
+        "description": "Come over here... I dont bite hehehehe"
       }
 ]

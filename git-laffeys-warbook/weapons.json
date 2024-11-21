@@ -16,7 +16,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "2d6+4"
+        "val": "2d6"
       }
     ],
     "range": [
@@ -74,7 +74,7 @@
     "source": "STC",
     "license": "Crusader",
     "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
-    "license_level": 3,
+    "license_level": 1,
     "description": "<div>The Quad Mega Pulse Laser is a massive, quad-barrel cannon powered by an external battery, usually dorsally mounted on the chassis carrying it.</div>",
     "mount": "Superheavy",
     "type": "Cannon",
@@ -96,7 +96,7 @@
       }
     ],
     "tags": [
-      {"id": "tg_ordnance"}, {"id": "tg_heat_self", "val": 2}]
+      {"id": "tg_ordnance"}, {"id": "tg_heat_self", "val": 3}]
   },
   {
     "id": "401aa282-6532d-45a3-b54686177-10coijh8cd9",
@@ -104,7 +104,7 @@
     "source": "STC",
     "license": "Crusader",
     "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
-    "license_level": 3,
+    "license_level": 2,
     "description": "<div>The Dual 150mm Short Railgun is a massive, Dual-barrel cannon powered by an external battery, usually dorsally mounted on the chassis carrying it.</div>",
     "mount": "Superheavy",
     "type": "Cannon",
@@ -131,12 +131,6 @@
         "name": "Armor-Piercing (AP)",
         "description": "Damage dealt by this weapon ignores Armor."
       },
-      {
-        "id": "LAFF_tags_loading_{val}",
-        "name": "Loading {val}",
-        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems.",
-        "val": 3
-      }, 
       {"id": "tg_ordnance"}
     ]
   },
@@ -211,11 +205,12 @@
     "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "effect": "You start with Kinetic magazine Loaded",
     "actions": [
       {
         "name": "Swap Magazine",
         "activation": "Quick Action",
-        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+        "detail": "Reload your gun with a diffrent magzine containing either Kinetic, Energy or Explosive Damage."
       }],
     "damage": [
       {
@@ -229,7 +224,7 @@
         "val": 12
       }
     ],
-    "tags": [ {"id": "tg_reliable", "val": 3}, {"id": "tg_accurate"}]
+    "tags": [ {"id": "tg_reliable", "val": 3}, {"id": "tg_accurate"}, {"id": "LAFF_upgraded", "val": 2}]
   },  
   {
     "id": "LAFF_Mariana_Pistol",
@@ -245,11 +240,12 @@
     "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "effect": "You start with Kinetic magazine Loaded",
     "actions": [
       {
         "name": "Swap Magazine",
         "activation": "Free Action",
-        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+        "detail": "Reload your gun with a diffrent magzine containing either Kinetic, Energy or Explosive Damage."
       }],
     "damage": [
       {
@@ -267,7 +263,7 @@
         "val": 3
       }
     ],
-    "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "tg_accurate"}]
+    "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "tg_accurate"}, {"id": "LAFF_upgraded", "val": 2}]
   },
   {
     "id": "LAFF_Mariana_Modular_Rifle",
@@ -312,7 +308,7 @@
             "val": "12"
           }
         ],
-        "effect": "Basic Rifle Configuration",
+        "effect": "Basic Rifle Configuration. You start with Kinetic magazine Loaded",
         "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]
       },
       {
@@ -329,7 +325,7 @@
             "val": "20"
           }
         ],
-        "effect": "Sniper Rifle Configuration",
+        "effect": "Sniper Rifle Configuration. You start with Kinetic magazine Loaded",
         "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]
       },
       {
@@ -346,8 +342,8 @@
             "val": "4"
           }
         ],
-        "effect": "Shot Gun Configuration",
-        "tags": [{"id": "tg_reliable", "val": 2} ]
+        "effect": "Shot Gun Configuration. You start with Kinetic magazine Loaded",
+        "tags": [{"id": "tg_reliable", "val": 2}, {"id": "tg_knockback", "val": 2} ]
       }]
   },
   {
@@ -394,7 +390,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "4d6+2"
+            "val": "4d6"
           }
         ],
         "range": [
@@ -403,12 +399,12 @@
             "val": "8"
           }
         ],
-        "effect": "While spinning, you are Slowed and can no longer use the Ragnarok with Skirmish. You can cease this effect as a protocol.",
+        "effect": "While spinning, you are Slowed and can no longer use the Ragnarok with Skirmish.",
         "actions": [
           {
             "name": "Cease Spin-Up",
             "activation": "Quick Action",
-            "detail": "Spin up the barrels of the Ragnarok Heavy Assault Cannon, Slowing your mech and allowing use of its Spin-Up Mode profile."
+            "detail": "Cease the spin up the barrels of the Ragnarok Heavy Assault Cannon, no longer slowing your mech"
           }],
           "tags": [{"id": "tg_reliable", "val": 2} ]
       }]
@@ -421,6 +417,8 @@
     "type": "Spool Weapon",
     "skirmish": false,
     "barrage": false,
+    "no_mods": true,
+    "license_id": "",
     "effect": "Mortal Reminder needs to be set up in stages",
     "actions": [
       {
@@ -429,7 +427,7 @@
         "detail": "Fire Mortal reminder and reset back to charge 0"
       }
     ],
-    "Tags": [{"ID": "tg_ap"}],
+    
     "profiles": [
       {
         "name": "Deploy Rail gun stabilizers",
@@ -459,10 +457,11 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "3d6"
+            "val": "4d6"
           }
         ],
-        "effect": "Set yourself to 3 HEAT (not counting heat you gained prior). Requires Lock on for valid target."
+        "Tags": [{"id": "tg_ap"}],
+        "effect": "Set yourself to 5 HEAT (not counting heat you gained prior). Requires Lock on for valid target. Ignore cover. Clear half HEAT once fired"
       },
       {
         "name": "Charge Rail: 2",
@@ -475,10 +474,11 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "4d6"
+            "val": "5d6"
           }
         ],
-        "effect": "Set yourself to 7 HEAT (not counting heat you gained prior). Requires Lock on for valid target. Ignore cover, shoot though terrain."
+        "Tags": [{"id": "tg_ap"}],
+        "effect": "Set yourself to 10 HEAT (not counting heat you gained prior). Gain reliable 10 against anyone in the line. Requires Lock on for valid target. Ignore cover, shoot though terrain. Clear half HEAT once fired"
       },
       {
         "name": "Charge Rail: 3",
@@ -491,29 +491,30 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "5d6"
+            "val": "5d8"
           }
         ],
-        "effect": "Set yourself to 15 HEAT (not counting heat you gained prior). Requires Lock on for valid target. All targets adjacent to the Line must make an Agility save or take half damage if passed then no damage. Additionally ignore cover, shoot though terrain."
+        "Tags": [{"id": "tg_ap"}],
+        "effect": "Set yourself to 15 HEAT (not counting heat you gained prior). Gain reliable 20 against anyone in the line. Requires Lock on for valid target. All targets adjacent to the Line must make an Agility save or take half damage if passed then no damage. Additionally ignore cover, shoot though terrain. Clear half HEAT once fired."
       },
       {
         "name": "Safety override",
         "range": [
           {
             "type": "Line",
-            "val": 40
+            "val": 50
           }
         ],
         "damage": [
           {
             "type": "Kinetic",
-            "val": "3d20"
+            "val": "4d20"
           }
         ],
-        "effect": "Set yourself to 15 HEAT, take 1 Stress dammage and mark the gun as destroyed once you fire. Gain reliable 20 against anyone in the line. All targets adjacent to the line must roll a agility safe or take damage if they pass they only take half the damage (reliable does not count). Additionally ignore cover, shoot though terrain. Requires lock on. (Once the weapon is destroyed due to the safey override you can only repair this with 3 repair capacity.)"
+        "Tags": [{"id": "tg_ap"}],
+        "effect": "Set yourself to 15 HEAT, take 1 Stress dammage and mark the gun as destroyed once you fire. Gain reliable 30 against anyone in the line. All targets adjacent to the line must roll a agility safe or take damage if they pass they only take half the damage (reliable does not count). Additionally ignore cover, shoot though terrain. Requires lock on. (Once the weapon is destroyed due to the safey override you can only repair this with 3 repair capacity.). Clear half HEAT once fired"
       }
-    ],
-    "license_id": ""
+    ]
   },
   {
     "id": "LAFF_combat_shotgun_mk2",
@@ -529,11 +530,12 @@
     "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "effect": "You start with Kinetic magazine Loaded",
     "actions": [
       {
         "name": "Swap Magazine",
         "activation": "Quick Action",
-        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+        "detail": "Reload your gun with a diffrent magzine containing either Kinetic, Energy or Explosive Damage."
       }],
     "damage": [
       {
@@ -544,10 +546,15 @@
     "range": [
       {
         "type": "cone",
-        "val": 5
+        "val": 4
+      },
+      {
+        "type": "Threat",
+        "val": 3
       }
+
     ],
-    "tags": [ {"id": "tg_reliable", "val": 4}]
+    "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "LAFF_upgraded", "val": 2}]
   },
   {
     "id": "LAFF_monitor_jammer",
@@ -577,6 +584,264 @@
         "val": 12
       }
     ],
-    "tags": [ {"id": "tg_heat_self", "val": 2}]
-  }
+    "tags": [ {"id": "tg_heat_self", "val": 3}]
+  },
+  {
+    "id": "LAFF_vx15t",
+    "name": "VX-15T Battle Rifle",
+    "source": "OH",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>The VX-15T Battle Rifle is a relic from the era of Old Humanity, crafted with advanced technology that modern engineers cannot replicate or fully understand. It fires energy rounds with incredible precision, growing more deadly with each successive shot. The rifle recharges itself through unknown means, a feature that eludes current technological comprehension. This equipment is derived from lost or incomprehensible advanced technology, unable to be maintained or replicated, with effects that defy current understanding. Despite its age, the VX-15T remains a formidable and enigmatic weapon, a reminder of humanity's lost potential.</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "no_mods": true,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "Each time you hit the same target with this weapon, it deals the cumulative total of all previous damage this weapon has inflicted on that target.", 
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d8"
+      },
+      {
+        "type": "Burn",
+        "val": "1d4"
+      },
+      {
+        "type": "HEAT",
+        "val": "1d4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [ {"id": "tg_loading"}, {"id": "LAFF_enigmatic_technology"}, {"id": "tg_unique"}, {"id": "tg_overkill"}, {"id": "tg_heat_self", "val": 4}, {"id": "tg_seeking"}, {"id": "tg_limited", "val": 3}, {"id": "tg_exotic"}]
+  },
+  {
+    "id": "LAFF_vm36s",
+    "name": "VM-36S Curved Sword",
+    "source": "OH",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>The VM-36S Curved Sword, also known as 'Demon's Scar,' is a relic from the era of Old Humanity. Forged using incomprehensible technologies, its razor-sharp, curved blade can cut through armor and flesh with terrifying precision. The sword recharges through unknown means, ensuring its edge never dulls. The origins of this weapon are lost to time, and its design cannot be replicated or maintained with current technology. Those who wield it are often said to be marked by its power, as it leaves scars that never heal. A weapon of elegance and terror, it is feared by many and revered by those who understand its true nature.</div>",
+    "mount": "Main",
+    "type": "Melee",
+    "no_mods": true,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": " If this sword hits the same enemy 3 times in a row, deal an extra 1d8 damage that can't be reduced by armor or resistance.",
+    "on_crit": "On a natural 20, something special happens. On a normal crit, deal double damage (including the extra damage from the On Hit effect if it's active).",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d4"
+      },
+      {
+        "type": "Energy",
+        "val": "1d4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [ {"id": "LAFF_enigmatic_technology"}, {"id": "tg_unique"}, {"id": "tg_exotic"}, {"id": "tg_reliable", "val": 4}]
+  },
+  {
+    "id": "LAFF_vx5",
+    "name": "VX-5",
+    "source": "OH",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>The VX-5 Cannon is a formidable weapon from the era of Old Humanity, its technology shrouded in mystery. This superheavy cannon fires with devastating force, creating a rift at the point of impact that pulls enemies—and even the targeted mech—out of reality itself. The blast radius warps space, displacing anyone caught within, and pulling them closer to the epicenter. When a critical hit occurs, the rift grows, expanding to remove everything in its reach from existence for a time. The cannon’s design is based on incomprehensible, archaic technology that bends the very fabric of space, making it an unpredictable and dangerous weapon. Its effects are so powerful that using it too recklessly may lead to the operator themselves being removed from reality. With its powerful energy discharge and devastating consequences, the VX-5 is as feared for its effects as it is for its sheer power.</div>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "no_mods": true,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "Create a temporary rift at the point of impact with a blast radius of 1. The affected mech is instantly removed from reality for a time. Enemies within the blast 1 radius must make an Agility or Hull save or also be removed from reality. Everyone in blast 2+ is pulled 1 space closer to the center. (Blast 3 moves to where blast 2 was.)", 
+    "on_crit": "On a natural 20, create a blast 4 rift, removing everything in its radius from reality temporarily.",
+    "effect": "When you roll your 4d6 die and get 3 or more natural 1's, you are removed from reality temporarily. ",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "4d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 30
+      },
+      {
+        "type": "Blast",
+        "val": 4
+      }
+    ],
+    "tags": [ {"id": "tg_loading"}, {"id": "LAFF_enigmatic_technology"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 8}, {"id": "tg_exotic"}, {"id": "tg_ordnance"}, {"id": "tg_arcing"}]
+  },
+  {
+    "id": "LAFF_vsd32",
+    "name": "VX-D-32 Nanites Nexus",
+    "source": "OH",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div></div>",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "no_mods": true,
+    "sp": 3,
+    "effect": "Blast 1 area of nanites that give allied soft cover and do damage each time an enemy enters and starts their turn in the effected area.",
+    "on_attack": "Deploy an Blast 1 area of nantites that stay in place till recalled or blased away with any AOE attack.",
+    "on_hit": "string",
+    "on_crit": "string",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2"
+      },
+      {
+        "type": "Burn",
+        "val": "2"
+      },
+      {
+        "type": "Energy",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "actions": [],
+    "deployables": [
+      {
+        "name": "Scorched Nanites Proximity Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "activation": "Quick",
+        "detail": "Launch (as if its arcing) a canister within Range 5. A canister will land and plant itself into the ground waiting for any enemies adjacent up to 2 spaces high for it to activate and explode onto the single target. If there is more than 1 target the PC chooses 1. Damage Die 1d4 Kinetic, 6 Burn, 1d6 Energy."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "tags": [{"id": "tg_limited", "val": 1}, {"id": "tg_unique"}, {"id": "tg_grenade"}, {"id": "LAFF_enigmatic_technology"}, {"id": "tg_exotic"}, {"id": "tg_ap"}]
+  },
+  {
+    "id": "jo_shoutgun",
+    "name": "Double Barrel Shotgun",
+    "source": "GMS",
+    "license": "Castle",
+    "license_id": "JOOL_121",
+    "license_level": 2,
+    "effect": "Can fire both rounds doing 4d4+2 damage instead.",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d4"
+      }
+    ],
+    "range": [
+    {
+     "type": "Cone",
+     "val": 4
+    },
+    {
+     "type": "Threat",
+     "val": 3
+    }
+    ],
+    "tags": [
+    {
+      "id": "LAFF_tags_loading_{val}",
+      "val": 2
+    },
+    {
+        "id": "tg_knockback",
+        "val": 2
+    },
+    {
+        "id": "tg_reliable",
+        "val": 2
+    }
+  ]
+  },
+    {
+        "id": "jo_shield",
+        "name": "Greatshield of Glory",
+        "source": "GMS",
+        "license": "Castle",
+        "license_id": "JOOL_121",
+        "license_level": 1,
+        "effect": "The Greatshield can be set into the ground creating hard cover in a line of 3 with a height matching the size of your mech and must be adjacent. Gain +4 HP while equiped.",
+        "on_crit": "Enemy needs to make an HULL save or becomes stunned until the end of their turn.",
+        "mount": "Heavy",
+        "type": "Melee",
+        "actions": [
+          {
+            "name": "Deploy Greatshield of Glory",
+            "detail": "Deploy the Greatshield becoming immobilized untill the shield is retracted and cant be used as a weapon while its deployed.", 
+            "activation": "Protocol"
+          },
+          {
+            "name": "Retract Greatshield of Glory",
+            "detail": "Retract the Greatshield", 
+            "activation": "Protocol"
+          }
+        ],
+        "bonuses": [
+          {
+            "id": "hp",
+            "val": 4
+          }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d4"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 2
+            },
+            {
+                "id": "tg_reliable",
+                "val": 2
+            }
+        ]
+    }
 ]

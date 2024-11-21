@@ -105,7 +105,7 @@
       {
         "name": "Remote Repair",
         "activation": "Quick Action",
-        "detail": "Target an allied mech within range. That mech regains 1d4+2 HP.",
+        "detail": "Target an allied mech within range 12. That mech regains 1d4+2 HP.",
         "range": [
           {
             "type": "Range",
@@ -126,7 +126,7 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": "0",
-    "effect": "A continuous targeting laser that provides a permanent lock-on to a single enemy, allowing all allies to benefit from this for as long as the laser remains active.",
+    "effect": "A continuous targeting laser that provides a lock-on to a single enemy.",
     "sp": "2",
     "description": "LORE",
     "tags": [
@@ -142,7 +142,7 @@
       {
         "name": "Paint Target",
         "activation": "Quick Action",
-        "detail": "As long as the laser is maintained, the target gains the Lock On condition. This condition persists until the target is no longer within line of sight or range. Allies may benefit from this Lock On, but only as long as the laser is active.",
+        "detail": "As long as the laser is maintained, the target gains the Lock On condition. This condition persists until the target is no longer within line of sight and range. You and your allies may benefit from this Lock On, but only as long as the laser is active.",
         "range": [
           {
             "type": "Range",
@@ -194,85 +194,13 @@
     ]
   },
   {
-    "id": "LAFF_armor_hardener_kinetic",
-    "name": "Armor Hardener Kinetic",
-    "source": "STC",
-    "license": "Crusader",
-    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
-    "license_level": "1",
-    "effect": "An enhanced version of the standard kinetic armor plating. Uses advanced magnetic field generators to strengthen the Armor Plating integrity.",
-    "sp": "3",
-    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {"id": "tg_heat_self", "val": 3}
-    ],
-    "actions": [
-      {
-        "name": "Activate armor hardener",
-        "activation": "Protocol",
-        "detail": "Once activated at the start of your turn you take 50% less Kinetic damage untill the start of your next turn."
-      }
-    ]
-  },
-  {
-    "id": "LAFF_armor_hardener_explosive",
-    "name": "Armor Hardener Explosive",
-    "source": "STC",
-    "license": "Crusader",
-    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
-    "license_level": "2",
-    "effect": "An enhanced version of the standard explosive armor plating. Uses advanced magnetic field generators to strengthen the Armor Plating integrity.",
-    "sp": "3",
-    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {"id": "tg_heat_self", "val": 3}
-    ],
-    "actions": [
-      {
-        "name": "Activate armor hardener",
-        "activation": "Protocol",
-        "detail": "Once activated at the start of your turn you take 50% less Explosive damage untill the start of your next turn."
-      }
-    ]
-  },
-  {
-    "id": "LAFF_armor_hardener_energy",
-    "name": "Armor Hardener Energy",
-    "source": "STC",
-    "license": "Crusader",
-    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
-    "license_level": "2",
-    "effect": "An enhanced version of the standard Energy armor plating. Uses advanced magnetic field generators to strengthen the Armor Plating integrity.",
-    "sp": "3",
-    "description": "THIS CAN NOT BE USED WITH ANY OTHER HARDENER",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {"id": "tg_heat_self", "val": 3}
-    ],
-    "actions": [
-      {
-        "name": "Activate armor hardener",
-        "activation": "Protocol",
-        "detail": "Once activated at the start of your turn you take 50% less Energy damage untill the start of your next turn."
-      }
-    ]
-  },
-  {
     "id": "LAFF_damage_control",
     "name": "Damage Control",
     "source": "GMS",
     "license": "Mariana",
     "license_id": "LAFF_mariana",
     "license_level": "1",
-    "effect": "Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
     "sp": "1",
     "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
     "tags": [
@@ -288,21 +216,20 @@
     "license": "Mariana",
     "license_id": "LAFF_mariana",
     "license_level": "3",
-    "effect": "PASSIVE: Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
+    "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
     "sp": "3",
     "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module <br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {"id": "tg_recharge", "val": 6},
-      {"id": "tg_heat_self", "val": 5}
+      }
     ],
     "actions": [
       {
         "name": "Activate assault damage control",
         "activation": "Free",
-        "detail": "Once activated the damage control gives the user resistance to all damage for 3 Rounds."
+        "detail": "Once activated the damage control gives the user resistance to Kinetic and Explosive damage for 2 Rounds. Gain 5 HEAT once you activate this.",
+        "frequency": "2/Mission"
       }
     ]
   },
@@ -347,7 +274,7 @@
       {
         "name": "Activate armor hardener",
         "activation": "Protocol",
-        "detail": "Once activated at the start of your turn you take less damage untill the start of your next turn. You start with no script loaded. Unscripted 25% resistance. Scripted 50% resistance."
+        "detail": "Once activated at the start of your turn you take less damage untill the end of your next turn. You start with no script loaded. Unscripted 25% resistance. Scripted 50% resistance."
       },
       {
         "name": "Change resistance script",
@@ -369,10 +296,6 @@
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
       }
     ],
     "bonuses": [
@@ -384,7 +307,7 @@
       {
         "name": "Deep Scan",
         "activation": "Quick Action",
-        "detail": "Scan an enemy mech and gain all current stats, items and abilities of the mech while getting to know what its current orders are. Also gain any public records on the mech. Gain 2 Heat while you perform this action. If used against items gain an detailed analysis if possible"
+        "detail": "Scan an enemy mech and gain all current stats, items and abilities of the mech while getting to know what its current orders are. Also gain any public records on the mech. If used against items gain an detailed analysis if possible"
       }
     ]
   },
@@ -408,12 +331,12 @@
       {
         "name": "Assisted Aim",
         "activation": "Quick Tech",
-        "detail": "Target a ally in sensor range and give them +1 accuracy for all attacks"
+        "detail": "Target a ally in sensor range and give them +1 accuracy for all attacks till the end of their next turn."
       },
       {
         "name": " Sharing is caring :3",
         "activation": "Quick Tech",
-        "detail": "The Monitor makes a quick tech action against a character within Sensors. On a success, any time the target gains heat until the end of the Monitor's next turn, all of their allied characters within range 5 also gain the same amount of heat."
+        "detail": "The Monitor makes a quick tech action against a character. On a success, any time the target gains heat until the end of the Monitor's next turn, all of their allied characters within range 5 also gain the same amount of heat."
       }
     ]
   },
@@ -437,12 +360,12 @@
       {
         "name": "Piggy back",
         "activation": "Full Tech",
-        "detail": "Hack an enemy allowing you to hack from their sensor range and Line of Sight for 3 rounds"
+        "detail": "Hack an enemy allowing you to hack from their sensor range and Line of Sight for 2 rounds"
       },
       {
         "name": "Emotional Damage",
         "activation": "Invade",
-        "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, the target takes the standard 2 heat immediately and then a further 1d3 Heat at the start of the Monitor's next turn. Heat dealt by Emotional Damage on the Monitor's next turn increases by 2d3 heat if the target is not in the Danger Zone."
+        "detail": "The target takes 2d3 HEAT if they are NOT in the danger zone. If they are they take 1d3 HEAT."
       }
     ]
   },
@@ -466,12 +389,12 @@
       {
         "name": "Watchfull Eye",
         "activation": "Quick Action",
-        "detail": "The Monitor targets a single enemy mech within Sensor range. On a successful tech attack, the target is Locked on and cant hide or be invisible untill the lock on has been consumed."
+        "detail": "The target is Locked on and cant hide or be invisible untill the lock on has been consumed."
       },
       {
         "name": "Nuh uh",
-        "activation": "Invade",
-        "detail": "The Monitor targets a single enemy mech within Sensor range. On a successful tech attack, the target needs to pass a systems save or become stunned untill the end of their next turn. If the target passes the system safe they are impaired untill the end of their next turn. Each character can only be Stunned by this effect once per scene."
+        "activation": "Full Tech",
+        "detail": "The target needs to pass a systems save or become stunned untill the end of their next turn. If the target passes the system safe they are impaired untill the end of their next turn. Each character can only be Stunned by this effect once per scene."
       }
     ]
   },
@@ -488,26 +411,22 @@
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
       }
     ],
     "actions":[
       {
         "name": "Multi Lock",
         "activation": "Full Tech",
-        "detail": "Atempt to lock on 3 hostiles of your choice wihtin sensor range."
+        "detail": "Lock on 3 hostiles of your choice."
       }
     ]
   },
   {
     "id": "laff_style_ammocase",
     "name": "Estio's Ammo Case",
-    "source": "STC",
-    "license": "Crusader",
-    "license_id": "54f81590-7e41-4db9-8643-4f849d948ae9",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
     "license_level": 1,
     "description": "LORE",
     "sp": 1,
@@ -519,9 +438,12 @@
       {
         "id": "tg_turn",
         "val": 1
+      },
+      {
+        "id": "tg_exotic"
       }
     ],
-    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost.",
+    "effect": "1/turn, when you attack with a ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost.",
     "ammo": [
       {
         "name": "A.I.S",
@@ -640,7 +562,7 @@
       "license": "Thalia",
       "license_id": "LAFF_Thalia",
       "license_level": 3,
-      "effect": "If an ally within range 8 is taking structure damage as a reaction you may move up to them ignoring engagement and give them 10 over shield possibly negating any further damage. ",
+      "effect": "",
       "sp": 4,
       "description": "LORE",
       "tags": [
@@ -666,7 +588,7 @@
       "license": "Thalia",
       "license_id": "LAFF_Thalia",
       "license_level": 3,
-      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. No rule superceeds this.</li>",
+      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. unless you use the supply drop from the talent Grease Money Rank III. No other rule superceeds this.</li>",
       "sp": 5,
       "description": "LORE",
       "tags": [
@@ -683,15 +605,15 @@
       "id": "LAFF_dawn_core",
       "name": "Dawncore Drive",
       "type": "Reactor",
-      "source": "GMS",
-      "license": "GMS",
+      "source": "EXOTIC",
+      "license": "",
       "license_level": "0",
       "sp": 0,
       "tags": [
         {
           "id": "tg_unique"
         },
-        {"id": "tg_indestructible"}
+        {"id": "tg_indestructible"}, {"id": "tg_exotic"}
       ],
       "effect": "You gain +2 Heat Cap. ONLY TO BE USED WITH THE DAWN CORE RANK I TALENT",
       "description": "<span class='horus--subtle'>[Overdrive]</span><br>Gained from the <i>Dawncore: Rank I</i> pilot talent.",
@@ -700,9 +622,6 @@
         {
           "id": "heatcap",
           "val": 2
-        },
-        {
-          "id": "tg_exotic"
         }
       ]
     },
@@ -753,52 +672,6 @@
       "description": "Artemis possesses a calculated and driven personality, focussed on efficiency and logic. "      
     },
     {
-      "id": "LAFF_cheese_drone_1",
-      "name": "Buzz Droid Swarm Prototype",
-      "effect": "Deploy a drone near an ally or ontop of an enemy for the following choices. Also this drone is a prototype meaning it will have some kinks and bugs that cause it to not always survive long in the field.",
-      "sp": 0,
-      "license_id": "",
-      "description": "LORE",
-      "tags": [
-        {
-          "id": "tg_limited",
-          "val": 2
-        },
-        {
-          "id": "tg_exotic"
-        }
-      ],
-      "deployables": [
-        {
-          "type": "Drone",
-          "name": "Buzz Droid Swarm",
-          "activation": "Quick",
-          "size": 0.5,
-          "hp": 3,
-          "edef": 10,
-          "evasion": 10,
-          "detail": "A swarm of drones that has a vairity of tools at its disposal and also has its own turn right after its owner. It can choose only one action listed below.",
-          "actions": [ 
-            {
-              "name": "Remove condition",
-              "activation": "Full Action",
-              "detail": "Remove only one condition from the following list: Jammed, Shredded. but the drone is destroyed once used."
-            },
-            {
-              "name": "Sabotage",
-              "activation": "Full Action",
-              "detail": "The Target makes all checks and saves with +2 Difficutly untill the droid is shaken off with a contested hull save."
-            },
-            {
-              "name": "Rend",
-              "activation": "Full Action",
-              "detail": "The target will become shredded untill the end of their next turn but the drone is destroyed once used."
-            }
-           ]
-        }
-      ]
-    },
-    {
       "id": "LAFF_sensor_booster_Monitor",
       "name": "Sensor Booster Monitor",
       "license_id": "",
@@ -808,10 +681,6 @@
       "tags": [
         {
           "id": "tg_unique"
-        },
-        {
-          "id": "tg_heat_self",
-          "val": 2
         }
       ],
       "bonuses": [
@@ -823,7 +692,7 @@
         {
           "name": "Deep Scan",
           "activation": "Quick Action",
-          "detail": "Scan an enemy mech and gain all current stats, items and abilities of the mech while getting to know what its current orders are. Also gain any public records on the mech. Gain 2 Heat while you perform this action. If used against items gain an detailed analysis if possible"
+          "detail": "Scan an enemy mech and gain all current stats, items and abilities of the mech while getting to know what its current orders are. Also gain any public records on the mech. If used against items gain an detailed analysis if possible"
         }
       ]
     },
@@ -837,10 +706,6 @@
       "tags": [
         {
           "id": "tg_unique"
-        },
-        {
-          "id": "tg_heat_self",
-          "val": 2
         }
       ],
       "actions":[
@@ -863,5 +728,185 @@
           "id": "tg_indestructible"
         }
       ]
-    }
+    },
+    {
+      "id": "laff_bones_ammocase",
+      "name": "Leonidas' Ammo Case",
+      "source": "EXOTIC",
+      "license": "",
+      "license_id": "",
+      "license_level": 0,
+      "description": "LORE",
+      "sp": 1,
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 4
+        },
+        {
+          "id": "tg_turn",
+          "val": 1
+        },
+        {
+          "id": "tg_exotic"
+        }
+      ],
+      "effect": "1/turn, when you attack with a ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost. If you perform a critical hit using ammunition from your Ammo Case, you refund half the cost of any charges used. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+      "ammo": [
+        {
+          "name": "Zeus Rounds (2 Charges)",
+          "detail": "The attack does no damage but target must succeed on a system save or be stunned untill the end of their next turn.",
+          "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+          "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+        },
+        {
+          "name": "Icarus Rounds",
+          "detail": "The attack gains +1 accuracy to flying targets and on hit the target begins to fall",
+          "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+          "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+        }
+      ]
+    },
+    {
+      "id": "jo_interception_protocol",
+      "name": "Interception Protocol",
+      "source": "GMS",
+      "license": "Castle",
+      "license_id": "JOOL_121",
+      "license_level": 3,
+      "effect": "As a Reaction, when an ally within Sensor Range is targeted by an attack and has Lock On, your mech can force the attack to target yourself instead.",
+      "type": "System",
+      "sp": 2,
+      "actions": [
+        {
+          "name": "Activate Interception Protocol",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "When an enemy attacks an ally and the enemy uses lock on thats on the ally.", 
+          "detail": "You may get attacked instead, having the enemy do an attack roll on you."
+        }
+      ]
+    },
+      {
+        "id": "jo_intergrated_jump_jets",
+        "name": "Intergrated Jump Jets",
+        "source": "GMS",
+        "license": "Castle",
+        "license_id": "JOOL_121",
+        "license_level": 3,
+        "effect": "As a Quick Action, you may jump up to 2 spaces in any direction, including vertically. Upon landing, all characters (enemies and allies) adjacent to you centered on your landing spot must pass a Hull save or be knocked Prone. This movement does not provoke reactions",
+        "type": "System",
+        "sp": 2,
+        "description": "These GMS-designed jump jets enable high-impact tactical mobility, allowing mechs to reposition without fear of retaliation. Upon landing, the shockwave from the impact destabilizes surrounding units, making it an invaluable tool for disrupting enemy formations or covering quick retreats.",
+        "actions": [
+          {
+            "name": "Goomba Stomp",
+            "detail": "jump up to 2 spaces in any direction, including vertically. Upon landing, all characters (enemies and allies) adjacent to you on your landing spot must pass a Hull save or be knocked Prone. This movement does not provoke reactions",
+            "activation": "Quick Action"
+          }
+        ],
+        "tags": [{"id": "tg_heat_self", "val": 1}]
+      },
+      {
+        "id": "LAFF_cheese_buzzdroid",
+        "name": "Buzz Droid",
+        "type": "Drone",
+        "sp": 3,
+        "license_id": "",
+        "source": "EXOTIC",
+        "license": "",
+        "license_level": 0,
+        "actions": [
+          {
+            "name": "Aid Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Removes Jammed or Shredded from the target. The drone is destroyed on use."
+          },
+          {
+            "name": "Sabotage Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target must make a Hull save. On failure, they take +2 Difficulty on checks and saves until the end of their next turn. This effect can be repeated with another Hull save until the target passes. The drone is destroyed on a successful save."
+          },
+          {
+            "name": "Rend Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target gains the Shredded condition until the end of their next turn. To extend this condition in future rounds, make a contested Engineering check. The drone is destroyed on a successful save."
+          },
+          {
+            "name": "Breach  Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target gets a buzz droid thats focused on breaching the cockpit. Roll 1d3+1 to determine the rounds needed to breach the cockpit. The pilot is shredded(killed) if breached. The target or an allied mech can destroy one Buzz Droid per successful Engineering or Systems save."
+          },
+          {
+            "name": "Buzz Droid Swarm",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              },
+              {
+                "type": "Blast",
+                "val": 1
+              }
+            ],
+            "damage": [
+              {
+                "type": "Kinetic",
+                "val": "2"
+              },
+              {
+                "type": "Energy",
+                "val": "1"
+              }
+            ],
+            "detail": "Deploy a swarm thats blast 1. All enemies that enter or start their turn in the effected area take damage. The swarm acts as a drone"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_limited",
+            "val": 2
+          },
+          {
+            "id": "tg_unique"
+          },
+          {
+            "id": "tg_grenade"
+          },
+          {
+            "id": "tg_exotic"
+          },
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_drone"
+          }
+        ]
+      }
 ]

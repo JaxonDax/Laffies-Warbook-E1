@@ -18,7 +18,7 @@
       "armor": 3,
       "hp": 10,
       "evasion": 7,
-      "edef": 8,
+      "edef": 7,
       "heatcap": 5,
       "repcap": 7,
       "sensor_range": 8,
@@ -46,7 +46,7 @@
           {
             "name": "Activate Trophy System",
             "activation": "Reaction",
-            "detail": "<div>The Trophy System attempts to intercept incoming attacks. 2/Round. <br><br>Requires an attack roll higher than the incoming attack to negate said attack.<br><br>Does not work against SMART weapons.</div>",
+            "detail": "The Trophy System attempts to intercept incoming attacks. 2/Round. <br><br>Requires an d20+GRIT(Is also effected by Bolster) roll higher than enemies attack roll for it to negate said attack.<br><br>Does not work against SMART weapons, Flamer weapons.",
             "pilot": false,
             "synergy_locations": [
               "pilot_weapon"
@@ -54,7 +54,7 @@
             "tech_attack": false,
             "frequency": "2/round",
             "init": "",
-            "trigger": "<div>Yourself or an ally within range 8 get attacked</div>"
+            "trigger": "<div>An attack lands within range 6</div>"
           }
         ]
       }
@@ -62,7 +62,7 @@
     "core_system": {
       "name": "Blitz Core",
       "active_name": "Blitz Tactics",
-      "active_effect": "<p>The Crusader moves spaces equal to double their Speed in a straight line, ignoring reactions and engagement. When charging all characters adjacent to the path follow or adjacent to their final position – hostile and allied – must succeed on a Hull save or be knocked Prone. You can use Pile Bunker once as a free action, ignoring the loading trait. IF the target dies from the pile bunker, you may select a new target as a reaction, letting you charge them.<br><br>All attacks made in this state, gives it Reliable 4.<br>While active gain 1d3 HEAT per turn.</p>",
+      "active_effect": "<p>Crusader charges in a straight line using its current movement + 4, ignoring reactions, dragging all characters in its path to the endpoint. Those dragged must make a Hull Save or be knocked Prone. It can use Pile Bunker once as a free action, ignoring the loading trait. If it kills the target, it can immediately charge equal to your current speed to a new target as a reaction. The charge itself deals no damage, but all attacks while Blitz Core is active have Reliable 4. Crusader gains 1d3 HEAT per turn while this ability is active.</p>",
       "activation": "Protocol",
       "description": "<p>The core goes into hyperdrive, increasing speed in all forms exponentially. Select a target (preferably someone in the backline), you charge into melee with said mech, pushing through any and all mechs of equal or smaller size. Max range equal to max speed.</p>",
       "deactivation": "Free",
@@ -116,22 +116,22 @@
       {
         "name": "Fragile",
         "use": "",
-        "description": "<div>Gain +1 difficulty on Hull and Engineering checks and saves.</div><div><br></div>"
+        "description": "Gain +1 difficulty on Hull and Engineering checks and saves."
       },
       {
         "name": "Scout Frame",
         "use": "",
-        "description": "<div>Ignores difficult terrain and can not be discovered on sensors while hiding.</div><div><br></div>"
+        "description": "Ignores difficult terrain"
       },
       {
         "name": "Data Siphon",
         "use": "",
-        "description": "<div>Whenever the Monitor makes a tech attack against a hostile character, it may also automatically Scan them.</div><div><br></div>"
+        "description": "Whenever the Monitor makes a tech attack against a hostile character, it may also automatically Scan them."
       },
       {
         "name": "Full-Spectrum Sensor Suite",
         "use": "",
-        "description": "<div>The Monitor may Lock On as a protocol. Whenever an allied character within Range 10 consumes any Lock On, their attack is not affected by cover.</div><div><br></div>"
+        "description": "The Monitor may Lock On as a protocol."
       },
       {
         "name": "Intergrated Sensor Booster and Targeting System.",
@@ -156,7 +156,7 @@
       {
         "name": "Star Killer",
         "activation": "Full Tech",
-        "detail": "Choose a target within sensors to start having a reactor meltdown. Unless they shutdown their mech they will blow up at the end of the next round.",
+        "detail": "2/Scene choose a target to start having a reactor meltdown. Unless they shutdown their mech they will blow up at the end of the next round.",
         "frequency": "2/scene"
       }],
       "active_bonuses": [],
@@ -167,7 +167,7 @@
         {
           "name": "Intrusive Thoughts",
           "activation": "Full Tech",
-          "detail": "The Monitor makes a tech attack against a character within Sensors. On a success, the target immediately as a reaction uses a weapon chosen by the Monitor to attack a character within Range. <br><span class='horus--subtle'>[It is a man's own mind not his enemy or foe that lures him to evil ways].</span>"
+          "detail": "The Monitor makes a tech attack against a character. On a success, the target immediately as a reaction uses a weapon chosen by the Monitor to attack a character within Range. <br><span class='horus--subtle'>[It is a man's own mind not his enemy or foe that lures him to evil ways].</span>"
         }
       ],
       "passive_bonuses": [],
@@ -240,7 +240,7 @@
           "activation": "Reaction",
           "frequency": "2/encounter", 
           "trigger": "When hit with an ranged/melee attack", 
-          "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion and Resistance to all ranged attacks for the next 2 rounds."
+          "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion for the next 2 rounds."
         },
         {
           "name": "Protocol 2 - Offensive Override",
@@ -273,7 +273,7 @@
     "stats": {
       "size": 3,
       "structure": 4,
-      "stress": 4,
+      "stress": 3,
       "armor": 1,
       "hp": 10,
       "evasion": 6,
@@ -293,11 +293,11 @@
       },
       {
         "name": "Thermal Plating",
-        "description": "The Naga has resistance to HEAT Damage."
+        "description": "The Naga has resistance to HEAT Damage from weapons."
       },
       {
         "name": "Colossus",
-        "description": "Adjacent allied characters can use the Naga for hard cover.*"
+        "description": "Adjacent allied characters can use the Naga for hard cover."
       },
       {
         "name": "Slow",
@@ -314,7 +314,7 @@
       "name": "Mortal Reminder",
       "description": "LORE",
       "active_name": "Set up to next stage/ Charge Railgun",
-      "active_effect": "When activated you start setting up your railgun. any disruptions require you to make a 13+ D20 save otherwise you take the HEAT damage and have to start charge from 0",
+      "active_effect": "When activated you start setting up your railgun. Any disruptions require you to make a 13+ D20+GRIT save otherwise you take the HEAT damage and have to start charge from 0",
       "activation": "Full Action",
       "integrated": ["LAFF_Naga_integrated"]
     }
@@ -352,7 +352,7 @@
       },
       {
         "name": "Assisted Repair",
-        "description": "as a prepared action Thalia may give adjacent allies the quick action to repair to full HP. (The allie uses their own repair cap at their regular cost)"
+        "description": "as a prepared action Thalia may give adjacent allies the quick action to repair to full HP Or recover 1 Structure damage and return to 1 HP.  (The ally uses their own repair cap at their regular cost for HP repair and for structure double the amount.)"
       },
       {
         "name": "Intergrated IRDS and RAAR",
@@ -367,5 +367,79 @@
       "activation": "Protocol",
       "integrated": ["LAFF_irds_thalia", "LAFF_raar_thalia"]
     }
+  },
+  {
+    "id": "JOOL_121",
+    "license_id": "JOOL_121",
+    "source": "GMS",
+    "license_level": 2,
+    "name": "Castle",
+    "mechtype": ["Defender"],
+    "description": "GMS initially introduced the Castle with a vibrant color scheme during its limited prototype phase, intending to market the mech as not just a tool of war, but a symbol of protection and leadership. The colors were inspired by ancient myths of heroic defenders, drawing comparisons to knightly heraldry from Old Terra. However, the flashy design sparked controversy within the utilitarian GMS community. Critics claimed it was unnecessary for a mech designed for mass production and versatility. Originally developed under the codename Fortress Adaptive Deployment Frame (FADF), the Castle was part of a GMS initiative to appeal to security contractors, planetary defense forces, and humanitarian organizations requiring mobile, heavy-duty protection platforms. However, budget overruns, logistical delays, and skepticism about its specialized role and flashy design led to the project being quietly shelved for years. Despite this, several prototypes were distributed to field testers, and the results spoke for themselves—wherever the Castle stood, its allies did not fall.",
+    "mounts": ["Main", "Heavy"],
+    "stats": {
+      "size": 2, 
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Unyielding Defense",
+        "use": "",
+        "description": "The Castle can Brace without penalties, then has a 1-round cooldown before using this trait again, though it can still use a regular Brace during the cooldown."
+      },
+      {
+        "name": "Heavy Frame",
+        "use": "",
+        "description": "The Castle can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
+      },
+        {
+          "name": "Slow",
+          "use": "",
+          "description": "The Castle receives +1 difficulty on Agility checks and saves."
+        },
+        {
+          "name": "Aggressive Taunt",
+          "description": "As a Quick Action, this mech can force an enemy within sensor range to make a Systems Save. If the enemy fails, it becomes Taunted until the end of Castle's next turn. A Taunted enemy has +2 difficulty on all attack rolls against targets other than Castle. This ability can only be active on one character.",
+          "actions": [
+          {
+          "name":"Taunt",
+          "activation":"Quick"
+          }
+        ]}
+      ],
+    "core_system": {
+      "name": "Defiance Core",
+      "active_name": "Mocking Defiance",
+      "active_effect": "<p> 1/scene this core can be activated, so whenever The Castle Braces, it gains 10 Overshield and Aggressive Taunt now affects all enemies within sensor range for 2 rounds .</p>",
+      "activation": "Protocol",
+      "description": "he Defiance Core exploits enemy targeting and sensory systems, rerouting hostile focus to the Castle through powerful interference signals compelling them to view the Castle as their primary threat. At the same time this system cloaks the Castle's large shield in a shimmering, protective energy field.",
+      "deactivation": "",
+      "use": "",
+      "passive_name": "",
+        "passive_effect": "",
+      "passive_actions": [],
+      "active_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 25
   }
 ]

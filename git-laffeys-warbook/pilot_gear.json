@@ -5,7 +5,7 @@
   "type": "Weapon",
   "description": "An intergrated minigun inside the lancers armour",
   "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic.",
-  "tags": [{"ID": "tg_ordnance"}, {"ID": "LAFF_tags_loading_{val}", "val": 3}],
+  "tags": [],
   "range": [
     {
         "type": "Range",

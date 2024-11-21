@@ -5,52 +5,16 @@
     "logo_url": "https://wiki.eveuniversity.org/images/e/e0/Logo_faction_drifters.png",
     "light": "#000000",
     "dark": "#993333",
-    "quote": "Test",
-    "description": "Test"
+    "quote": "Your normal group of murder hobo's",
+    "description": "Player faction"
   },
   {
-    "id": "AC",
-    "name": "Angel Cartel",
-    "logo_url": "https://wiki.eveuniversity.org/images/0/0d/Logo_faction_angel_cartel.png",
-    "light": "#eff5f5",
-    "dark": "#bfbfbf",
-    "quote": "Test",
-    "description": "Test"
-  },
-  {
-    "id": "BRC",
-    "name": "Blood Raider Covenant",
-    "logo_url": "https://wiki.eveuniversity.org/images/6/66/Logo_faction_the_blood_raider_covenant.png",
-    "light": "#eff5f5",
-    "dark": "#ff0000",
-    "quote": "Test",
-    "description": "Test"
-  },
-  {
-    "id": "GP",
-    "name": "Guristas Pirates",
-    "logo_url": "https://wiki.eveuniversity.org/images/d/dc/Logo_faction_guristas_pirates.png",
-    "light": "#e6ac00",
-    "dark": "#b38600",
-    "quote": "Test",
-    "description": "Test"
-  },
-  {
-    "id": "SN",
-    "name": "Sansha's Nation",
-    "logo_url": "https://wiki.eveuniversity.org/images/0/0e/Logo_faction_sanshas_nation.png",
-    "light": "#eff5f5",
-    "dark": "#339933",
-    "quote": "Test",
-    "description": "Test"
-  },
-  {
-    "id": "SER",
-    "name": "Serpentis",
-    "logo_url": "https://wiki.eveuniversity.org/images/d/d5/Logo_faction_serpentis.png",
-    "light": "#339933",
-    "dark": "#eff5f5",
-    "quote": "Test",
-    "description": "Test"
+    "id": "OH",
+    "name": "Old Humanity",
+    "logo": "gms",
+    "light": "#000000",
+    "dark": "#993333",
+    "quote": "We reached for the stars, only to find the darkness within ourselves.",
+    "description": "the ancient, pre-Fall civilizations that once reached the zenith of technological and societal development. They are the architects of the Monist and SecComm Eras, marked by rampant expansion, unchecked ambition, and the creation of technology that defied ethical boundaries. Their hubris led to the Fall—a cataclysmic collapse of their vast interstellar empire, plunging the galaxy into a dark age. Now, their ruins, data vaults, and forgotten AIs litter the stars, offering both peril and promise to those brave or foolish enough to uncover their secrets. Old Humanity serves as both a cautionary tale and a tantalizing mystery, a reminder of the heights to which humankind can ascend, and the depths to which they can fall."
   }
 ]

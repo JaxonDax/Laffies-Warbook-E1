@@ -1,2 +1,7 @@
 [
+    {
+        "id": "LAFF_upgraded_{val}",
+        "name": "MK.{VAL}",
+        "description": "This weapon has been upgraded from its base version dealing either more damage having other effects ect."
+      }
 ]
