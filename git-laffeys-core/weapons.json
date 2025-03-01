@@ -1,141 +1,25 @@
 [
-  {
-    "id": "LAFF_Mariana_Rifle",
-    "name": "Assault Rifle MK.2",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": 2,
-    "description": "<div>An improved rifle made by GMS to fit for any situation</div>",
-    "mount": "Main",
-    "type": "Rifle",
-    "no_mods": false,
-    "sp": 0,
-    "barrage": true,
-    "skirmish": true,
-    "actions": [
-      {
-        "name": "Swap Magazine",
-        "activation": "Quick Action",
-        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
-      }],
-    "damage": [
-      {
-        "type": "Variable",
-        "val": "1d6+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 12
-      }
-    ],
-    "tags": [ {"id": "tg_reliable", "val": 3}, {"id": "tg_accurate"}]
-  },  
-  {
-    "id": "LAFF_Mariana_Pistol",
-    "name": "Pistol MK.2",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": 1,
-    "description": "<div>An improved pistol made by GMS to fit for any situation</div>",
-    "mount": "Auxiliary",
-    "type": "CQB",
-    "no_mods": false,
-    "sp": 0,
-    "barrage": true,
-    "skirmish": true,
-    "actions": [
-      {
-        "name": "Swap Magazine",
-        "activation": "Free Action",
-        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
-      }],
-    "damage": [
-      {
-        "type": "Variable",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 6
-      },
-      {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
-    "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "tg_accurate"}]
-  },
-  {
-    "id": "LAFF_Mariana_Modular_Rifle",
-    "name": "Modular Rifle",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": 3,
-    "description": "<div>An Modular rifle made by GMS to fit for any situation</div>",
-    "mount": "Heavy",
-    "type": "Rifle",
-    "no_mods": false,
-    "sp": 1,
-    "barrage": true,
-    "skirmish": true,
-    "actions": [
-      {
-        "name": "Swap Magazine",
-        "activation": "Quick Action",
-        "detail": "Reload your gun with a diffrent magzine containing a other damage type"
-      },
-      {
-        "name": "Configure Weapon",
-        "activation": "Full Action",
-        "detail": "Change your weapon to any of the profiles"
-      }
-    ],
-    "profiles": [
-      {
-        "name": "Basic Configuration",
-        "damage": [
+    {
+        "id": "DAX_Mariana_Rifle",
+        "name": "Assault Rifle MK.2",
+        "source": "GMS",
+        "license": "Mariana",
+        "license_id": "DAX_mariana",
+        "license_level": 2,
+        "description": "<div>An improved rifle made by GMS to fit for any situation</div>",
+        "mount": "Main",
+        "type": "Rifle",
+        "no_mods": false,
+        "sp": 0,
+        "barrage": true,
+        "skirmish": true,
+        "effect": "You start with Kinetic magazine Loaded",
+        "actions": [
           {
-            "override": true,
-            "type": "Variable",
-            "val": "2d6+2"
-          }
-        ],
-        "range": [
-          {
-            "override": true,
-            "type": "Range",
-            "val": "12"
-          }
-        ],
-        "effect": "Basic Rifle Configuration",
-        "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]
-      },
-      {
-        "name": "Sniper Configuration",
-        "damage": [
-          {
-            "type": "Variable",
-            "val": "1d6+6"
-          }
-        ],
-        "range": [
-          {
-            "type": "Range",
-            "val": "20"
-          }
-        ],
-        "effect": "Sniper Rifle Configuration",
-        "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]
-      },
-      {
-        "name": "Shot Gun Configuration",
+            "name": "Swap Magazine",
+            "activation": "Quick Action",
+            "detail": "Reload your gun with a diffrent magzine containing either Kinetic, Energy or Explosive Damage."
+          }],
         "damage": [
           {
             "type": "Variable",
@@ -144,12 +28,269 @@
         ],
         "range": [
           {
-            "type": "Cone",
-            "val": "4"
+            "type": "Range",
+            "val": 12
           }
         ],
-        "effect": "Shot Gun Configuration",
-        "tags": [{"id": "tg_reliable", "val": 2} ]
-      }]
-  }
+        "tags": [ {"id": "tg_reliable", "val": 3}, {"id": "tg_accurate"}, {"id": "DAX_upgraded", "val": 2}]
+      },  
+      {
+        "id": "DAX_Mariana_Pistol",
+        "name": "Pistol MK.2",
+        "source": "GMS",
+        "license": "Mariana",
+        "license_id": "DAX_mariana",
+        "license_level": 1,
+        "description": "<div>An improved pistol made by GMS to fit for any situation</div>",
+        "mount": "Auxiliary",
+        "type": "CQB",
+        "no_mods": false,
+        "sp": 0,
+        "barrage": true,
+        "skirmish": true,
+        "effect": "You start with Kinetic magazine Loaded",
+        "actions": [
+          {
+            "name": "Swap Magazine",
+            "activation": "Free Action",
+            "detail": "Reload your gun with a diffrent magzine containing either Kinetic, Energy or Explosive Damage."
+          }],
+        "damage": [
+          {
+            "type": "Variable",
+            "val": "1d3+1"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 6
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ],
+        "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "tg_accurate"}, {"id": "DAX_upgraded", "val": 2}]
+      },
+      {
+        "id": "DAX_Mariana_Modular_Rifle",
+        "name": "Modular Rifle",
+        "source": "GMS",
+        "license": "Mariana",
+        "license_id": "DAX_mariana",
+        "license_level": 3,
+        "description": "<div>An Modular rifle made by GMS to fit for any situation</div>",
+        "mount": "Heavy",
+        "no_mods": false,
+        "sp": 1,
+        "barrage": true,
+        "skirmish": true,
+        "actions": [
+          {
+            "name": "Swap Magazine",
+            "activation": "Quick Action",
+            "detail": "Reload your gun with a diffrent magzine containing a other damage type"
+          },
+          {
+            "name": "Configure Weapon",
+            "activation": "Full Action",
+            "detail": "Change your weapon to any of the profiles"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Basic Configuration",
+            "type": "Rifle",
+            "damage": [
+              {
+                "override": true,
+                "type": "Variable",
+                "val": "2d6+2"
+              }
+            ],
+            "range": [
+              {
+                "override": true,
+                "type": "Range",
+                "val": "12"
+              }
+            ],
+            "effect": "Basic Rifle Configuration. You start with Kinetic magazine Loaded",
+            "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]
+          },
+          {
+            "name": "Sniper Configuration",
+            "type": "Rifle",
+            "damage": [
+              {
+                "type": "Variable",
+                "val": "1d6+6"
+              }
+            ],
+            "range": [
+              {
+                "type": "Range",
+                "val": "20"
+              }
+            ],
+            "effect": "Sniper Rifle Configuration. You start with Kinetic magazine Loaded",
+            "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]
+          },
+          {
+            "name": "Shot Gun Configuration",
+            "type": "CQB",
+            "damage": [
+              {
+                "type": "Variable",
+                "val": "3d4"
+              }
+            ],
+            "range": [
+              {
+                "type": "Cone",
+                "val": "4"
+              },
+              {
+                "type": "Threat",
+                "val": "3"
+              }
+            ],
+            "effect": "Shot Gun Configuration. You start with Kinetic magazine Loaded",
+            "tags": [{"id": "tg_reliable", "val": 2}, {"id": "tg_knockback", "val": 2} ]
+          }]
+      },
+      {
+        "id": "DAX_combat_shotgun_mk2",
+        "name": "Combat Shotgun MK.2",
+        "source": "STC",
+        "license": "Thalia",
+        "license_id": "DAX_Thalia",
+        "license_level": 2,
+        "description": "<div>An improved shotgun made by STC to fit for any situation</div>",
+        "mount": "Main",
+        "type": "CQB",
+        "no_mods": false,
+        "sp": 0,
+        "barrage": true,
+        "skirmish": true,
+        "effect": "You start with Kinetic magazine Loaded",
+        "actions": [
+          {
+            "name": "Swap Magazine",
+            "activation": "Quick Action",
+            "detail": "Reload your gun with a diffrent magzine containing either Kinetic, Energy or Explosive Damage."
+          }],
+        "damage": [
+          {
+            "type": "Variable",
+            "val": "2d4+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "cone",
+            "val": 4
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+    
+        ],
+        "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "DAX_upgraded", "val": 2}]
+      },
+      {
+        "id": "jo_shoutgun",
+        "name": "Double Barrel Shotgun",
+        "source": "GMS",
+        "license": "Castle",
+        "license_id": "JOOL_121",
+        "license_level": 2,
+        "effect": "Can fire both rounds doing 4d4+2 damage and use a full action instead.",
+        "mount": "Main",
+        "type": "CQB",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d4"
+          }
+        ],
+        "range": [
+        {
+         "type": "Cone",
+         "val": 4
+        },
+        {
+         "type": "Threat",
+         "val": 3
+        }
+        ],
+        "tags": [
+        {
+          "id": "DAX_tags_loading_{val}",
+          "val": 2
+        },
+        {
+            "id": "tg_knockback",
+            "val": 2
+        },
+        {
+            "id": "tg_reliable",
+            "val": 2
+        }
+      ]
+      },
+        {
+            "id": "jo_shield",
+            "name": "Greatshield of Glory",
+            "source": "GMS",
+            "license": "Castle",
+            "license_id": "JOOL_121",
+            "license_level": 1,
+            "effect": "The Greatshield can be set into the ground creating hard cover in a line of 3 with a height matching the size of your mech and must be adjacent. Gain +4 HP while equiped.",
+            "on_crit": "Enemy needs to make an HULL save or becomes stunned until the end of their turn.",
+            "mount": "Heavy",
+            "type": "Melee",
+            "actions": [
+              {
+                "name": "Deploy Greatshield of Glory",
+                "detail": "Deploy the Greatshield becoming immobilized untill the shield is retracted and cant be used as a weapon while its deployed.", 
+                "activation": "Protocol"
+              },
+              {
+                "name": "Retract Greatshield of Glory",
+                "detail": "Retract the Greatshield", 
+                "activation": "Protocol"
+              }
+            ],
+            "bonuses": [
+              {
+                "id": "hp",
+                "val": 4
+              }
+            ],
+            "damage": [
+                {
+                    "type": "Kinetic",
+                    "val": "1d4"
+                }
+            ],
+            "range": [
+                {
+                    "type": "Threat",
+                    "val": 2
+                }
+            ],
+            "tags": [
+                {
+                    "id": "tg_knockback",
+                    "val": 2
+                },
+                {
+                    "id": "tg_reliable",
+                    "val": 2
+                }
+            ]
+        }
 ]

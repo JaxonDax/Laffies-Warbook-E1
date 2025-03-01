@@ -1,0 +1,15 @@
+[
+    {
+        "id": "DAX_SC_CORE",
+        "name": "System Compatibility",
+        "source": "GMS",
+        "effect": "Gain +2 System Points",
+        "description": "By researching and having your mech be rebuilt the systems your put in your mech lock in seamlessly causing you to have more space for even more systems.",
+        "bonuses": [
+            {
+                "id": "sp",
+                "val": 2
+              }
+        ]
+      }
+]

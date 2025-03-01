@@ -274,7 +274,6 @@
     "license_level": 3,
     "description": "<div>An Modular rifle made by GMS to fit for any situation</div>",
     "mount": "Heavy",
-    "type": "Rifle",
     "no_mods": false,
     "sp": 1,
     "barrage": true,
@@ -294,6 +293,7 @@
     "profiles": [
       {
         "name": "Basic Configuration",
+        "type": "Rifle",
         "damage": [
           {
             "override": true,
@@ -313,6 +313,7 @@
       },
       {
         "name": "Sniper Configuration",
+        "type": "Rifle",
         "damage": [
           {
             "type": "Variable",
@@ -330,6 +331,7 @@
       },
       {
         "name": "Shot Gun Configuration",
+        "type": "CQB",
         "damage": [
           {
             "type": "Variable",
@@ -340,6 +342,10 @@
           {
             "type": "Cone",
             "val": "4"
+          },
+          {
+            "type": "Threat",
+            "val": "3"
           }
         ],
         "effect": "Shot Gun Configuration. You start with Kinetic magazine Loaded",
@@ -600,11 +606,12 @@
     "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "effect": "Each time you reload you consume a charge on the weapon these charges can only be regained when you have access to a printer",
     "on_hit": "Each time you hit the same target with this weapon, it deals the cumulative total of all previous damage this weapon has inflicted on that target.", 
     "damage": [
       {
         "type": "Energy",
-        "val": "2d8"
+        "val": "4d4"
       },
       {
         "type": "Burn",
@@ -621,7 +628,7 @@
         "val": 20
       }
     ],
-    "tags": [ {"id": "tg_loading"}, {"id": "LAFF_enigmatic_technology"}, {"id": "tg_unique"}, {"id": "tg_overkill"}, {"id": "tg_heat_self", "val": 4}, {"id": "tg_seeking"}, {"id": "tg_limited", "val": 3}, {"id": "tg_exotic"}]
+    "tags": [ {"id": "tg_loading"}, {"id": "LAFF_enigmatic_technology"}, {"id": "tg_unique"}, {"id": "tg_overkill"}, {"id": "tg_seeking"}, {"id": "tg_limited", "val": 3}, {"id": "tg_exotic"}]
   },
   {
     "id": "LAFF_vm36s",
@@ -758,7 +765,7 @@
     "license": "Castle",
     "license_id": "JOOL_121",
     "license_level": 2,
-    "effect": "Can fire both rounds doing 4d4+2 damage instead.",
+    "effect": "Can fire both rounds doing 4d4+2 damage and use a full action instead.",
     "mount": "Main",
     "type": "CQB",
     "damage": [

@@ -88,7 +88,7 @@
   {
     "id": "LAFF_systems_remote_ancillary_armor_repairer_raar",
     "name": "Remote Ancillary Armor Repairer (RAAR)",
-    "source": "STC",
+    "source": "GMS",
     "license": "Thalia",
     "license_id": "LAFF_Thalia",
     "license_level": 1,
@@ -142,7 +142,7 @@
       {
         "name": "Paint Target",
         "activation": "Quick Action",
-        "detail": "As long as the laser is maintained, the target gains the Lock On condition. This condition persists until the target is no longer within line of sight and range. You and your allies may benefit from this Lock On, but only as long as the laser is active.",
+        "detail": "As long as the laser is maintained, the target gains the Lock On condition. This condition persists until the target is no longer within line of sight and range also no enemies may be in the way of the laser and the line has to come from center point instead of from token edges its.. You and your allies may benefit from this Lock On, but only as long as the laser is active.",
         "range": [
           {
             "type": "Range",
@@ -166,7 +166,7 @@
   {
     "id": "LAFF_integrity_response_drones_system",
     "name": "Integrity Response Drones System (IRDS)",
-    "source": "STC",
+    "source": "GMS",
     "license": "Thalia",
     "license_id": "LAFF_Thalia",
     "license_level": 1,
@@ -588,7 +588,7 @@
       "license": "Thalia",
       "license_id": "LAFF_Thalia",
       "license_level": 3,
-      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. unless you use the supply drop from the talent Grease Money Rank III. No other rule superceeds this.</li>",
+      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. unless you use the supply drop from the talent Grease Monkey Rank III. No other rule superceeds this.</li>",
       "sp": 5,
       "description": "LORE",
       "tags": [
@@ -811,7 +811,7 @@
         "id": "LAFF_cheese_buzzdroid",
         "name": "Buzz Droid",
         "type": "Drone",
-        "sp": 3,
+        "sp": 2,
         "license_id": "",
         "source": "EXOTIC",
         "license": "",

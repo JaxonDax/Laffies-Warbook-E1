@@ -1,80 +1,203 @@
 [
-  {
-    "id": "LAFF_mariana",
-    "license_id": "LAFF_mariana",
-    "source": "GMS",
-    "license_level": 2,
-    "name": "Mariana",
-    "mechtype": ["Balanced"],
-    "description": "Named after the Mariana Trench, the deepest point on Earth, the Mariana reflects GMS’s commitment to creating a frame capable of operating under immense pressure—both literal and metaphorical. This frame is designed for those who need more than just durability and firepower; it’s for Lancers who demand flexibility in the chaos of battle. Whether fighting in open space or in the depths of alien environments, the Mariana can handle it all. GMS saw the success of the Everest and decided to push the limits of what a standard frame could offer. The Mariana was designed to be the Everest MK II, incorporating years of field data, pilot feedback, and evolving battlefield needs. It's not just a frame for rookies learning the ropes—it’s built for seasoned veterans who need a platform that can be fine-tuned to their unique combat style. The inclusion of enhanced mod slots and more streamlined repair capabilities ensures that the Mariana can be refitted and rearmed with ease, making it ideal for extended campaigns where support might be limited.",
-    "mounts": ["Flex", "Flex", "Heavy"],
-    "stats": {
-      "size": 2, 
-      "structure": 4,
-      "stress": 4,
-      "armor": 1,
-      "hp": 12,
-      "evasion": 8,
-      "edef": 9,
-      "heatcap": 7,
-      "repcap": 6,
-      "sensor_range": 12,
-      "tech_attack": 0,
-      "save": 10,
-      "speed": 5,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "Replaceable parts",
-        "use": "",
-        "description": "While resting, the Mariana can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
-      },
-      {
-        "name": "Durable Boosters",
-        "use": "",
-        "description": "The Mariana has a propulsion system suitable for use in low or zero gravity and underwater environments. In those environments, you can fly and are not Slowed. You may also boost as a free action while not using the boosters as a EVA."
-      },
-      {
-        "name": "In-Built Redundancy",
-        "use": "",
-        "description": "The Mariana has many in built systems and mounts that allow it for 1 structure damage ignore all effects."
-      }
-    ],
-    "core_system": {
-      "name": " 'Everest' COMP/CON",
-      "active_name": "Protocol 1 & 2",
-      "active_effect": "Choose one of the two protocol's",
-      "activation": "",
-      "description": "The mech has an inbuilt comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. This AI does not count to your total AI count and can be replaced with an NHP to create a variant personal mech.",
-      "deactivation": "",
-      "use": "",
-      "passive_name": "Protocol 3 - Protect the Pilot",
-        "passive_effect": "When your mech is destroyed due to a failed structure save, the pilot automatically ejects and lands within range 8 (your choice of location). The mech then regains full HP and stays active for 2 rounds as an autonomous unit, prioritizing any immediate threats to the pilot. Once the 2 rounds are up the mech falls on the spot having completed it duty.",
-      "passive_actions": [],
-      "active_actions": [
-        {
-          "name": "Protocol 1 - Engage Defensive Maneuvers",
-          "activation": "Reaction",
-          "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion and Resistance to all ranged attacks for the next 2 rounds."
+    {
+        "id": "DAX_mariana",
+        "license_id": "DAX_mariana",
+        "source": "GMS",
+        "license_level": 2,
+        "name": "Mariana",
+        "mechtype": ["Balanced"],
+        "description": "Named after the Mariana Trench, the deepest point on Earth, the Mariana reflects GMS’s commitment to creating a frame capable of operating under immense pressure—both literal and metaphorical. This frame is designed for those who need more than just durability and firepower; it’s for Lancers who demand flexibility in the chaos of battle. Whether fighting in open space or in the depths of alien environments, the Mariana can handle it all. GMS saw the success of the Everest and decided to push the limits of what a standard frame could offer. The Mariana was designed to be the Everest MK II, incorporating years of field data, pilot feedback, and evolving battlefield needs. It's not just a frame for rookies learning the ropes—it’s built for seasoned veterans who need a platform that can be fine-tuned to their unique combat style. The inclusion of enhanced mod slots and more streamlined repair capabilities ensures that the Mariana can be refitted and rearmed with ease, making it ideal for extended campaigns where support might be limited.",
+        "mounts": ["Flex", "Flex", "Heavy"],
+        "stats": {
+          "size": 2, 
+          "structure": 4,
+          "stress": 4,
+          "armor": 1,
+          "hp": 12,
+          "evasion": 8,
+          "edef": 9,
+          "heatcap": 7,
+          "repcap": 6,
+          "sensor_range": 12,
+          "tech_attack": 0,
+          "save": 10,
+          "speed": 5,
+          "sp": 6
         },
-        {
-          "name": "Protocol 2 - Offensive Override",
+        "traits": [
+          {
+            "name": "Replaceable parts",
+            "use": "",
+            "description": "While resting, the Mariana can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
+          },
+          {
+            "name": "Durable Boosters",
+            "use": "",
+            "description": "The Mariana has a propulsion system suitable for use in low or zero gravity and underwater environments. In those environments, you can fly and are not Slowed. You may also boost as a free action while not using the boosters as a EVA."
+          },
+          {
+            "name": "In-Built Redundancy",
+            "use": "",
+            "description": "The Mariana has many in built systems and mounts that allow it to ignore all effects from the first structure damage it takes."
+          }
+        ],
+        "core_system": {
+          "name": " 'Everest' COMP/CON",
+          "active_name": "Protocol 1 & 2",
+          "active_effect": "Choose one of the two protocol's",
           "activation": "Protocol",
-          "detail": "For the next 2 turns, gain an extra quick action and you can use Barrage as a Quick Action once during this period.",
-          "frequency": "2/mission"
+          "description": "The mech has an inbuilt advanced comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. This AI does not count to your total AI count.",
+          "deactivation": "",
+          "use": "",
+          "passive_name": "Protocol 3 - Protect the Pilot",
+            "passive_effect": "When your mech is destroyed due to a failed structure save, the pilot automatically ejects and lands within range 8 (your choice of location). The mech then regains full HP and stays active for 2 rounds as an autonomous unit, prioritizing any immediate threats to the pilot. Once the 2 rounds are up the mech falls on the spot having completed it duty.",
+          "passive_actions": [],
+          "active_actions": [
+            {
+              "name": "Protocol 1 - Engage Defensive Maneuvers",
+              "activation": "Reaction",
+              "frequency": "2/encounter", 
+              "trigger": "When hit with an ranged/melee attack", 
+              "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion for the next 2 rounds."
+            },
+            {
+              "name": "Protocol 2 - Offensive Override",
+              "activation": "Protocol",
+              "detail": "Once Protocol 2 is activated Barrage becomes a quick action for only two instances until the end of the next round."
+            }
+          ],
+          "passive_bonuses": [],
+          "passive_synergies": [],
+          "deployables": [],
+          "counters": [],
+          "integrated": ["DAX_damage_control_Intergrated"],
+          "special_equipment": [],
+          "tags": [{"id": "tg_ai"},{ "id": "tg_no_cascade"}]
+        },
+        "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+        "y_pos": 25
+      },
+      {
+        "id": "DAX_Thalia",
+        "license_level": 2,
+        "source": "GMS",
+        "name": "Thalia",
+        "mechtype": ["Support", "Striker"],
+        "y_pos": 32,
+        "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+        "description": "The Thalia frame, forged by the Union's finest engineers, was conceived as the ultimate battlefield medic, offering frontline repairs to allies in critical moments. Named after the ancient figure of grace and rejuvenation, Thalia embodies a dual philosophy: combining durability with unparalleled support capabilities to sustain allies in even the most hostile conditions. Originally developed during a series of brutal campaigns, the Thalia became essential in long battles where repair stations were scarce. Steel Core engineers equipped it with breakthrough technology, including the Integrity Response Drone System (IRDS) and Remote Automated Armor Restoration (RAAR), enabling it to provide rapid, in-field repair without compromising its own combat capabilities. These systems were an innovation in field support: the IRDS drone could be deployed to handle repairs autonomously while the pilot attended to more urgent matters, while the RAAR enabled Thalia to shore up the defenses of critically damaged mechs and restore operational efficiency in seconds.",
+        "mounts": ["Aux/Aux", "Flex"],
+        "stats": {
+          "size": 1,
+          "structure": 4,
+          "stress": 4,
+          "armor": 1,
+          "hp": 8,
+          "evasion": 8,
+          "edef": 8,
+          "heatcap": 4,
+          "repcap": 4,
+          "sensor_range": 8,
+          "tech_attack": 0,
+          "save": 10,
+          "speed": 5,
+          "sp": 10
+        },
+        "traits": [
+          {
+            "name": "Combat medic",
+            "description": "Thalia and all allies adjacent to the Thalia gain +1 accuracy to HULL, SYSTEM and ENGINEERING saving throws."
+          },
+          {
+            "name": "Assisted Repair",
+            "description": "as a prepared action Thalia may give adjacent allies the quick action to repair to full HP Or recover 1 Structure damage and return to 1 HP.  (The ally uses their own repair cap at their regular cost for HP repair and for structure double the amount.)"
+          },
+          {
+            "name": "Intergrated IRDS and RAAR",
+            "description": "You gain 2 intergrated Systems. RAAR Thalia Variant and IRDS Thalia Variant."
+          }
+        ],
+        "core_system": {
+          "name": "Cryptbloom",
+          "description": "LORE",
+          "active_name": "Superior Repair",
+          "active_effect": "For the rest of the encounter the Thalia may use any repair actions twice as a quick action. Or you may choose as a full action to repair an ally's system or weapon using 1 RAAR charge. ",
+          "activation": "Protocol",
+          "integrated": ["DAX_irds_thalia", "DAX_raar_thalia"]
         }
-      ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": [{"id": "tg_ai"},{ "id": "tg_no_cascade"}]
-    },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "y_pos": 25
-  }
-  
+      },
+      {
+        "id": "JOOL_121",
+        "license_id": "JOOL_121",
+        "source": "GMS",
+        "license_level": 2,
+        "name": "Castle",
+        "mechtype": ["Defender"],
+        "description": "GMS initially introduced the Castle with a vibrant color scheme during its limited prototype phase, intending to market the mech as not just a tool of war, but a symbol of protection and leadership. The colors were inspired by ancient myths of heroic defenders, drawing comparisons to knightly heraldry from Old Terra. However, the flashy design sparked controversy within the utilitarian GMS community. Critics claimed it was unnecessary for a mech designed for mass production and versatility. Originally developed under the codename Fortress Adaptive Deployment Frame (FADF), the Castle was part of a GMS initiative to appeal to security contractors, planetary defense forces, and humanitarian organizations requiring mobile, heavy-duty protection platforms. However, budget overruns, logistical delays, and skepticism about its specialized role and flashy design led to the project being quietly shelved for years. Despite this, several prototypes were distributed to field testers, and the results spoke for themselves—wherever the Castle stood, its allies did not fall.",
+        "mounts": ["Main", "Heavy"],
+        "stats": {
+          "size": 2, 
+          "structure": 4,
+          "stress": 4,
+          "armor": 3,
+          "hp": 10,
+          "evasion": 6,
+          "edef": 6,
+          "heatcap": 5,
+          "repcap": 5,
+          "sensor_range": 8,
+          "tech_attack": -2,
+          "save": 11,
+          "speed": 3,
+          "sp": 6
+        },
+        "traits": [
+          {
+            "name": "Unyielding Defense",
+            "use": "",
+            "description": "The Castle can Brace without penalties, then has a 1-round cooldown before using this trait again, though it can still use a regular Brace during the cooldown."
+          },
+          {
+            "name": "Heavy Frame",
+            "use": "",
+            "description": "The Castle can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
+          },
+            {
+              "name": "Slow",
+              "use": "",
+              "description": "The Castle receives +1 difficulty on Agility checks and saves."
+            },
+            {
+              "name": "Aggressive Taunt",
+              "description": "As a Quick Action, this mech can force an enemy within sensor range to make a Systems Save. If the enemy fails, it becomes Taunted until the end of Castle's next turn. A Taunted enemy has +2 difficulty on all attack rolls against targets other than Castle. This ability can only be active on one character.",
+              "actions": [
+              {
+              "name":"Taunt",
+              "activation":"Quick"
+              }
+            ]}
+          ],
+        "core_system": {
+          "name": "Defiance Core",
+          "active_name": "Mocking Defiance",
+          "active_effect": "<p> 1/scene this core can be activated, so whenever The Castle Braces, it gains 10 Overshield and Aggressive Taunt now affects all enemies within sensor range for 2 rounds .</p>",
+          "activation": "Protocol",
+          "description": "he Defiance Core exploits enemy targeting and sensory systems, rerouting hostile focus to the Castle through powerful interference signals compelling them to view the Castle as their primary threat. At the same time this system cloaks the Castle's large shield in a shimmering, protective energy field.",
+          "deactivation": "",
+          "use": "",
+          "passive_name": "",
+            "passive_effect": "",
+          "passive_actions": [],
+          "active_actions": [],
+          "passive_bonuses": [],
+          "passive_synergies": [],
+          "deployables": [],
+          "counters": [],
+          "integrated": [],
+          "special_equipment": [],
+          "tags": []
+        },
+        "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+        "y_pos": 25
+      }
 ]

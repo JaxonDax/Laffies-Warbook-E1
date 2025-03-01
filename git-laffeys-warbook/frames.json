@@ -322,12 +322,12 @@
   {
     "id": "LAFF_Thalia",
     "license_level": 2,
-    "source": "STC",
+    "source": "GMS",
     "name": "Thalia",
     "mechtype": ["Support", "Striker"],
     "y_pos": 32,
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "description": "The Thalia frame, forged by Steel Core’s finest engineers, was conceived as the ultimate battlefield medic, offering frontline repairs to allies in critical moments. Named after the ancient figure of grace and rejuvenation, Thalia embodies a dual philosophy: combining durability with unparalleled support capabilities to sustain allies in even the most hostile conditions. Originally developed during a series of brutal campaigns, the Thalia became essential in long battles where repair stations were scarce. Steel Core engineers equipped it with breakthrough technology, including the Integrity Response Drone System (IRDS) and Remote Automated Armor Restoration (RAAR), enabling it to provide rapid, in-field repair without compromising its own combat capabilities. These systems were an innovation in field support: the IRDS drone could be deployed to handle repairs autonomously while the pilot attended to more urgent matters, while the RAAR enabled Thalia to shore up the defenses of critically damaged mechs and restore operational efficiency in seconds.",
+    "description": "The Thalia frame, forged by the Union's finest engineers, was conceived as the ultimate battlefield medic, offering frontline repairs to allies in critical moments. Named after the ancient figure of grace and rejuvenation, Thalia embodies a dual philosophy: combining durability with unparalleled support capabilities to sustain allies in even the most hostile conditions. Originally developed during a series of brutal campaigns, the Thalia became essential in long battles where repair stations were scarce. Steel Core engineers equipped it with breakthrough technology, including the Integrity Response Drone System (IRDS) and Remote Automated Armor Restoration (RAAR), enabling it to provide rapid, in-field repair without compromising its own combat capabilities. These systems were an innovation in field support: the IRDS drone could be deployed to handle repairs autonomously while the pilot attended to more urgent matters, while the RAAR enabled Thalia to shore up the defenses of critically damaged mechs and restore operational efficiency in seconds.",
     "mounts": ["Aux/Aux", "Flex"],
     "stats": {
       "size": 1,
@@ -438,6 +438,71 @@
       "integrated": [],
       "special_equipment": [],
       "tags": []
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 25
+  },
+  {
+    "id": "LAFF_mariana_Grizz",
+    "license_id": "LAFF_mariana_grizz",
+    "source": "GMS",
+    "license_level": 1,
+    "name": "Mariana [Vangence NHP]",
+    "mechtype": ["Offensive", "NHP Entity"],
+    "description": "This Mariana has an NHP intergrated into its main systems. Vangence NHP.",
+    "mounts": ["Flex", "Flex", "Heavy"],
+    "stats": {
+      "size": 2, 
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 9,
+      "heatcap": 7,
+      "repcap": 6,
+      "sensor_range": 12,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Replaceable parts",
+        "use": "",
+        "description": "While resting, the Mariana can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
+      },
+      {
+        "name": "Durable Boosters",
+        "use": "",
+        "description": "The Mariana has a propulsion system suitable for use in low or zero gravity and underwater environments. In those environments, you can fly and are not Slowed. You may also boost as a free action while not using the boosters as a EVA."
+      },
+      {
+        "name": "In-Built Redundancy",
+        "use": "",
+        "description": "The Mariana has many in built systems and mounts that allow it to ignore all effects from the first structure damage it takes."
+      }
+    ],
+    "core_system": {
+      "name": "Vangence NHP",
+      "description": "This mech always has a part of its bonded NHP. The pilot also can tap into the mind of the NHP if they wish though this action is highly likely to kill the pilot. ",
+      "active_name": "????",
+      "active_effect": "?????",
+      "activation": "Full Action",
+      "deactivation": "",
+      "use": "4/mission",
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "active_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": ["LAFF_damage_control_Intergrated"],
+      "special_equipment": [],
+      "tags": [{"id": "tg_ai"}]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": 25

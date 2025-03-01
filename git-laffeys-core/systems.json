@@ -1,6 +1,6 @@
 [
   {
-    "id": "LAFF_systems_base_hacking_kit_v2",
+    "id": "DAX_systems_base_hacking_kit_v2",
     "name": "Base Hacking Kit V2",
     "sp": "0",
     "source": "GMS",
@@ -39,19 +39,54 @@
     ]
   },
   {
-    "id": "LAFF_integrity_response_drones_system",
-    "name": "Integrity Response Drones System (IRDS)",
+    "id": "DAX_systems_remote_ancillary_armor_repairer_raar",
+    "name": "Remote Ancillary Armor Repairer (RAAR)",
     "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": "1",
-    "effect": "Deploy a drone to either yourself or an allied mech within sensor range. Drone will automaticly repair allies nearby.",
+    "license": "Thalia",
+    "license_id": "DAX_Thalia",
+    "license_level": 1,
+    "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
     "sp": "3",
-    "description": "Developed by GENERAL MASSIVE SYSTEMS (GMS) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+    "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
     "tags": [
       {
         "id": "tg_limited",
-        "val": 2
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Remote Repair",
+        "activation": "Quick Action",
+        "detail": "Target an allied mech within range 12. That mech regains 1d4+2 HP.",
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          }
+        ]
+      },
+      {
+        "name": "Restock",
+        "activation": "Quick Action",
+        "detail": "Consume 1 repair capacity and regain all charges"
+      }
+    ]
+  },
+  {
+    "id": "DAX_integrity_response_drones_system",
+    "name": "Integrity Response Drones System (IRDS)",
+    "source": "GMS",
+    "license": "Thalia",
+    "license_id": "DAX_Thalia",
+    "license_level": 1,
+    "effect": "Deploy a drone to either yourself or an allied mech within range 4. The Drone will automaticly repair allies nearby.",
+    "sp": "3",
+    "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
       }
     ],
     "deployables": [
@@ -60,94 +95,221 @@
         "name": "Integrity Response Drone",
         "activation": "Quick",
         "size": 0.5,
-        "hp": 5,
+        "hp": 3,
         "edef": 10,
         "evasion": 10,
-        "detail": "In a Burst 1 Area friendly mechs gain 1d6+2 HP at the start of their turn.",
+        "detail": "In a Burst 1 Area friendly mechs gain 1d4+4 HP at the start of their turn.",
+        "actions": []
+      }
+    ]
+  },
+    {
+      "id": "DAX_irds_thalia",
+      "name": "IRDS Thalia Variant",
+      "effect": "Deploy a drone to either yourself or an allied mech within range 5. Drone will automaticly repair allies nearby.",
+      "sp": 0,
+      "license_id": "",
+      "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 2
+        }
+      ],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Integrity Response Drone",
+          "activation": "Quick",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "In a Burst 2 Area friendly mechs gain 1d4+4+ENGINEERING SKILL HP at the start of their turn.",
+          "actions": [  ]
+        }
+      ]
+    },
+    {
+      "id": "DAX_raar_thalia",
+      "name": "RAAR Thalia Variant",
+      "license_id": "",
+      "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
+      "sp": 0,
+      "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_limited",
+          "val": 3
+        }
+      ],
+      "actions": [
+        {
+          "name": "Remote Repair",
+          "activation": "Quick Action",
+          "detail": "Target an allied mech within range. That mech regains 1d4+4+ENGINEERING SKILL HP.",
+          "range": [
+            {
+              "type": "Range",
+              "val": 15
+            }
+          ]
+        },
+        {
+          "name": "Restock",
+          "activation": "Quick Action",
+          "detail": "Consume 1 repair capacity and regain all charges"
+        }
+      ]
+    },
+    {
+      "id": "DAX_wabu_shield",
+      "name": "Wabu Shield",
+      "source": "GMS",
+      "license": "Thalia",
+      "license_id": "DAX_Thalia",
+      "license_level": 3,
+      "effect": "",
+      "sp": 4,
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_unique"
+        }
+      ],
+      "actions": [
+        {
+          "name": "Activate WABU",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "init": "Must not be stunned, Immobilized, jammed or grappled.", 
+          "trigger": "Ally takes structure damage within range 8", 
+          "detail": "You may move up to the ally giving +1 difficulty to any engagements and any overwatch reactions. Once at the ally give them 10 over shield possibly negating any further damage."
+        }
+      ]
+    },
+    {
+      "id": "DAX_3d_parts_printer",
+      "name": "3D Parts Printer",
+      "source": "GMS",
+      "license": "Thalia",
+      "license_id": "DAX_Thalia",
+      "license_level": 3,
+      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. unless you use the supply drop from the talent Grease Monkey Rank III. No other rule superceeds this.</li>",
+      "sp": 5,
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_unique"
+        },
+        {
+          "id": "tg_limited",
+          "val": 2
+        }
+      ]
+    },
+    {
+      "id": "DAX_damage_control",
+      "name": "Damage Control",
+      "source": "GMS",
+      "license": "Mariana",
+      "license_id": "DAX_mariana",
+      "license_level": "1",
+      "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
+      "sp": "1",
+      "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+      "tags": [
+        {
+          "id": "tg_unique"
+        }
+      ]
+    },
+    {
+      "id": "DAX_assault_damage_control",
+      "name": "Assault Damage Control",
+      "source": "GMS",
+      "license": "Mariana",
+      "license_id": "DAX_mariana",
+      "license_level": "3",
+      "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
+      "sp": "3",
+      "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module <br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
+      "tags": [
+        {
+          "id": "tg_unique"
+        }
+      ],
+      "actions": [
+        {
+          "name": "Activate assault damage control",
+          "activation": "Free",
+          "detail": "Once activated the damage control gives the user resistance to Kinetic and Explosive damage for 2 Rounds. Gain 5 HEAT once you activate this.",
+          "frequency": "2/Mission"
+        }
+      ]
+    },
+    {
+      "id": "jo_interception_protocol",
+      "name": "Interception Protocol",
+      "source": "GMS",
+      "license": "Castle",
+      "license_id": "JOOL_121",
+      "license_level": 3,
+      "effect": "As a Reaction, when an ally within Sensor Range is targeted by an attack and has Lock On, your mech can force the attack to target yourself instead.",
+      "type": "System",
+      "sp": 2,
+      "actions": [
+        {
+          "name": "Activate Interception Protocol",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "When an enemy attacks an ally and the enemy uses lock on thats on the ally.", 
+          "detail": "You may get attacked instead, having the enemy do an attack roll on you."
+        }
+      ]
+    },
+      {
+        "id": "jo_intergrated_jump_jets",
+        "name": "Intergrated Jump Jets",
+        "source": "GMS",
+        "license": "Castle",
+        "license_id": "JOOL_121",
+        "license_level": 3,
+        "effect": "As a Quick Action, you may jump up to 2 spaces in any direction, including vertically. Upon landing, all characters (enemies and allies) adjacent to you centered on your landing spot must pass a Hull save or be knocked Prone. This movement does not provoke reactions",
+        "type": "System",
+        "sp": 2,
+        "description": "These GMS-designed jump jets enable high-impact tactical mobility, allowing mechs to reposition without fear of retaliation. Upon landing, the shockwave from the impact destabilizes surrounding units, making it an invaluable tool for disrupting enemy formations or covering quick retreats.",
         "actions": [
           {
-            "name": "Move Drone",
-            "activation": "Quick",
-            "detail": "The drone can be moved to any point within Sensors."
+            "name": "Goomba Stomp",
+            "detail": "jump up to 2 spaces in any direction, including vertically. Upon landing, all characters (enemies and allies) adjacent to you on your landing spot must pass a Hull save or be knocked Prone. This movement does not provoke reactions",
+            "activation": "Quick Action"
+          }
+        ],
+        "tags": [{"id": "tg_heat_self", "val": 1}]
+      },
+      {
+        "id": "DAX_reinforced_structure",
+        "name": "Reinforced Structure",
+        "source": "GMS",
+        "license": "GMS",
+        "license_level": "0",
+        "effect": "Gain 1 extra structure by sacrificing system space",
+        "sp": "2",
+        "description": "<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+        "tags": [
+          {
+            "id": "tg_unique"
+          }, {"id": "tg_indestructible"}
+        ],
+        "bonuses": [
+          {
+            "id": "structure",
+            "val": 1
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "LAFF_damage_control",
-    "name": "Damage Control",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": "1",
-    "effect": "Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 1 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
-    "sp": "1",
-    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ]
-  },
-  {
-    "id": "LAFF_assault_damage_control",
-    "name": "Assault Damage Control",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": "2",
-    "effect": "PASSIVE: Once you lost structure the damage control automaticly activates and you gain resistance to all damage for 2 turns. Also you may only lose 2 structure and suffer no after effects while this module is active. Mark the damage control as destroyed once you lose structure.",
-    "sp": "3",
-    "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S<br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ]
-  },
-  {
-    "id": "LAFF_reinforced_structure",
-    "name": "Reinforced Structure",
-    "source": "GMS",
-    "license": "GMS",
-    "license_level": "0",
-    "effect": "Gain 1 extra structure by sacrificing system space",
-    "sp": "2",
-    "description": "<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }, {"id": "tg_indestructible"}
-    ]
-  },
-  {
-    "id": "LAFF_armor_hardener_flex",
-    "name": "Flex Armor Hardener",
-    "source": "GMS",
-    "license": "Mariana",
-    "license_id": "LAFF_mariana",
-    "license_level": "3",
-    "effect": "Gain resistances to a spesfic damage type",
-    "sp": "4",
-    "description": "Flex Armor Hardeners contain advanced nanite membranes capable of being reprogrammed mid-fight using swappable scripts. When unscripted this system provides resistances to Kinetic, Thermal and Energy damage types, and when loaded with a script it provides greatly enhanced resistance to one specific damage type.",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {"id": "tg_heat_self", "val": 2}
-    ],
-    "actions": [
-      {
-        "name": "Activate armor hardener",
-        "activation": "Protocol",
-        "detail": "Once activated at the start of your turn choose a damage type you are resistant to."
-      },
-      {
-        "name": "Change resistance script",
-        "activation": "Quick Action",
-        "detail": "Choose one of the 3 damage types to change your resistance."
-      }
-    ]
-  }
 ]

@@ -1,62 +1,82 @@
 [
-  {
-    "id": "LAFF_talents_dawncore_drive",
-    "name": "Dawncore Drive",
-    "icon": "NUCLEAR CAVALIER",
-    "terse": "Improve your survivability by replacing your reactor with an Dawncore drive",
-    "description": "Laffey testing desc",
-    "ranks": [
-      {
-        "name": "Dawncore Tier 1",
-        "description": "While flying, you get the following benefits:<ul><li>You make all Agility checks and saves with +1 Accuracy.</li><li>Any time an attack misses you, you may fly up to 2 spaces in any direction as a reaction.</li></ul>",
-        "synergies": [
+    {
+        "id": "DAX_talents_lucky_bastard",
+        "name": "Lucky Bastard",
+        "terse": "Is luck a talent? some say it is. Luck helps you with surviving on the field or making impossible shots.",
+        "description": "Some pilots seem to be blessed by fate, always dodging incoming fire by the skin of their teeth or landing improbable hits when it matters most. Whether by instinct or sheer dumb luck, the Lucky Bastard always seems to survive.",
+        "ranks": [
           {
-            "locations": [
-              "agility, active_effects"
-            ],
-            "detail": "Make all Agility checks and saves with +1 Accuracy."
-          }
-        ],
-        "actions": [
-          {
-            "name": "Acrobatics",
-            "activation": "Reaction",
-            "trigger": "Any time an attack misses you.",
-            "detail": "You may fly up to 2 spaces in any direction."
-          }
-        ]
-      },
-      {
-        "name": "Dawncore Tier 2",
-        "description": "When you Boost while flying, you may move an additional 1d6 spaces, but take heat equal to half that amount.",
-        "synergies": [
-          {
-            "locations": [
-              "boost"
-            ],
-            "detail": "When you Boost while flying, you may move an additional 1d6 spaces, but take heat equal to half that amount."
-          }
-        ]
-      },
-      {
-        "name": "Dawncore Tier 3",
-        "description": "As a quick action on your turn, you may <b>spin up your thrusters</b>. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the <b>Supersonic</b> Reaction.",
-        "actions": [
-          {
-            "name": "Spin Up Thrusters",
-            "activation": "Quick",
-            "detail": "As a quick action on your turn, you may spin up your thrusters. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the Supersonic reaction."
+            "name": "Lucky Clover",
+            "description": "<ul><li>Fortune’s Favor: Twice per mission, you can force reroll on an enemy attack roll against you. The enemy must use the new result."
           },
           {
-            "name": "Supersonic",
-            "activation": "Reaction",
-            "frequency": "1/round",
-            "init": "Requires activation of the <b>Spin Up Thrusters</b> quick action on your turn. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, you may use this reaction.",
-            "trigger": "Your target’s turn ends.",
-            "detail": "You fly to a space free and adjacent to them. There must be a path to do so but you can move even if the nominated character is no longer within your movement range or line of sight. This ignores engagement and does not provoke reactions."
+            "name": "Good Karma",
+            "description": "<ul><li>Lucky Strike: When you roll a natural 20 on an Attack Roll, you can add +1 Difficulty to your target's next attack until the end of their next turn.</li><li>Narrow Escape: Once per scene, when you are hit by an attack, you may roll a 1d6. On a 5-6, you halve the damage taken.</li></ul>"
+          },
+          {
+            "name": "Lady Luck's first born",
+            "description": "<ul><li>Impossible Dodge: Once per scene, when an attack would hit you, you may roll a 1d6. On a 4-6, you automatically dodge the attack, taking no damage or effects. On a 1-3, you take the hit but only take half damage.</li><li>Blessing of the Dice: Once per scene, you can turn any natural roll of 1 into a 20 on an Attack Roll or Dodge Roll. You are then “Cursed” and cannot roll a natural 20 for the rest of the scene.</li></ul>"
+          }
+        ]
+      },
+      {
+        "id": "DAX_talents_cyborg",
+        "name": "Cyborg",
+        "terse": "Becoming closer with your mech has never becomes easier as you are connected in more ways than one.",
+        "description": "Some mechanics claim they can talk to their machines - but you take it literally. more than just cosmetic changes your augments mean your mech is like an extention of your body. was it a back-ally surgeon or a blacksite engineer? did you pay in manna or blood? was it your decision or someone else's? either way there is no going back now.",
+        "ranks": [
+          {
+            "name": "Neural Link",
+            "description": "When a hostile character attacks you as a reaction on your turn roll a 1d6. On a 4+ the attack misses."
+          },
+          {
+            "name": "Volition Override",
+            "description": "When your mech is Stunned or Jammed you may still move up to half of your speed as a standard move and take one quick action. All actions, saves, have a +2 difficulty and cause you to take 1 Heat."
+          },
+          {
+            "name": "Full Cerebral Sync",
+            "description": "When your mech is destroyed you may choose to keep it active though sheer force of will. You are instead recuded to 1 HP. You can not recover or lose HP while this effect is active. At the end of each of your turns whenever you take damage roll 1d20+Grit. on a 10+ your mech remains active otherwise it is immediately destroyed. at the end of each of your turns while this ability is active you gain +1 cumulative difficulty on subsequent rolls. You may only use this ability once per full repair."
+          }
+        ]
+      },
+      {
+        "id": "DAX_talents_bruiser",
+        "name": "Bruiser",
+        "terse": "Hit harder with melee attacks by opening yourself up to reprisal",
+        "description": "Look, it's simple; you have a mech, your mech has a hammer, and the whole world is made of nails. Now all you need to do is hit someone as hard as you can. If they're still moving afterwards? You hit'em again. And maybe a third time for good measure. All the fancy footwork in the world won't help you when both your legs are broken.",
+        "ranks": [
+          {
+            "name": "Reckless Swing",
+            "description": "1/round you may choose to gain +1 Accuracy on an attack with a melee weapon on your turn. Until the start of your next turn, the next attack made against you gains +1 Accuracy."
+          },
+          {
+            "name": "Payback",
+            "description": "When you take structure damage, your next melee attack deals +1d6 bonus damage on hit."
+          },
+          {
+            "name": "Take Your Best Shot",
+            "description": "1/scene as a free action, you may choose a hostile character within line of sight to immediately make an attack against you. That character must be able to attack you, or they cannot be chosen. Afterwards, whether this attack hits or misses, you may make an attack against them with a non-Superheavy melee weapon. You may then allow that character to make another attack against you if they wish, repeating this process until one of you has been destroyed or until they decline to attack you any further."
+          }
+        ]
+      },
+      {
+        "id": "DAX_talents_guerrilla",
+        "name": "Guerrilla",
+        "terse": "Use hit-and-run tactics to strike from Hiding and enhance your defense",
+        "description": "War isn't fair, so why shouldn't you fight the same way? Leave notions of honorable combat to the would-be knights and champions, you're here to get work done. In the shadows, in the split-second flash of lightning before the thunder comes, hit and run, strike and fade. They may hate you, but they'll learn to fear you all the same.",
+        "ranks": [
+          {
+            "name": "Fighting Ghosts",
+            "description": "You may Boost without losing Hidden, and whenever you Disengage attacks against you are made at +1 Difficulty until the end of your next turn."
+          },
+          {
+            "name": "Go to Ground",
+            "description": "If you end your turn in cover which you did not begin your turn in, all ranged attacks against you receive +1 Difficulty until the end of your next turn."
+          },
+          {
+            "name": "Run and Gun",
+            "description": "At the beginning of each scene, before anyone acts you may move up to your speed. If you end this movement in cover, you automatically become Hidden, and until the end of your next turn the first attack roll you make while Hidden gains +1 Accuracy."
           }
         ]
       }
-    ]
-  }
 ]

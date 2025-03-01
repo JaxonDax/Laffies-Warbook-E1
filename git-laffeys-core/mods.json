@@ -1,2 +1,44 @@
 [
+      {
+        "id": "DAX_accurate_personalisation",
+        "name": "Accurate Personalisation",
+        "source": "EXOTIC",
+        "license": "",
+        "license_id": "",
+        "sp": 0,
+        "description": "Lore", 
+        "effect": "Gives Accuracy to any personal weapon ASK THE GM TO USE THIS", 
+        "tags": [{"id": "tg_exotic"}],
+        "allowed_types": ["Cannon", "Rifle", "Launcher", "CQB", "Nexus", "Melee"],
+        "allowed_sizes": ["Heavy", "Superheavy", "Aux", "Main"], 
+        "restricted_types": [],
+        "restricted_sizes": [], 
+        "added_tags": [{"id": "tg_accurate"}]
+      },
+      {
+        "id": "jo_targeting_spike",
+        "name": "Targeting Spike",
+        "source": "GMS",
+        "license": "Castle",
+        "license_id": "JOOL_121",
+        "license_level": 1,
+        "sp": 1,
+        "description": "This advanced weapon mod embeds a micro-targeting system that activates upon critical strikes, marking enemies for follow-up attacks.",
+        "effect": "Whenever you get a crit the target gains lock-on. This does not work for AOE attacks. "
+      },
+      {
+        "id": "DAX_Custom_Magazine",
+        "name": "Custom Magazines",
+        "source": "EXOTIC",
+        "license": "",
+        "license_id": "",
+        "sp": 0,
+        "description": "Lore", 
+        "effect": "The weapon that has this mod equiped can benefit from the walking armoury talent.", 
+        "tags": [{"id": "tg_exotic"}],
+        "allowed_types": ["Cannon", "Rifle", "Launcher", "CQB", "Nexus"],
+        "allowed_sizes": ["Heavy", "Superheavy", "Aux", "Main"], 
+        "restricted_types": ["Melee"],
+        "restricted_sizes": []
+      }
 ]
