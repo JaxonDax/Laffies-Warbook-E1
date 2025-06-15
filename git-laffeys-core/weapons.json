@@ -163,7 +163,7 @@
       {
         "id": "DAX_combat_shotgun_mk2",
         "name": "Combat Shotgun MK.2",
-        "source": "STC",
+        "source": "GMS",
         "license": "Thalia",
         "license_id": "DAX_Thalia",
         "license_level": 2,
@@ -292,5 +292,42 @@
                     "val": 2
                 }
             ]
-        }
+        },
+  {
+    "id": "DAX_vx15t",
+    "name": "VX-15T Battle Rifle",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>The VX-15T Battle Rifle is a relic from the era of Old Humanity, crafted with advanced technology that modern engineers cannot replicate or fully understand. It fires energy rounds with incredible precision, growing more deadly with each successive shot. The rifle recharges itself through unknown means, a feature that eludes current technological comprehension. This equipment is derived from lost or incomprehensible advanced technology, unable to be maintained or replicated, with effects that defy current understanding. Despite its age, the VX-15T remains a formidable and enigmatic weapon, a reminder of humanity's lost potential.</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "no_mods": true,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "effect": "Regain charger",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d4"
+      },
+      {
+        "type": "Burn",
+        "val": "2d4"
+      },
+      {
+        "type": "HEAT",
+        "val": "1d4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_overkill"}, {"id": "tg_seeking"}, {"id": "tg_limited", "val": 3}, {"id": "tg_exotic"}]
+  }
 ]

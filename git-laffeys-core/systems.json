@@ -45,7 +45,7 @@
     "license": "Thalia",
     "license_id": "DAX_Thalia",
     "license_level": 1,
-    "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
+    "effect": "Restores armor HP using stored repair charges.",
     "sp": "3",
     "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
     "tags": [
@@ -65,11 +65,6 @@
             "val": 12
           }
         ]
-      },
-      {
-        "name": "Restock",
-        "activation": "Quick Action",
-        "detail": "Consume 1 repair capacity and regain all charges"
       }
     ]
   },
@@ -134,7 +129,7 @@
       "id": "DAX_raar_thalia",
       "name": "RAAR Thalia Variant",
       "license_id": "",
-      "effect": "Restores armor HP using stored repair charges. Requires repair capacity for a full recharge.",
+      "effect": "Restores armor HP using stored repair charges.",
       "sp": 0,
       "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
       "tags": [
@@ -157,11 +152,6 @@
               "val": 15
             }
           ]
-        },
-        {
-          "name": "Restock",
-          "activation": "Quick Action",
-          "detail": "Consume 1 repair capacity and regain all charges"
         }
       ]
     },
@@ -178,18 +168,25 @@
       "tags": [
         {
           "id": "tg_unique"
+        },
+        {
+          "id": "tg_limited",
+          "val": 1
         }
       ],
-      "actions": [
-        {
-          "name": "Activate WABU",
-          "activation": "Reaction",
-          "frequency": "1/round",
-          "init": "Must not be stunned, Immobilized, jammed or grappled.", 
-          "trigger": "Ally takes structure damage within range 8", 
-          "detail": "You may move up to the ally giving +1 difficulty to any engagements and any overwatch reactions. Once at the ally give them 10 over shield possibly negating any further damage."
-        }
-      ]
+    "actions": [
+      {
+        "name": "Activate WABU",
+        "activation": "Full", 
+          "detail": "Activate the WABU Shield generator making an Burst 3 range around the mech having all units (allied or not) gain 10 Overshield for 2 Rounds.",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 3
+          }
+        ]
+      }
+    ]
     },
     {
       "id": "DAX_3d_parts_printer",
