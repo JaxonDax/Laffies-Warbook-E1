@@ -1,11 +1,11 @@
 [
   {
     "id": "DAX",
-    "name": "Workshop",
-    "logo_url": "https://wiki.eveuniversity.org/images/e/e0/Logo_faction_drifters.png",
-    "light": "#000000",
-    "dark": "#993333",
-    "quote": "Test",
-    "description": "Test"
+    "name": "Unknown Faction",
+    "logo_url": "https://i.imgur.com/AEoF4nb.png",
+    "light": "#991E2A",
+    "dark": "#db1a2d",
+    "quote": "Your Friend In High Places",
+    "description": "<br><span class='horus--subtle'>[Unknown Faction]</span>"
   }
 ]

@@ -78,5 +78,25 @@
             "description": "At the beginning of each scene, before anyone acts you may move up to your speed. If you end this movement in cover, you automatically become Hidden, and until the end of your next turn the first attack roll you make while Hidden gains +1 Accuracy."
           }
         ]
+      },
+      {
+        "id": "DAX_talents_WIP20062023",
+        "name": "WIP",
+        "terse": "Together with a selected ally assist each other in melee and ranged attacks.",
+        "description": "WIP",
+        "ranks": [
+          {
+            "name": "WIP1",
+            "description": "WIP1"
+          },
+          {
+            "name": "WIP2",
+            "description": "WIP2"
+          },
+          {
+            "name": "WIP3",
+            "description": "WIP3"
+          }
+        ]
       }
 ]

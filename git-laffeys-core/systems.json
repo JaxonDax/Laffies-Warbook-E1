@@ -308,5 +308,66 @@
             "val": 1
           }
         ]
+      },
+        {
+    "id": "DAX",
+    "name": "Salvo's Shell Box",
+    "source": "DAX",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
       }
+    ],
+    "effect": "1/turn, When you attack with the Howitzer, Siege Cannon, Mortar, or Bolt Thrower, choose one of these weapons. You may expend charges to apply one of the following effects to your attack, paying the listed cost.",
+    "ammo": [
+      {
+        "name": "NUKA-Shells (1 Charge)",
+        "detail": "The attack gains +1d4 Explosive Damage, +1 Blast radius.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "Smoke Shells (1 Charge)",
+        "detail": "The attack deploys soft cover in the form of smoke in a BLAST 2 radius. Smoke lifts 2 rounds from deployment.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "WP Shells (1 Charge)",
+        "detail": "The attack deals double damage to biological targets, no damage to mechs but 1d4 HEAT to mechs.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "AP-G Shells (2 Charges)",
+        "detail": "The attack requires target to have Lock on. Deals Kinetic damage instead of explosive with an extra 1d6 of damage and gains armour piercing. The attack also only focuses on 1 target.",
+        "cost": 2,
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "S-532 Shells (2 Charges)",
+        "detail": "The attack changes to Blast 1, deals kinetic damage, inflicts Shredded to all hit targets until start of next round.",
+        "cost": 2,
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      }
+    ],
+    "description": "<p><strong>UNION R&amp;D RESPONSE: REQUEST DENIED</strong><br><br><em>Mmm. As expected, <strong><em>Union's</em></strong> Research and Development division has... declined your requisition.</em><br><em>Bureaucracy, you understand. Forms. Protocols.</em><br><strong>But don’t worry, friend.</strong> <em>I have… <strong>connections.</strong> In high places.</em><br><em>Let’s just say I’ve ensured you’ll receive the item anyway.</em><br><em>I’m <strong>most</strong> interested in observing what you do with it.</em><br><em><strong>Make it count.</strong></em></p>"
+  }
 ]
