@@ -7,5 +7,14 @@
     "dark": "#db1a2d",
     "quote": "Your Friend In High Places",
     "description": "<br><span class='horus--subtle'>[Unknown Faction]</span>"
+  },
+    {
+    "id": "ACR",
+    "name": "ACRUX",
+    "logo_url": "https://i.imgur.com/AERMTKH.png",
+    "light": "#991E2A",
+    "dark": "#db1a2d",
+    "quote": "Pretty doesn’t hold under orbital fire.",
+    "description": "ACRUX—colloquially known as ACR—is GMS's black-ops adjacent, ultra-resilient engineering division. Born from the need to deliver combat-ready, modular, and nigh-indestructible systems to GMS special operations, forward scouts, and long-haul campaigns, ACRUX embraces a simple design philosophy: survive first, adapt second, eliminate third. Where GMS is universal, reliable, and trusted, ACR is the high-end, battlefield-customizable evolution, maintaining GMS' rugged dependability but augmenting it with bleeding-edge materials and modular combat architecture."
   }
 ]

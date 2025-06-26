@@ -38,176 +38,6 @@
       }
     ]
   },
-  {
-    "id": "DAX_systems_remote_ancillary_armor_repairer_raar",
-    "name": "Remote Ancillary Armor Repairer (RAAR)",
-    "source": "GMS",
-    "license": "Thalia",
-    "license_id": "DAX_Thalia",
-    "license_level": 1,
-    "effect": "Restores armor HP using stored repair charges.",
-    "sp": "3",
-    "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 3
-      }
-    ],
-    "actions": [
-      {
-        "name": "Remote Repair",
-        "activation": "Quick Action",
-        "detail": "Target an allied mech within range 12. That mech regains 1d4+2 HP.",
-        "range": [
-          {
-            "type": "Range",
-            "val": 12
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "DAX_integrity_response_drones_system",
-    "name": "Integrity Response Drones System (IRDS)",
-    "source": "GMS",
-    "license": "Thalia",
-    "license_id": "DAX_Thalia",
-    "license_level": 1,
-    "effect": "Deploy a drone to either yourself or an allied mech within range 4. The Drone will automaticly repair allies nearby.",
-    "sp": "3",
-    "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 1
-      }
-    ],
-    "deployables": [
-      {
-        "type": "Drone",
-        "name": "Integrity Response Drone",
-        "activation": "Quick",
-        "size": 0.5,
-        "hp": 3,
-        "edef": 10,
-        "evasion": 10,
-        "detail": "In a Burst 1 Area friendly mechs gain 1d4+4 HP at the start of their turn.",
-        "actions": []
-      }
-    ]
-  },
-    {
-      "id": "DAX_irds_thalia",
-      "name": "IRDS Thalia Variant",
-      "effect": "Deploy a drone to either yourself or an allied mech within range 5. Drone will automaticly repair allies nearby.",
-      "sp": 0,
-      "license_id": "",
-      "description": "Developed by Steel Core Manufacuring (STC) as a quick-deployment repair tool, the Integrity Response Drones (IRD) were designed to patch up damaged mechs on the battlefield without the need for a dedicated mechanic or support unit. These drones are popular among smaller strike teams that can’t afford dedicated healers. Pirate groups such as the Guristas Pirates have also adapted this technology for rapid repairs during hit-and-run engagements.",
-      "tags": [
-        {
-          "id": "tg_limited",
-          "val": 2
-        }
-      ],
-      "deployables": [
-        {
-          "type": "Drone",
-          "name": "Integrity Response Drone",
-          "activation": "Quick",
-          "size": 0.5,
-          "hp": 5,
-          "edef": 10,
-          "evasion": 10,
-          "detail": "In a Burst 2 Area friendly mechs gain 1d4+4+ENGINEERING SKILL HP at the start of their turn.",
-          "actions": [  ]
-        }
-      ]
-    },
-    {
-      "id": "DAX_raar_thalia",
-      "name": "RAAR Thalia Variant",
-      "license_id": "",
-      "effect": "Restores armor HP using stored repair charges.",
-      "sp": 0,
-      "description": "Designed and manufactured by Steel Core, the Remote Ancillary Armor Repairer (RAAR) employs advanced drone technology to provide real-time armor repairs from a distance. Originally developed for Steel Core's specialized units like the Thalia, this system enhances combat resilience by allowing mechs to receive quick repairs while remaining engaged in battle.",
-      "tags": [
-        {
-          "id": "tg_unique"
-        },
-        {
-          "id": "tg_limited",
-          "val": 3
-        }
-      ],
-      "actions": [
-        {
-          "name": "Remote Repair",
-          "activation": "Quick Action",
-          "detail": "Target an allied mech within range. That mech regains 1d4+4+ENGINEERING SKILL HP.",
-          "range": [
-            {
-              "type": "Range",
-              "val": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "DAX_wabu_shield",
-      "name": "Wabu Shield",
-      "source": "GMS",
-      "license": "Thalia",
-      "license_id": "DAX_Thalia",
-      "license_level": 3,
-      "effect": "",
-      "sp": 4,
-      "description": "LORE",
-      "tags": [
-        {
-          "id": "tg_unique"
-        },
-        {
-          "id": "tg_limited",
-          "val": 1
-        }
-      ],
-    "actions": [
-      {
-        "name": "Activate WABU",
-        "activation": "Full", 
-          "detail": "Activate the WABU Shield generator making an Burst 3 range around the mech having all units (allied or not) gain 10 Overshield for 2 Rounds.",
-        "range": [
-          {
-            "type": "Burst",
-            "val": 3
-          }
-        ]
-      }
-    ]
-    },
-    {
-      "id": "DAX_3d_parts_printer",
-      "name": "3D Parts Printer",
-      "source": "GMS",
-      "license": "Thalia",
-      "license_id": "DAX_Thalia",
-      "license_level": 3,
-      "effect": "<li>During a short repair you can expend a charge on yourself or for an ally to fully repair  HP or Structure and a System or Weapon.</li><li>During a short rest you can expend 2 charges charge on yourself or for an ally to do a full repair.</li><li>This system is not allowed to regain charges till the end of the mission. unless you use the supply drop from the talent Grease Monkey Rank III. No other rule superceeds this.</li>",
-      "sp": 5,
-      "description": "LORE",
-      "tags": [
-        {
-          "id": "tg_unique"
-        },
-        {
-          "id": "tg_limited",
-          "val": 2
-        }
-      ]
-    },
     {
       "id": "DAX_damage_control",
       "name": "Damage Control",
@@ -217,7 +47,7 @@
       "license_level": "1",
       "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
       "sp": "1",
-      "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+      "description": "",
       "tags": [
         {
           "id": "tg_unique"
@@ -231,9 +61,9 @@
       "license": "Mariana",
       "license_id": "DAX_mariana",
       "license_level": "3",
-      "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
+      "effect": "",
       "sp": "3",
-      "description": "CAN NOT BE RUN WITH OTHER DAMAGE CONTROL'S OR THE Emergency Repair Module <br><span class='horus--subtle'>[Developed by GMS to cure even more stupid lancers]</span>",
+      "description": "LORE",
       "tags": [
         {
           "id": "tg_unique"
@@ -242,9 +72,10 @@
       "actions": [
         {
           "name": "Activate assault damage control",
-          "activation": "Free",
-          "detail": "Once activated the damage control gives the user resistance to Kinetic and Explosive damage for 2 Rounds. Gain 5 HEAT once you activate this.",
-          "frequency": "2/Mission"
+          "activation": "Reaction",
+          "frequency": "2/Mission", 
+          "trigger": "Mech is about to take any damage.", 
+          "detail": "Once activated the damage control gives the user resistance to all damage, HEAT and BURN till the end of the next round. Gain 5 HEAT once activated."
         }
       ]
     },
@@ -369,5 +200,26 @@
       }
     ],
     "description": "<p><strong>UNION R&amp;D RESPONSE: REQUEST DENIED</strong><br><br><em>Mmm. As expected, <strong><em>Union's</em></strong> Research and Development division has... declined your requisition.</em><br><em>Bureaucracy, you understand. Forms. Protocols.</em><br><strong>But don’t worry, friend.</strong> <em>I have… <strong>connections.</strong> In high places.</em><br><em>Let’s just say I’ve ensured you’ll receive the item anyway.</em><br><em>I’m <strong>most</strong> interested in observing what you do with it.</em><br><em><strong>Make it count.</strong></em></p>"
-  }
+  },
+        {
+        "id": "DAX_personalisation_heat",
+        "name": "Personalisation Heat",
+        "source": "EXOTIC",
+        "license": "EXOTIC",
+        "license_level": "0",
+        "effect": "Gain +1 HEAT Cap ASK THE GM TO USE THIS",
+        "sp": "0",
+        "description": "",
+        "tags": [
+          {
+            "id": "tg_unique"
+          }, {"id": "tg_indestructible"}
+        ],
+        "bonuses": [
+          {
+            "id": "heatcap",
+            "val": 1
+          }
+        ]
+      }
 ]

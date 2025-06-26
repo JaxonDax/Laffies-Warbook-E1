@@ -164,10 +164,10 @@
         "id": "DAX_combat_shotgun_mk2",
         "name": "Combat Shotgun MK.2",
         "source": "GMS",
-        "license": "Thalia",
-        "license_id": "DAX_Thalia",
+        "license": "Mariana",
+        "license_id": "DAX_mariana",
         "license_level": 2,
-        "description": "<div>An improved shotgun made by STC to fit for any situation</div>",
+        "description": "<div>LORE</div>",
         "mount": "Main",
         "type": "CQB",
         "no_mods": false,
@@ -248,9 +248,9 @@
             "license": "Castle",
             "license_id": "JOOL_121",
             "license_level": 1,
-            "effect": "The Greatshield can be set into the ground creating hard cover in a line of 3 with a height matching the size of your mech and must be adjacent. Gain +4 HP while equiped.",
+            "effect": "The Greatshield can be set into the ground creating hard cover in a line of 3 with a height matching the size of your mech and must be adjacent.",
             "on_crit": "Enemy needs to make an HULL save or becomes stunned until the end of their turn.",
-            "mount": "Heavy",
+            "mount": "Superheavy",
             "type": "Melee",
             "actions": [
               {
@@ -264,16 +264,10 @@
                 "activation": "Protocol"
               }
             ],
-            "bonuses": [
-              {
-                "id": "hp",
-                "val": 4
-              }
-            ],
             "damage": [
                 {
                     "type": "Kinetic",
-                    "val": "1d4"
+                    "val": "1d6"
                 }
             ],
             "range": [
@@ -290,6 +284,9 @@
                 {
                     "id": "tg_reliable",
                     "val": 2
+                },
+                {
+                  "id": "tg_inaccurate"
                 }
             ]
         },

@@ -12,16 +12,16 @@
           "size": 2, 
           "structure": 4,
           "stress": 4,
-          "armor": 1,
+          "armor": 0,
           "hp": 12,
-          "evasion": 8,
+          "evasion": 7,
           "edef": 9,
           "heatcap": 7,
           "repcap": 6,
-          "sensor_range": 12,
+          "sensor_range": 10,
           "tech_attack": 0,
           "save": 10,
-          "speed": 5,
+          "speed": 4,
           "sp": 6
         },
         "traits": [
@@ -44,9 +44,9 @@
         "core_system": {
           "name": " 'Everest' COMP/CON",
           "active_name": "Protocol 1 & 2",
-          "active_effect": "Choose one of the two protocol's",
+          "active_effect": "Once activated gain the following abilities.",
           "activation": "Protocol",
-          "description": "The mech has an inbuilt advanced comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. The Everest Comp/Con unit is also able to act and think independently when given a task. This AI does not count to your total AI count.",
+          "description": "The mech has an inbuilt advanced comp/con unit to assist in piloting the mech and any other side actions to make the the job of the pilot easier. The Everest Comp/Con unit is also able to act and think independently when the pilot is not present or when given a task. This AI does not count to your total AI count.",
           "deactivation": "",
           "use": "",
           "passive_name": "Protocol 3 - Protect the Pilot",
@@ -55,9 +55,7 @@
           "active_actions": [
             {
               "name": "Protocol 1 - Engage Defensive Maneuvers",
-              "activation": "Reaction",
-              "frequency": "2/encounter", 
-              "trigger": "When hit with an ranged/melee attack", 
+              "activation": "Protocol",
               "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion for the next 2 rounds."
             },
             {
@@ -78,55 +76,6 @@
         "y_pos": 25
       },
       {
-        "id": "DAX_Thalia",
-        "license_level": 2,
-        "source": "GMS",
-        "name": "Thalia",
-        "mechtype": ["Support", "Striker"],
-        "y_pos": 32,
-        "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-        "description": "The Thalia frame, forged by the Union's finest engineers, was conceived as the ultimate battlefield medic, offering frontline repairs to allies in critical moments. Named after the ancient figure of grace and rejuvenation, Thalia embodies a dual philosophy: combining durability with unparalleled support capabilities to sustain allies in even the most hostile conditions. Originally developed during a series of brutal campaigns, the Thalia became essential in long battles where repair stations were scarce. GMS engineers equipped it with breakthrough technology, including the Integrity Response Drone System (IRDS) and Remote Automated Armor Restoration (RAAR), enabling it to provide rapid, in-field repair without compromising its own combat capabilities. These systems were an innovation in field support: the IRDS drone could be deployed to handle repairs autonomously while the pilot attended to more urgent matters, while the RAAR enabled Thalia to shore up the defenses of critically damaged mechs and restore operational efficiency in seconds.",
-        "mounts": ["Aux/Aux", "Flex"],
-        "stats": {
-          "size": 1,
-          "structure": 4,
-          "stress": 4,
-          "armor": 1,
-          "hp": 8,
-          "evasion": 8,
-          "edef": 8,
-          "heatcap": 4,
-          "repcap": 4,
-          "sensor_range": 8,
-          "tech_attack": 0,
-          "save": 10,
-          "speed": 5,
-          "sp": 10
-        },
-        "traits": [
-          {
-            "name": "Combat medic",
-            "description": "Thalia and all allies adjacent to the Thalia gain +1 accuracy to HULL, SYSTEM and ENGINEERING saving throws."
-          },
-          {
-            "name": "Assisted Repair",
-            "description": "as a prepared action Thalia may give adjacent allies the quick action to repair to full HP Or recover 1 Structure damage and return to 1 HP.  (The ally uses their own repair cap at their regular cost for HP repair and for structure double the amount.)"
-          },
-          {
-            "name": "Intergrated IRDS and RAAR",
-            "description": "You gain 2 intergrated Systems. RAAR Thalia Variant and IRDS Thalia Variant."
-          }
-        ],
-        "core_system": {
-          "name": "Cryptbloom",
-          "description": "LORE",
-          "active_name": "Superior Repair",
-          "active_effect": "For the rest of the encounter the Thalia may use any repair actions twice as a quick action. Or you may choose as a full action to repair an ally's system or weapon using 1 RAAR charge. ",
-          "activation": "Protocol",
-          "integrated": ["DAX_irds_thalia", "DAX_raar_thalia"]
-        }
-      },
-      {
         "id": "JOOL_121",
         "license_id": "JOOL_121",
         "source": "GMS",
@@ -134,13 +83,13 @@
         "name": "Castle",
         "mechtype": ["Defender"],
         "description": "GMS initially introduced the Castle with a vibrant color scheme during its limited prototype phase, intending to market the mech as not just a tool of war, but a symbol of protection and leadership. The colors were inspired by ancient myths of heroic defenders, drawing comparisons to knightly heraldry from Old Terra. However, the flashy design sparked controversy within the utilitarian GMS community. Critics claimed it was unnecessary for a mech designed for mass production and versatility. Originally developed under the codename Fortress Adaptive Deployment Frame (FADF), the Castle was part of a GMS initiative to appeal to security contractors, planetary defense forces, and humanitarian organizations requiring mobile, heavy-duty protection platforms. However, budget overruns, logistical delays, and skepticism about its specialized role and flashy design led to the project being quietly shelved for years. Despite this, several prototypes were distributed to field testers, and the results spoke for themselves—wherever the Castle stood, its allies did not fall.",
-        "mounts": ["Main", "Heavy"],
+        "mounts": ["Aux", "Main", "Heavy"],
         "stats": {
           "size": 2, 
           "structure": 4,
           "stress": 4,
           "armor": 3,
-          "hp": 10,
+          "hp": 8,
           "evasion": 6,
           "edef": 6,
           "heatcap": 5,
