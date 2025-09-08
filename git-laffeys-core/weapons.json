@@ -210,37 +210,62 @@
         "effect": "Can fire both rounds doing 4d4+2 damage and use a full action instead.",
         "mount": "Main",
         "type": "CQB",
+        "profiles": [
+      {
+        "name": "One barrel",
+        "skirmish": true,
         "damage": [
           {
             "type": "Kinetic",
-            "val": "2d4"
+            "val": "1d4"
           }
         ],
         "range": [
-        {
-         "type": "Cone",
-         "val": 4
-        },
-        {
-         "type": "Threat",
-         "val": 3
-        }
+          {
+            "type": "Threat",
+            "val": 3
+          },
+          {
+            "type": "Cone",
+            "val": 4
+          }
+        ]
+      },
+      {
+        "name": "Double barrel",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d4+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 3
+          },
+          {
+            "type": "Cone",
+            "val": 4
+          }
         ],
         "tags": [
-        {
-          "id": "DAX_tags_loading_{val}",
-          "val": 2
-        },
-        {
+          {
+            "id": "DAX_tags_loading_{val}",
+            "val": 2
+          },
+          {
             "id": "tg_knockback",
             "val": 2
-        },
-        {
+          },
+          {
             "id": "tg_reliable",
             "val": 2
-        }
-      ]
-      },
+          }
+        ]
+      }
+    ]
+        },
         {
             "id": "jo_shield",
             "name": "Greatshield of Glory",
@@ -311,7 +336,7 @@
       },
       {
         "type": "Burn",
-        "val": "2d4"
+        "val": "1d4"
       },
       {
         "type": "HEAT",

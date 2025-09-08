@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Taunted",
+    "icon": "Taunted",
+    "type": "Condition",
+    "terse": "Taunted mechs gain a -2 Difficulty on attacking any other mech than the source.",
+    "effects": "Taunted mechs gain a -2 Difficulty on attacking any other mech than the source."
+  }
+]

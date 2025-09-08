@@ -79,24 +79,40 @@
           }
         ]
       },
+        {
+    "id": "DAX_Talents_Battle_Buddy",
+    "name": "Battle Buddy",
+    "icon": "BattleBuddy",
+    "terse": "Become a dream team with another pilot.",
+    "description": "Out here in the cold void, wrapped in steel and surrounded by fire, the only thing keeping you alive is the pilot beside you. They’re more than a comrade, they’re your brother or sister in arms. You don’t survive orbital drops, plasma storms, or enemy swarm assaults without someone watching your six. Maybe you grew up in the same station, maybe you signed on with the corps together, or maybe you were the only survivors when your squad got wiped in a blaze of railgun fire. Now, when the call to drop comes in and the cockpit seals shut, there’s no one else you want in the mech at your flank. You trust them with your life and they trust you with theirs. Alone, you're a war machine. Together, you're a legend written in fire and metal.",
+    "ranks": [
       {
-        "id": "DAX_talents_WIP20062023",
-        "name": "WIP",
-        "terse": "Together with a selected ally assist each other in melee and ranged attacks.",
-        "description": "WIP",
-        "ranks": [
+        "name": "I got your six",
+        "description": "When you take this talent, choose another pilot (hopefully a PC, but NPCs are fine if your GM allows it) to be your Battle Buddy. Any mech skill checks and saves either character makes while you they are in your line of sight gain a +1 flat bonus . If both characters have this talent, this increases to +2, but additional characters with this talent can’t increase it any further. Between missions, you can replace your Battle Buddy with a new one, but only if your relationship with them has changed."
+      },
+      {
+        "name": "Team Work",
+        "description": " Gain the <b>Set Up</b> Action and the <b>Take Opportunity</b> Reaction.",
+        "actions": [
           {
-            "name": "WIP1",
-            "description": "WIP1"
+            "name": "Take Opportunity",
+            "activation": "Reaction",
+            "frequency": "1/scene",
+            "trigger": " Battle buddy uses the <b>Set Up</b> action and hits the enemy.",
+            "detail": "You may use your reaction to attack as a skirmish allowing you to automatically hit the enemy."
           },
           {
-            "name": "WIP2",
-            "description": "WIP2"
-          },
-          {
-            "name": "WIP3",
-            "description": "WIP3"
+            "name": "Set Up (Skirmish/Barrage)",
+            "activation": "Other",
+            "frequency": "1/scene",
+            "detail": "When you attack as a Skirmish or Barrage you may use set up. You deal only half your damage when you hit and stagger the enemy. This also allows your battle buddy may use the Take Opportunity reaction."
           }
         ]
+      },
+      {
+        "name": "Dream Team",
+        "description": "Allows you to use Take Opportunity 2/scene instead of 1/scene. Also when performing a Crit with Set Up you dont do half damage anymore. You can not be forced to attack your battle buddy though hacks."
       }
+    ]
+  }
 ]
