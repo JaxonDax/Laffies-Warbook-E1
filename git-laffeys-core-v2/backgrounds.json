@@ -1,0 +1,13 @@
+[
+  {
+    "id": "DAX_FirstNHP",
+    "name": "First Wave NHP [WIP]",
+    "description": "First NHP",
+    "skills": [
+      "sk_charm",
+      "sk_pull_rank",
+      "sk_lead_or_inspire",
+      "sk_threaten"
+    ]
+  }
+]
