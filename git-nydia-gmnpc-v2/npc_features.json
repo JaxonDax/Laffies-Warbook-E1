@@ -1,0 +1,454 @@
+[
+{
+"id": "NYANPC_overloadedarmaments",
+"name": "OVERLOADED ARMAMENTS",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Chaingunner",
+        "base": true
+        },
+"locked": false,
+"type": "Trait",
+"effect": "The Chaingunner cannot attack with its superheavy weapons except as allowed by Spin-Up.",
+"immunity": [],
+"tags": []
+},
+{
+    "id": "NYANPC_spinup_spindown",
+    "name": "Spin-Up / Spin-Down",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": true
+            },
+    "locked": false,
+    "type": "System",
+    "effect": "Spin-Up the Chaingunner’s superheavy weapon:  Place a cone 30 area facing in any direction, starting from the Chaingunner.  This area denotes the firing arc of the chaingunner’s superheavy weapon - it can be used normally against any valid target in this area, following other rules such as line of sight. The firing arc can only be moved as a full action, and the Chaingunner is immobilized as long as Spin-Up is active.<br />Spin-Up ends when the superheavy weapon is destroyed or the chaingunner takes a full action to spin-down. ",
+    "tags": [{"id": "tg_recharge","val": 2},{"id": "tg_full_action"}]
+},
+{
+    "id": "NYANPC_chaingun",
+    "name": "Chaingun",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon attacks the same target two times at T1, three times at T2, and four times at T3.",
+    "tags": [{"id": "tg_heat_self", "val": 2}],
+    "weapon_type": "Superheavy Rifle",
+    "attack_bonus": [-1,0,1],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Kinetic","damage": [6,5,4]}],
+    "range": [{"type": "Range","val": 15}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_sr7_carbine",
+    "name": "SR7 Carbine",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "",
+    "tags": [{"id": "tg_reliable", "val": 1}],
+    "weapon_type": "Main Rifle",
+    "attack_bonus": [0,1,2],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Kinetic","damage": [4,6,8]}],
+    "range": [{"type": "Range","val": 10}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_camisole_short_shotgun",
+    "name": "Camisole Short Shotgun",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon deals 5 AP kinetic damage to drones and deployables.",
+    "tags": [{"id": "tg_reliable", "val": 1}],
+    "weapon_type": "Aux Rifle",
+    "attack_bonus": [1,2,3],
+    "accuracy": [-1,-1,-1],
+    "damage": [{"type": "Kinetic","damage": [2,3,4]}],
+    "range": [{"type": "Range","val": 3}, {"type": "Threat","val": 2}],
+    "on_hit": ""
+},
+{
+"id": "NYANPC_gunshield",
+"name": "GUNSHIELD",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Chaingunner",
+        "base": false
+        },
+"locked": false,
+"type": "Trait",
+"effect": "The Chaingunner has +2 armor against attacks which pass through its firing arc.",
+"immunity": [],
+"tags": []
+},
+{
+    "id": "NYANPC_rapid_action_handshake",
+    "name": "Rapid-Action Handbrake",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": false
+            },
+    "locked": false,
+    "type": "System",
+    "effect": "You may Spin-down as a protocol instead of a full action.",
+    "tags": [{"id": "tg_protocol"}]
+},
+{
+    "id": "NYANPC_gyro_stabilizer",
+    "name": "Gyro-Stabilizer",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": false
+            },
+    "locked": false,
+    "type": "System",
+    "effect": "While Spin-Up is active,  the Chaingunner is reduced to 1 speed and slowed instead of immobilized.",
+    "tags": [{"id": "tg_free_action"}]
+},
+{
+    "id": "NYANPC_autocannon",
+    "name": "Autocannon",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon attacks the same target twice.",
+    "tags": [{"id": "tg_loading"}, {"id": "tg_ap"}],
+    "weapon_type": "Superheavy Cannon",
+    "attack_bonus": [1,2,3],
+    "accuracy": [1,1,1],
+    "damage": [{"type": "Kinetic","damage": [6,7,8]}],
+    "range": [{"type": "Range","val": 15}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_quad_mortar",
+    "name": "Quad Mortar",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Chaingunner",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon attacks four times.  The target areas cannot overlap.",
+    "tags": [{"id": "tg_loading"}],
+    "weapon_type": "Superheavy Launcher",
+    "attack_bonus": [1,2,3],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Kinetic","damage": [4,5,6]}],
+    "range": [{"type": "Range","val": 25}, {"type": "Blast","val": 1}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_pintle_machine_gun",
+    "name": "Pintle Machine Gun",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Earthshaker",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "",
+    "tags": [],
+    "weapon_type": "Main Rifle",
+    "attack_bonus": [0,1,2],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Kinetic","damage": [4,6,8]}],
+    "range": [{"type": "Range","val": 10}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_multi_launch_rocket_pod",
+    "name": "Multi-Launch Rocket Pod",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Earthshaker",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "Before attack:  pick a direction from the center of the blast area and roll a d6.  Move the blast area that far in the chosen direction.",
+    "tags": [{"id": "tg_arcing"}],
+    "weapon_type": "Superheavy Launcher",
+    "attack_bonus": [1,2,3],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Explosive","damage": [4,5,6]}],
+    "range": [{"type": "Range","val": 20}, {"type": "Blast","val": [3]}],
+    "on_hit": ""
+},
+{
+"id": "NYANPC_mixed_munitions",
+"name": "Mixed Munitions",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Earthshaker",
+        "base": true
+        },
+"locked": false,
+"type": "System",
+"effect": "When attacking with the Multi-Launch Rocket Pod, the Earthshaker may apply one of the following effects to the attack:<br />Incendiary Warheads: Base damage becomes 2 burn, 2 heat.<br />Bunker Busters:  The Multi-Launch Rocket Pod deals 10 AP explosive damage to objects and terrain within the blast area.<br />Airburst Rockets:  On a hit, the target must succeed on an agility check or be shredded until the end of their next turn. Base damage becomes 3 Kinetic",
+"immunity": [],
+"tags": []
+},
+{
+"id": "NYANPC_stabilizing_fins",
+"name": "Stabilizing Fins",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Earthshaker",
+        "base": false
+        },
+"locked": false,
+"type": "Trait",
+"effect": "When picking a target point within range 10, the Multi-Launch Rocket Pod drifts d3 spaces instead of d6.",
+"immunity": [],
+"tags": []
+},
+{
+    "id": "NYANPC_gatecrasher_missile",
+    "name": "Gatecrasher Missile",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Earthshaker",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "On attack, hit or miss: The main target must succeed on a systems check or become exposed until the end of their next turn.",
+    "tags": [{"id": "tg_loading"}],
+    "weapon_type": "Superheavy Launcher",
+    "attack_bonus": [0,1,2],
+    "accuracy": [-1,-1,-1],
+    "damage": [{"type": "Explosive","damage": [5,7,9]}],
+    "range": [{"type": "Range","val": 15}, {"type": "Blast","val": 1}],
+    "on_hit": ""
+},
+{
+"id": "NYANPC_AD10S_incendiary_payload",
+"name": "AD10S Incendiary payload",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Earthshaker",
+        "base": false
+        },
+"locked": false,
+"type": "System",
+"effect": "The Earthshaker launches a size 1/2 bomb into a free space within range 20. At the start of the Earthshaker’s next turn, the bomb activates.  Until the bomb is destroyed, characters who start their turn or move into burst 3 of it take 3/4/5 heat on a failed engineering check, or half as much on a success.<br />Bomb has 5/10/15 HP, 8 EV, and 0 armor.",
+"immunity": [],
+"tags": [{"id": "tg_full_action"}, {"id": "tg_limited","val": 1}, {"id": "tg_drone"}]
+},
+{
+"id": "NYANPC_JUGGERNAUT",
+"name": "JUGGERNAUT",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Landship",
+        "base": true
+        },
+"locked": false,
+"type": "Trait",
+"effect": "The Landcruiser is always in control of any grapple involving it, and it cannot be knocked prone or immobilized except by its own systems.  When it would be immobilized or knocked prone by another character, instead reduce its speed by 1 until the end of the scene.",
+"immunity": [],
+"tags": []
+},
+{
+"id": "NYANPC_SUPERHEAVY_ENGINE",
+"name": "SUPERHEAVY ENGINE",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Landship",
+        "base": true
+        },
+"locked": false,
+"type": "Trait",
+"effect": "The Landcruiser must always move in a straight line, and cannot climb or swim.  Additionally the Landship cannot move or be moved by any means except its own standard move on its turn.",
+"immunity": [],
+"tags": []
+},
+{
+"id": "NYANPC_CRUSHING_ADVANCE",
+"name": "CRUSHING ADVANCE",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Landship",
+        "base": true
+        },
+"locked": false,
+"type": "Trait",
+"effect": "The Landcruiser can move into spaces occupied by hostile characters.  When the Landship collides with a hostile character, they take 2/3/4 AP kinetic damage and are knocked back 1.  This can happen any number of times per turn.  Structures and terrain take 10/15/20 AP kinetic damage and block the landship’s movement until destroyed.",
+"immunity": [],
+"tags": []
+},
+{
+"id": "NYANPC_Extensive_Modifications",
+"name": "Extensive Modifications",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Landship",
+        "base": true
+        },
+"locked": false,
+"type": "System",
+"effect": "The landcruiser always picks one heavy or superheavy weapon and one main weapon in addition to its standard optional systems.",
+"immunity": [],
+"tags": []
+},
+{
+    "id": "NYANPC_Heavy_Cannon_Batteries",
+    "name": "Heavy Cannon Batteries",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Landship",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon attacks up to two separate targets in range.<br />This weapon deals 10 AP Explosive damage to obstacles and deployables inside its blast area.",
+    "tags": [{"id": "tg_loading"}, {"id": "tg_ap"}],
+    "weapon_type": "Heavy Cannon",
+    "attack_bonus": [1,2,3],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Explosive","damage": [4,5,6]}],
+    "range": [{"type": "Range","val": 15}, {"type": "Blast","val": 1}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_Anti_Asteroid_Laser_Array",
+    "name": "Anti-Asteroid Laser Array",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Landship",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon attacks up to 4/5/6 times, only two attacks may be against any one target.",
+    "tags": [{"id": "tg_smart"}],
+    "weapon_type": "Heavy Nexus",
+    "attack_bonus": [0,1,1],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Energy","damage": [3,3,3]}, {"type": "Burn","damage": [1,1,1]}],
+    "range": [{"type": "Range","val": 15}, {"type": "Blast","val": 1}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_Lance_Cannon",
+    "name": "Lance Cannon",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Landship",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "At Tier 2+, targets must succeed an agility save or become shredded.<br />This weapon deals 90 AP Explosive damage to obstacles and deployables inside its blast area.",
+    "tags": [{"id": "tg_recharge", "val": 3},{"id": "tg_heat_self", "val": 4}],
+    "weapon_type": "Superheavy Cannon",
+    "attack_bonus": [-3,-2,-1],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Burn","damage": [6,6,6]}, {"type": "Heat","damage": [4,4,4]}],
+    "range": [{"type": "Line","val": 15}],
+    "on_hit": ""
+},
+{
+    "id": "NYANPC_Grappling_Hook",
+    "name": "Grappling Hook",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Landship",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "Reel In: Quick Action to reel in the hook, reloading the weapon in the process. The target gets pulled to an adjacent space of the landcruiser and must succeed a Hull check or become grappled. Adjacent targets are no longer Hooked.",
+    "tags": [{"id": "tg_ap"},{"id": "tg_loading"}],
+    "weapon_type": "Main Launcher",
+    "attack_bonus": [0,0,0],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Kinetic","damage": [1,1,1]}],
+    "range": [{"type": "Range","val": 10}],
+    "on_hit": "the target is Hooked. They cannot move further away from the Landcruiser and need to succeed a Hull or Engineering check to remove the grappling hook. Multiple targets can be Hooked at once. This gives access to the Reel In Quick Action."
+},
+{
+    "id": "NYANPC_Flak_Cannon",
+    "name": "Flak Cannon",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "Landship",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon has +1 accuracy against airborne targets.",
+    "tags": [],
+    "weapon_type": "Main Launcher",
+    "attack_bonus": [1,2,3],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Explosive","damage": [4,5,6]}],
+    "range": [{"type": "Range","val": 7}, {"type": "Blast","val": 1}],
+    "on_hit": ""
+},
+{
+"id": "NYANPC_Auxiliary_mech_bay",
+"name": "Auxiliary mech bay [WIP]",
+"origin": 
+        {
+        "type": "Class",
+        "name": "Landship",
+        "base": true
+        },
+"locked": false,
+"type": "System",
+"effect": "Work in progress",
+"immunity": [],
+"tags": []
+}
+]

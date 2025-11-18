@@ -189,6 +189,19 @@ C/C will try to calculate the heat cost of item actions based on item tags, but 
   "description": string, // v-html
   "skills"?: string[] // Use ids from skills.json
 }
+
+{
+  "id": "DAX_",
+  "name": "string",
+  "description": "string",
+  "skills": 
+  [
+    "string",
+    "string",
+    "string",
+    "string"
+  ]
+}
 ```
 The `skills` field is an optional array of skill IDs from `skills.json`, used to present example skill triggers for a background. Upon selection of a background, if a pilot currently has no skill trigger points assigned, C/C will attempt to auto-populate the pilot with 1 point in each of the example skill triggers.
 
@@ -1371,3 +1384,6 @@ Where X is number of dice, Y is number of die sides, and N (optional) is a flat 
 | `Main`       | Main'       |
 | `Heavy`      | Heavy'      |
 | `Superheavy` | Superheavy  |
+
+
+

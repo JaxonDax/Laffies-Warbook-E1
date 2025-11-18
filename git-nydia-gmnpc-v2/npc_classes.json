@@ -1,0 +1,122 @@
+[
+      {
+    "id": "NYANPC_Chaingunner",
+    "name": "Chaingunner",
+    "role": "striker",
+    "info": {
+      "flavor": "The term ‘Chaingunner’ denotes a particular style of mech armament, with a bipod or tripod-stabilized superheavy weapon as the focal point.  These frames can often be found in forces with limited resources, where a single frame may need to fill many battlefield roles.",
+      "tactics": "The chaingunner is very heavily armed but slow to get its weapons on target - move up aggressively to screen objectives or protect the flanks of teammates.  It is extremely vulnerable to flanking attacks, but punishes head-on attacks.  Its secondary weapons are not very dangerous but give it token self-defense while on the move."
+    },
+    "stats": 
+    {
+      "armor": [0,0,0],
+      "hp": [12,15,18],
+      "evade": [10,10,10],
+      "edef": [8,8,8],
+      "heatcap": [6,6,6],
+      "speed": [4,4,4],
+      "sensor": [8,8,8],
+      "save": [10,12,14],
+      "hull": [1,1,1],
+      "agility": [1,1,2],
+      "systems": [0,0,0],
+      "engineering": [3,4,5],
+      "size": [[1],[1],[1]],
+      "activations": [1,1,1]
+    },
+    "base_features": [
+      "NYANPC_overloadedarmaments",
+      "NYANPC_spinup_spindown",
+      "NYANPC_chaingun",
+      "NYANPC_sr7_carbine",
+      "NYANPC_camisole_short_shotgun"
+    ],
+    "optional_features": [
+      "NYANPC_gunshield",
+      "NYANPC_rapid_action_handshake",
+      "NYANPC_gyro_stabilizer",
+      "NYANPC_autocannon",
+      "NYANPC_quad_mortar"
+    ],
+    "power": 100
+  },
+    {
+    "id": "NYANPC_Earthshaker",
+    "name": "Earthshaker",
+    "role": "Artillery",
+    "info": {
+      "flavor": "Earthshakers are little more than area saturation weapons on legs.",
+      "tactics": "Earthshakers launch barrages of rockets that saturate a huge area, but deal limited damage to single targets and are very inaccurate.  Use its munition options as circumstances require, and target points near the middle of the players’ squad.  Players can counter the Earthshaker by spreading out or closing to melee range where the Earthshaker can’t effectively target them."
+    },
+    "stats": 
+    {
+      "armor": [1,1,1],
+      "hp": [10,12,14],
+      "evade": [8,9,10],
+      "edef": [10,12,14],
+      "heatcap": [6,6,6],
+      "speed": [3,3,3],
+      "sensor": [15,15,15],
+      "save": [12,14,16],
+      "hull": [-1,-1,-1],
+      "agility": [0,0,0],
+      "systems": [2,3,4],
+      "engineering": [-2,-2,-2],
+      "size": [[2],[2],[2]],
+      "activations": [1,1,1]
+    },
+    "base_features": [
+      "NYANPC_pintle_machine_gun",
+      "NYANPC_multi_launch_rocket_pod",
+      "NYANPC_mixed_munitions"
+    ],
+    "optional_features": [
+      "NYANPC_stabilizing_fins",
+      "NYANPC_gatecrasher_missile",
+      "NYANPC_AD10S_incendiary_payload"
+    ],
+    "power": 100
+  },
+      {
+    "id": "NYANPC_landship",
+    "name": "Landship",
+    "role": "Defender",
+    "info": {
+      "flavor": "The Shale Plains of Serena proved in many ways to be a worst-case scenario for mechs.  Tar lakes, loose rocks, and acidic rain took their toll on the mech units assigned there.  Both sides quickly repurposed superheavy industrial vehicles into mobile fortresses, able to carry many tonnes of armor and weaponry over all but the worst terrain.",
+      "tactics": "Landships are slow but durable vehicles that can spearhead assaults or provide an anchor for allies to rally around.  Use their massive size to shield allies from incoming fire when moving up the map, and lay down withering fire with multiple weapon banks."
+    },
+    "stats": 
+    {
+      "armor": [1,2,2],
+      "hp": [20,25,30],
+      "evade": [4,4,4],
+      "edef": [8,8,8],
+      "heatcap": [8,10,12],
+      "speed": [6,6,6],
+      "sensor": [10,10,10],
+      "save": [11,13,15],
+      "hull": [4,5,6],
+      "agility": [-6,-6,-5],
+      "systems": [0,0,0],
+      "engineering": [3,4,5],
+      "size": [[3],[3],[3]],
+      "activations": [1,1,1]
+    },
+    "base_features": [
+      "NYANPC_JUGGERNAUT",
+      "NYANPC_SUPERHEAVY_ENGINE",
+      "NYANPC_CRUSHING_ADVANCE",
+      "NYANPC_Extensive_Modifications"
+    ],
+    "optional_features": [
+      "NYANPC_Heavy_Cannon_Batteries",
+      "NYANPC_Anti_Asteroid_Laser_Array",
+      "NYANPC_Lance_Cannon",
+      "NYANPC_Grappling_Hook",
+      "NYANPC_Flak_Cannon",
+      "NYANPC_Auxiliary_mech_bay"
+    ],
+    "power": 100
+  }
+
+]

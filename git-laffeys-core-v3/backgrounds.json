@@ -1,3 +1,14 @@
 [
-    
-]
+{
+  "id": "DAX_Background_Clone_Subject",
+  "name": "Clone Subject",
+  "description": "Being a clone can mean many things. Were you created to replace someone who no longer exists? Were you part of a highly illegal project designed to build an army of perfect copies, only for it to be shut down? Or perhaps you were nothing more than a test subject, grown in a lab and discarded when the experiment was over. Whatever your life has become, you live with the knowledge that somewhere out there, others share your face, your memories. Maybe even your thoughts. Some may hide, some may hunt, and some may be searching for you.",
+  "skills": 
+  [
+    "sk_stay_cool",
+    "sk_survive",
+    "sk_word_on_the_street",
+    "sk_assault"
+  ]
+}
+] 

@@ -1,3 +1,16 @@
 [
-    
+{
+  "id": "DAX_CoreBonus_System_Compatibility",
+  "name": "System Compatibility",
+  "source": "GMS",
+  "effect": "Gain +2 System Points",
+  "description": "by using wasted space you found you were able to put more into your mech than ever before."
+},
+{
+  "id": "DAX_Corebonus_Superheavy_Overclocking",
+  "name": "Super Heavy Overclocking",
+  "source": "HA",
+  "effect": "You may use your superheavy weapon when you overcharge as a quick action but you roll your overcharge die again adding the additional heat. This does not trigger the next level of overcharge just the current level again.",
+  "description": "HA’s R&D department has found a way to stress a mech’s reactor enough to allow it to fire a super-heavy rated weapon while overcharging. However, tests have shown that the limit of such a modification is typically twice every 10 hours for standard mechs, with more opportunities available if the pilot is skilled in engineering and has additional HA core modifications."
+}
 ]

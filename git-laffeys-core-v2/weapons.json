@@ -149,7 +149,7 @@
             "range": [
               {
                 "type": "Cone",
-                "val": "4"
+                "val": "5"
               },
               {
                 "type": "Threat",

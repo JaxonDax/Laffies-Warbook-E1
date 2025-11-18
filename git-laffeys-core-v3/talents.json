@@ -1,3 +1,356 @@
 [
-    
+{
+  "id": "DAX_talents_lucky_bastard",
+  "name": "Lucky Bastard",
+  "description": "Is luck a talent? some say it is. Luck helps you with surviving on the field or making impossible shots.",
+  "ranks": 
+        [
+        {
+        "name": "Fortune’s Favor",
+        "description": "Twice per full repair you may add a +1 to any roll you make.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": 
+        [
+            {
+            "id": "DAX_talents_lucky_bastard_rank_I",
+            "name": "Lucky Clover",
+            "default_value": "2",
+            "min": "0",
+            "max": "2"
+            }
+        ],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Good Fortune",
+        "description": "Twice per full repair you may use a reaction to have an attacker reroll their attack against you.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": 
+        [
+            {
+            "id": "DAX_talents_lucky_bastard_rank_II",
+            "name": "Good Fortune",
+            "default_value": "2",
+            "min": "0",
+            "max": "2"
+            }
+        ],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Spreading Luck",
+        "description": "Any allied characters adjacent to you get  accuracy  on any saving rolls.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "A talent focused on the roll of the dice."
+},
+{
+  "id": "DAX_talents_guerrilla",
+  "name": "Guerrilla",
+  "description": "War isn't fair, so why shouldn't you fight the same way? Leave notions of honorable combat to the would-be knights and champions, you're here to get work done. In the shadows, in the split-second flash of lightning before the thunder comes, hit and run, strike and fade. They may hate you, but they'll learn to fear you all the same.",
+  "ranks": 
+        [
+        {
+        "name": "Fighting Ghosts",
+        "description": "You may Boost without losing Hidden, and whenever you Disengage attacks against you are made at +1 Difficulty until the end of your next turn.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Go to Ground",
+        "description": "If you end your turn in cover which you did not begin your turn in, all ranged attacks against you receive +1 Difficulty until the end of your next turn.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Run and Gun",
+        "description": "At the beginning of each scene, before anyone acts you may move up to your speed. If you end this movement in cover, you automatically become Hidden, and until the end of your next turn the first attack roll you make while Hidden gains +1 Accuracy.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "Use hit-and-run tactics to strike from Hiding and enhance your defense"
+},
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "ranks": 
+        [
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "string"
+},
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "ranks": 
+        [
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "string"
+},
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "ranks": 
+        [
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "string"
+},
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "ranks": 
+        [
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "string"
+},
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "ranks": 
+        [
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "string",
+        "description": "string",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "string"
+}
 ]
