@@ -47,7 +47,7 @@
       "license_level": "1",
       "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
       "sp": "1",
-      "description": "",
+      "description": "LORE",
       "tags": [
         {
           "id": "tg_unique"
@@ -205,11 +205,10 @@
         "id": "DAX_personalisation_heat",
         "name": "Personalisation Heat",
         "source": "EXOTIC",
-        "license": "EXOTIC",
-        "license_level": "0",
+        "license": "",
         "effect": "Gain +1 HEAT Cap ASK THE GM TO USE THIS",
         "sp": "0",
-        "description": "",
+        "description": "LORE",
         "tags": [
           {
             "id": "tg_unique"
@@ -221,5 +220,244 @@
             "val": 1
           }
         ]
+      },
+  {
+    "id": "laff_style_ammocase",
+    "name": "Estio's Ammo Case",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "LORE",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      },
+      {
+        "id": "tg_exotic"
       }
+    ],
+    "effect": "1/turn, when you attack with a ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost.",
+    "ammo": [
+      {
+        "name": "A.I.S",
+        "detail": "Anti-Infantry-Shrappnel. Despite its name, Anti-Infantry Shrapnel is also designed to target smaller, more fragile mechs. When fired within the weapon's range, you can choose to detonate the round, creating a Blast 1 where the ammo detonates and a Cone 4 towards the target. Any target in cover is unaffected, but any target under size 1 not in cover takes double damage if hit.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      }
+    ]
+  },
+    {
+      "id": "laff_bones_ammocase",
+      "name": "Leonidas' Ammo Case",
+      "source": "EXOTIC",
+      "license": "",
+      "license_id": "",
+      "license_level": 0,
+      "description": "LORE",
+      "sp": 1,
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 4
+        },
+        {
+          "id": "tg_turn",
+          "val": 1
+        },
+        {
+          "id": "tg_exotic"
+        }
+      ],
+      "effect": "1/turn, when you attack with a ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost. If you perform a critical hit using ammunition from your Ammo Case, you refund half the cost of any charges used. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+      "ammo": [
+        {
+          "name": "Zeus Rounds (2 Charges)",
+          "detail": "The attack does no damage but target must succeed on a system save or be stunned untill the end of their next turn.",
+          "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+          "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+        },
+        {
+          "name": "Icarus Rounds",
+          "detail": "The attack gains +1 accuracy to flying targets and on hit the target begins to fall",
+          "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+          "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+        }
+      ]
+    },
+      {
+        "id": "LAFF_cheese_buzzdroid",
+        "name": "Buzz Droid",
+        "type": "Drone",
+        "sp": 2,
+        "license_id": "",
+        "source": "EXOTIC",
+        "license": "",
+        "license_level": 0,
+        "actions": [
+          {
+            "name": "Aid Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Removes Jammed or Shredded from the target. The drone is destroyed on use."
+          },
+          {
+            "name": "Sabotage Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target must make a Hull save. On failure, they take +2 Difficulty on checks and saves until the end of their next turn. This effect can be repeated with another Hull save until the target passes. The drone is destroyed on a successful save."
+          },
+          {
+            "name": "Rend Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target gains the Shredded condition until the end of their next turn. To extend this condition in future rounds, make a contested Engineering check. The drone is destroyed on a successful save."
+          },
+          {
+            "name": "Breach  Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target gets a buzz droid thats focused on breaching the cockpit. Roll 1d3+1 to determine the rounds needed to breach the cockpit. The pilot is shredded(killed) if breached. The target or an allied mech can destroy one Buzz Droid per successful Engineering or Systems save."
+          },
+          {
+            "name": "Buzz Droid Swarm",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              },
+              {
+                "type": "Blast",
+                "val": 1
+              }
+            ],
+            "damage": [
+              {
+                "type": "Kinetic",
+                "val": "2"
+              },
+              {
+                "type": "Energy",
+                "val": "1"
+              }
+            ],
+            "detail": "Deploy a swarm thats blast 1. All enemies that enter or start their turn in the effected area take damage. The swarm acts as a drone"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_limited",
+            "val": 2
+          },
+          {
+            "id": "tg_unique"
+          },
+          {
+            "id": "tg_grenade"
+          },
+          {
+            "id": "tg_exotic"
+          },
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_drone"
+          }
+        ]
+      },
+    {
+      "id": "jo_kinetic_wake_emitter",
+      "name": "Kinetic Wake Emitter",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_wayfarer",
+      "license_level": "1",
+      "effect": "The first time each turn when ever you move in a straight line you may activate this system as a free action. Choose one character adjacent to your movement path. That character must succeed on an Agility save or be KNOCKED PRONE.",
+      "sp": "1",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"}]
+    },
+    {
+      "id": "jo_burnout",
+      "name": "Burnout",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_wayfarer",
+      "license_level": "3",
+      "effect": "When you END your movement, may activate this system as a free action. All characters in Burst 1 centered on you take 2 heat and 2 burn.",
+      "sp": "2",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"},{"id": "tg_heat_self", "val": 2},{"id": "tg_limited", "val": 3}]
+    },
+    {
+      "id": "jo_knights_couching",
+      "name": "Knights Couching",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_wayfarer",
+      "license_level": "2",
+      "effect": "The first attack that hit with a MELEE weapon after moving deals +1d3 bonus kinetic damage",
+      "sp": "1",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"}]
+    },
+    {
+      "id": "jo_lane_denial_matrix",
+      "name": "LANE DENIAL MATRIX",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_wayfarer",
+      "license_level": "3",
+      "effect": "",
+      "actions": 
+      [
+      {
+        "name": "Activate System",
+        "activation": "Quick",
+        "detail": "When you activate this system, designate a straight line of spaces up to your SPEED originating from your space. This line remains active until the start of your next turn. Gain the Lane Denial reaction."
+      },
+      {
+        "name": "Lane Denial",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character starts any movement inside the designated line, or enters the designated line.",
+        "detail": "Trigger Lane Denial. As a reaction, you immediately move to a free space adjacent to the triggering character, then SKIRMISH against the triggering character. "
+      }
+      ],
+      "sp": "3",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"}]
+    }
+
+
+
+
 ]

@@ -148,5 +148,70 @@
         },
         "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
         "y_pos": 25
+      },
+      {
+        "id": "JOOL_wayfarer",
+        "license_id": "JOOL_wayfarer",
+        "source": "SSC",
+        "license_level": 2,
+        "name": "Wayfarer",
+        "mechtype": ["Striker / Controller"],
+        "description": "The Wayfarer was never designed to hold ground. Instead, it was built to cross it. Developed for high-risk transit through contested zones, the Wayfarer embodies Smith-Shimano’s belief that motion itself is a form of defense. Its chassis is lean to the point of fragility, its systems intolerant of hesitation. Pilots describe the frame as restless — stable only when moving, precise only when committed. In combat, the Wayfarer does not advance so much as pass through, striking in straight, merciless lines before vanishing down another route. Enemies that attempt to pin it in place quickly discover the flaw in that strategy: the Wayfarer is already gone, leaving heat, fire, and shattered momentum behind.",
+        "mounts": ["Main", "Main"],
+        "stats": {
+          "size": 1, 
+          "structure": 4,
+          "stress": 4,
+          "armor": 0,
+          "hp": 6,
+          "evasion": 11,
+          "edef": 8,
+          "heatcap": 4,
+          "repcap": 3,
+          "sensor_range": 5,
+          "tech_attack": 0,
+          "save": 11,
+          "speed": 7,
+          "sp": 6
+        },
+        "traits": [
+          {
+            "name": "MOMENTUM DRIVE",
+            "use": "",
+            "description": "When you BOOST, you may only move in a straight line. During this movement, you may move through spaces occupied by characters, and ignore engagement and difficult terrain terrain. Each character whose space you move through this way takes 2 AP damage."
+          },
+          {
+            "name": "COMMITTED TO SPEED",
+            "use": "",
+            "description": "If you begin your turn IMMOBILIZED, SLOWED, or PRONE, you get +1 Difficulty on all attacks and checks until condtions is cleared"
+          },
+          {
+            "name": "CAN’T TOUCH THIS",
+            "use": "",
+            "description": "While you are moving at least 3 spaces during your turn, you gain Soft Cover until your next turn."
+          }
+            ],
+        "core_system": {
+          "name": "Dare Devil",
+          "active_name": "FULL THROTTLE",
+          "active_effect": "Until the end of your turn, you enter FULL THROTTLE: You may BOOST twice this turn; the second BOOST is free and does not cost an action, and you may change direction between BOOSTS. Changes the damage of MOMENTUM DRIVE to 4 AP and 1 burn. At the end of your turn, you are IMMOBILIZED until the end of your next turn. ",
+          "activation": "Protocol",
+          "description": "",
+          "deactivation": "",
+          "use": "",
+          "passive_name": "",
+            "passive_effect": "",
+          "passive_actions": [],
+          "active_actions": [],
+          "passive_bonuses": [],
+          "passive_synergies": [],
+          "deployables": [],
+          "counters": [],
+          "integrated": [],
+          "special_equipment": [],
+          "tags": []
+        },
+        "image_url": "https://i.imgur.com/RjCXLVh.png",
+        "y_pos": 25
       }
 ]

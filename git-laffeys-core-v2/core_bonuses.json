@@ -11,5 +11,19 @@
                 "val": 2
               }
         ]
-      }
+    },
+    {
+        "id": "DAX_shock_shield",
+        "name": "Shock Shiled",
+        "source": "GMS",
+        "effect": "Gain resistance to AOE damage.",
+        "description": "Your mech gains extra padding and shielding against attacks that are meant to spread over an area rather than attack single targets"
+    },
+    {
+        "id": "DAX_shock_shield",
+        "name": "Shock Shiled",
+        "source": "GMS",
+        "effect": "Gain resistance to AOE damage.",
+        "description": "Your mech gains extra padding and shielding against attacks that are meant to spread over an area rather than attack single targets"
+    }
 ]

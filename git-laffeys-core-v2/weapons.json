@@ -190,7 +190,7 @@
         "range": [
           {
             "type": "cone",
-            "val": 4
+            "val": 5
           },
           {
             "type": "Threat",
@@ -251,7 +251,7 @@
         ],
         "tags": [
           {
-            "id": "DAX_tags_loading_{val}",
+            "id": "DAX_tags_loading",
             "val": 2
           },
           {
@@ -322,10 +322,10 @@
     "license": "",
     "license_id": "",
     "license_level": 0,
-    "description": "<div>The VX-15T Battle Rifle is a relic from the era of Old Humanity, crafted with advanced technology that modern engineers cannot replicate or fully understand. The rifle recharges itself through unknown means, a feature that eludes current technological comprehension. This equipment is derived from lost or incomprehensible advanced technology, unable to be maintained or replicated, with effects that defy current understanding. Despite its age, the VX-15T remains a formidable and enigmatic weapon.</div>",
+    "description": "LORE",
     "mount": "Main",
     "type": "Rifle",
-    "no_mods": true,
+    "no_mods": false,
     "sp": 0,
     "barrage": true,
     "skirmish": true,
@@ -350,5 +350,502 @@
       }
     ],
     "tags": [{"id": "tg_unique"}, {"id": "tg_overkill"},{"id": "tg_limited", "val": 5}, {"id": "tg_exotic"}]
+  },
+    {
+    "id": "DAX_Phantasim",
+    "name": "Anti-Materiel Rifle 'Phantasim'",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "sp": 0,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [{"id": "tg_accurate"},{"id": "tg_ap"},{"id": "DAX_tags_loading", "val": 3},{"id": "tg_ordnance"},{"id": "tg_seeking"},{"id": "DAX_upgraded", "val": 2},{"id": "tg_exotic"}]
+  },
+    {
+    "id": "DAX_Rumble_Missiles",
+    "name": "Rumble Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "3d4"
+      },
+      {
+        "type": "HEAT",
+        "val": "1d4"
+      },
+      {
+        "type": "Burn",
+        "val": "3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [{"id": "tg_heat_self", "val": 3},{"id": "tg_overkill"},{"id": "tg_ordnance"},{"id": "tg_arcing"}]
+  },
+      {
+    "id": "DAX_msl_ewar_c",
+    "name": "J-142 Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Main",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "On_hit": "Effected targets make an systems save. On failure they become jammed until the end of their next turn",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [{"id": "tg_limited", "val": 3},{"id": "tg_unique"},{"id": "tg_arcing"}]
+  },
+    {
+    "id": "DAX_msl_at_c",
+    "name": "C-152 Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      },
+      {
+        "type": "Kinetic",
+        "val": "1d4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "tags": [{"id": "tg_loading"},{"id": "tg_ap"},{"id": "tg_arcing"}]
+  },
+    {
+    "id": "DAX_msl_ap_c",
+    "name": "Anti Personel Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "effect": "Deals double damage to biological targets",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      },
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "tags": [{"id": "tg_loading"},{"id": "tg_unique"},{"id": "tg_arcing"}]
+  },
+    {
+    "id": "DAX_msl_holo",
+    "name": "Holo Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Main",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Burn",
+        "val": "3"
+      },
+      {
+        "type": "HEAT",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "tags": [{"id": "tg_loading"},{"id": "tg_ordnance"}]
+  },
+    {
+    "id": "DAX_msl_cmd_arad",
+    "name": "CMD/ARAD Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "sp": 1,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "effect": "Can be used while being jammed. If fired on a hostile that jammed you it is always a hit while jammed.",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d4+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [{"id": "tg_smart"},{"id": "tg_seeking"}]
+  },
+    {
+    "id": "DAX_msl_slw",
+    "name": "Shock Net Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "effect": "the Blast 1 area becomes difficult terrain and anyone hit with the missile must make a agility save or be slowed. if a target is hit while already being slowed they are immobilized instead for the slows duration.",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [{"id": "tg_loading"}]
+  },
+    {
+    "id": "DAX_msl_ankheg",
+    "name": "Ankheg Missile",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Main",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "Effected targets make an Agility or Hull save. On failure they become shredded as long as they are effected by burn.",
+    "damage": [
+      {
+        "type": "Burn",
+        "val": "4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [{"id": "tg_arcing"},{"id": "tg_limited", "val": 3},{"id": "tg_unique"}]
+  },
+    {
+    "id": "DAX_msl_solar",
+    "name": "Solar Missiles",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "Each missile contains a compact plasma charge designed to mimic solar flare conditions. On detonation, it releases a burst of superheated ionized gas and intense visible light, briefly reaching temperatures that can soften armor alloys and overwhelm optical and sensor arrays.",
+    "mount": "Main",
+    "type": "Launcher",
+    "sp": 0,
+    "no_mods": false,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "Effected target must make an Agility or Egineering save. On failure they become stunned till the end of their next turn.",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3"
+      },
+        {
+        "type": "HEAT",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [{"id": "tg_arcing"},{"id": "tg_limited", "val": 2},{"id": "tg_unique"}]
+  },
+  {
+    "id": "DAX_point_defense",
+    "name": "Shoulder Gatling Gun",
+    "source": "GMS",
+    "license_level": 0,
+    "description": "",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "no_mods": true,
+    "sp": 1,
+    "barrage": true,
+    "skirmish": true,
+    "tags": [{"id": "tg_unique"}],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "actions": [
+    {
+    "name": "Activate Trophy System",
+    "activation": "Reaction",
+    "detail": "The Trophy System attempts to intercept an incoming attack. 2/Round you can try and intercept an attack that lands within the range of this weapon. You roll a D20+Grit(+Any bonuses to skill checks) against the enemies attack die's result. Due to how intense AOE attacks are you can not intercept them. Melee Attacks are also not able to get intercepted with this.",
+    "frequency": "2/round",
+    "init": "",
+    "trigger": "<div>An attack lands within range.</div>"
+    }
+    ]
+  },
+  {
+    "id": "DAX_quad_mega_pulse_laser",
+    "name": "Quad Mega Pulse Laser",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div>The Quad Mega Pulse Laser is a massive, quad-barrel cannon powered by an external battery, usually dorsally mounted on the chassis carrying it.</div>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "4d4"
+      },
+      {"type": "Burn", "val": 5}
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {"id": "tg_ordnance"}, {"id": "tg_heat_self", "val": 4}]
+  },
+  {
+    "id": "DAX_150mm_Railgun",
+    "name": "Dual 150mm Short Railgun",
+    "source": "GMS",
+    "license": "GMS",
+    "license_id": "",
+    "license_level": 3,
+    "description": "<div>The Dual 150mm Short Railgun is a massive, Dual-barrel cannon powered by an external battery, usually dorsally mounted on the chassis carrying it.</div>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": false,
+    "on_hit": "<div>On hit your weapon gains reliable 4</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d8"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 15
+      }
+    ],
+    "tags": [{"id": "tg_ap"},{"id": "tg_ordnance"}]
+  },
+  {
+    "id": "jo_longshotrifle",
+    "name": "Longshot Rifle",
+    "source": "SCC",
+    "license": "Wayfarer",
+    "license_id": "JOOL_wayfarer",
+    "license_level": 1,
+    "description": "<div>LORE</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<div>Deal +1 bonus damage for every 2 spaces between you and the target.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": []
+  },
+  {
+    "id": "jo_cavalry_lance",
+    "name": "Cavalry Lance",
+    "source": "SCC",
+    "license": "Wayfarer",
+    "license_id": "JOOL_wayfarer",
+    "license_level": 2,
+    "description": "<div>LORE</div>",
+    "mount": "Main",
+    "type": "Melee",
+    "no_mods": false,
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "",
+    "effect": "If you attack with this weapon after moving 6 or more spaces in a straight line before the attack. the target becomes PRONE, and you may automatically GRAPPLE the target, as they get impaled on the lance",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [{"id": "tg_ap"}]
   }
+
+
+
+
+
+
+
+
+
 ]
