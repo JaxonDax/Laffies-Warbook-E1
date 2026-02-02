@@ -209,11 +209,7 @@
         "effect": "Gain +1 HEAT Cap ASK THE GM TO USE THIS",
         "sp": "0",
         "description": "LORE",
-        "tags": [
-          {
-            "id": "tg_unique"
-          }, {"id": "tg_indestructible"}
-        ],
+        "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"},{"id": "tg_exotic"}],
         "bonuses": [
           {
             "id": "heatcap",
@@ -408,11 +404,11 @@
     {
       "id": "jo_burnout",
       "name": "Burnout",
-      "source": "SCC",
+      "source": "SSC",
       "license": "Wayfarer",
       "license_id": "JOOL_wayfarer",
       "license_level": "3",
-      "effect": "When you END your movement, may activate this system as a free action. All characters in Burst 1 centered on you take 2 heat and 2 burn.",
+      "effect": "When you END your movement, may activate this system as a free action. All characters in Burst 1 take 2 heat and 2 burn.",
       "sp": "2",
       "description": "Lore",
       "tags": [{"id": "tg_unique"},{"id": "tg_heat_self", "val": 2},{"id": "tg_limited", "val": 3}]
@@ -424,14 +420,14 @@
       "license": "Wayfarer",
       "license_id": "JOOL_wayfarer",
       "license_level": "2",
-      "effect": "The first attack that hit with a MELEE weapon after moving deals +1d3 bonus kinetic damage",
+      "effect": "The first attack that hits with a MELEE weapon after moving deals +1d3 bonus kinetic damage",
       "sp": "1",
       "description": "Lore",
       "tags": [{"id": "tg_unique"}]
     },
     {
       "id": "jo_lane_denial_matrix",
-      "name": "LANE DENIAL MATRIX",
+      "name": "Lane Denial Matrix",
       "source": "SCC",
       "license": "Wayfarer",
       "license_id": "JOOL_wayfarer",

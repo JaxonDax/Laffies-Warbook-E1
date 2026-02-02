@@ -56,7 +56,7 @@
             {
               "name": "Protocol 1 - Engage Defensive Maneuvers",
               "activation": "Protocol",
-              "detail": "Activate the Everest's advanced evasion subroutines, granting your mech +2 Evasion for the next 2 rounds."
+              "detail": "Activate the Comp/Con's advanced evasion subroutines, granting your mech +2 Evasion for the next 2 rounds."
             },
             {
               "name": "Protocol 2 - Offensive Override",
@@ -178,7 +178,7 @@
           {
             "name": "MOMENTUM DRIVE",
             "use": "",
-            "description": "When you BOOST, you may only move in a straight line. During this movement, you may move through spaces occupied by characters, and ignore engagement and difficult terrain terrain. Each character whose space you move through this way takes 2 AP damage."
+            "description": "When you BOOST, you may only move in a straight line. During this movement, you may move through spaces occupied by characters, and ignore engagement and difficult terrain. Each character whose space you move through this way takes 2 AP damage."
           },
           {
             "name": "COMMITTED TO SPEED",

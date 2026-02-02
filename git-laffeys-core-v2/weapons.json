@@ -503,10 +503,6 @@
       {
         "type": "Kinetic",
         "val": "1d3"
-      },
-      {
-        "type": "Explosive",
-        "val": "1d3"
       }
     ],
     "range": [
@@ -693,7 +689,7 @@
     "sp": 1,
     "barrage": true,
     "skirmish": true,
-    "tags": [{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_loading"}],
     "damage": [
       {
         "type": "Kinetic",
@@ -715,7 +711,7 @@
     "name": "Activate Trophy System",
     "activation": "Reaction",
     "detail": "The Trophy System attempts to intercept an incoming attack. 2/Round you can try and intercept an attack that lands within the range of this weapon. You roll a D20+Grit(+Any bonuses to skill checks) against the enemies attack die's result. Due to how intense AOE attacks are you can not intercept them. Melee Attacks are also not able to get intercepted with this.",
-    "frequency": "2/round",
+    "frequency": "1/round",
     "init": "",
     "trigger": "<div>An attack lands within range.</div>"
     }
@@ -783,7 +779,7 @@
   {
     "id": "jo_longshotrifle",
     "name": "Longshot Rifle",
-    "source": "SCC",
+    "source": "SSC",
     "license": "Wayfarer",
     "license_id": "JOOL_wayfarer",
     "license_level": 1,
@@ -812,7 +808,7 @@
   {
     "id": "jo_cavalry_lance",
     "name": "Cavalry Lance",
-    "source": "SCC",
+    "source": "SSC",
     "license": "Wayfarer",
     "license_id": "JOOL_wayfarer",
     "license_level": 2,
@@ -838,7 +834,181 @@
       }
     ],
     "tags": [{"id": "tg_ap"}]
+  },
+      {
+        "id": "DAX_Zorya",
+        "name": "Plasma Thrower 'Zorya'",
+        "source": "EXOTIC",
+        "license": "",
+        "license_id": "",
+        "license_level": 0,
+        "description": "",
+        "mount": "Superheavy",
+        "no_mods": false,
+        "sp": 0,
+        "barrage": true,
+        "skirmish": false,
+        "tags": [{"id": "tg_ordnance"}, {"id": "tg_exotic"}, {"id": "DAX_upgraded", "val": 2}],
+        "profiles": [
+          {
+            "name": "Standard",
+            "type": "CQB",
+            "damage": [
+              {
+                "override": true,
+                "type": "Energy",
+                "val": "1d6+2"
+              },
+              {
+                "override": true,
+                "type": "Burn",
+                "val": "6"
+              }
+            ],
+            "range": [
+              {
+                "override": true,
+                "type": "Line",
+                "val": "10"
+              },
+              {
+                "override": true,
+                "type": "Cone",
+                "val": "7"
+              }
+            ],
+            "effect": "Standard Mode on the Plasma Thrower",
+            "tags": [ {"id": "tg_heat_self", "val": 4}],
+          "actions": [
+          {
+            "name": "Change to Super Charge",
+            "activation": "Full Action",
+            "detail": "Change profile to super charged"
+          }
+        ]
+          },
+          {
+            "name": "Super Charged",
+            "type": "CQB",
+            "damage": [
+              {
+                "type": "Energy",
+                "val": "1d12"
+              },
+              {
+                "type": "Burn",
+                "val": "4"
+              }
+            ],
+            "range": [
+              {
+                "type": "Cone",
+                "val": "11"
+              }
+            ],
+          "actions": [
+          {
+            "name": "Change to Normal Charge",
+            "activation": "Quick Action",
+            "detail": "Change profile to standard"
+          }
+        ],
+            "effect": "In the effected cone the following things happen. 1. All cover types are decreased by one level (unless the cover is resistant/immune to energy or burn).  2. All non cover tiles becomes dangerous and difficult terrain. Any characters starting their turn in the effected area take 5 AP energy damage and 3 HEAT as well as cant clear burn though any means while inside the effected area. The terrain loses its effect becoming regular terrain in 3 turns.",
+            "tags": [ {"id": "tg_heat_self", "val": 10},{"id": "tg_limited", "val": 1}]
+          }]
+      },
+    {
+    "id": "DAX_heretic",
+    "name": "Warpike 'Sinner'",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Main",
+    "type": "Melee",
+    "no_mods": true,
+    "barrage": true,
+    "skirmish": true,
+    "sp": 0,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d8+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 4
+      }
+    ],
+    "tags": [{"id": "tg_ap"},{"id": "tg_thrown", "val": 10},{"id": "DAX_upgraded", "val": 2},{"id": "tg_exotic"}]
+  },
+    {
+    "id": "DAX_javelin",
+    "name": "Javelin",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Auxiliary",
+    "no_mods": true,
+    "barrage": true,
+    "skirmish": true,
+    "sp": 0,
+    "profiles": [
+          {
+            "name": "Thruster Off",
+            "type": "Melee",
+            "damage": [
+              {
+                "override": true,
+                "type": "Kinetic",
+                "val": "2"
+              }
+            ],
+            "range": [
+              {
+                "override": true,
+                "type": "Threat",
+                "val": "2"
+              }
+            ],
+            "on_crit": "Immobilize the enemy. The enemy needs to perform a Hull save to remove the javelin. (If the javelin gets returned though any means this effect is nullified)",
+          "actions": [
+          {
+            "name": "Activate Thrusters",
+            "activation": "Quick Action",
+            "detail": "Change profile to Activated Thrusters"
+          }
+        ]
+          },
+          {
+            "name": "Activated Thrusters",
+            "type": "Melee",
+            "damage": [
+              {
+                "type": "Kinetic",
+                "val": "1d8"
+              }
+            ],
+            "range": [
+              {
+                "type": "Threat",
+                "val": "2"
+              }
+            ],
+            "effect": "Once used return to the Thruster Off profile",
+            "on_hit": "Immobilize the enemy. The enemy needs to perform a Hull save to remove the javelin. (If the javelin gets returned though any means this effect is nullified)"
+          }],
+
+    "tags": [{"id": "tg_ap"},{"id": "tg_thrown", "val": 5},{"id": "tg_limited", "val": 3},{"id": "tg_arcing"}]
+
+    
   }
+  
 
 
 
