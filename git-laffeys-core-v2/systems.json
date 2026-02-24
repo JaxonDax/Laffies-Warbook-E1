@@ -451,7 +451,17 @@
       "sp": "3",
       "description": "Lore",
       "tags": [{"id": "tg_unique"}]
-    }
+    },
+    {
+        "id": "DAX_style",
+        "name": "Multi Lock's System",
+        "source": "EXOTIC",
+        "license": "",
+        "effect": "You cascade at 6 or lower but every time your barrage you are allowed to attack with 3 mounts.",
+        "sp": "0",
+        "description": "LORE",
+        "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"},{"id": "tg_exotic"}]
+      }
 
 
 

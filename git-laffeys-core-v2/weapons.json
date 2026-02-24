@@ -433,7 +433,7 @@
     "no_mods": false,
     "barrage": true,
     "skirmish": true,
-    "On_hit": "Effected targets make an systems save. On failure they become jammed until the end of their next turn",
+    "on_hit": "Effected targets make an systems save. On failure they become jammed until the end of their next turn. Characters can only be Jammed 1/scene.",
     "damage": [
       {
         "type": "Energy",
@@ -592,15 +592,15 @@
     "description": "",
     "mount": "Auxiliary",
     "type": "Launcher",
-    "sp": 0,
+    "sp": 1,
     "no_mods": false,
     "barrage": true,
     "skirmish": true,
-    "effect": "the Blast 1 area becomes difficult terrain and anyone hit with the missile must make a agility save or be slowed. if a target is hit while already being slowed they are immobilized instead for the slows duration.",
+    "on_hit": "Target make a agility save or be slowed till the end of their next turn. if a target is hit while already being slowed they are immobilized instead for the slows duration.",
     "damage": [
       {
         "type": "Energy",
-        "val": "2"
+        "val": "3"
       }
     ],
     "range": [
@@ -658,11 +658,11 @@
     "no_mods": false,
     "barrage": true,
     "skirmish": true,
-    "on_hit": "Effected target must make an Agility or Egineering save. On failure they become stunned till the end of their next turn.",
+    "on_hit": "Effected target must make an Egineering save. On failure they become stunned till the end of their next turn. Characters can only be stunned 2/scene.",
     "damage": [
       {
         "type": "Energy",
-        "val": "3"
+        "val": "4"
       },
         {
         "type": "HEAT",
@@ -710,7 +710,7 @@
     {
     "name": "Activate Trophy System",
     "activation": "Reaction",
-    "detail": "The Trophy System attempts to intercept an incoming attack. 2/Round you can try and intercept an attack that lands within the range of this weapon. You roll a D20+Grit(+Any bonuses to skill checks) against the enemies attack die's result. Due to how intense AOE attacks are you can not intercept them. Melee Attacks are also not able to get intercepted with this.",
+    "detail": "The Trophy System attempts to intercept an incoming attack. 1/Round you can try and intercept an attack that lands within the range of this weapon. You roll a D20+Grit(+Any bonuses to skill checks) against the enemies attack die's result. Due to how intense AOE attacks are you can not intercept them. Melee Attacks are also not able to get intercepted with this.",
     "frequency": "1/round",
     "init": "",
     "trigger": "<div>An attack lands within range.</div>"
@@ -991,7 +991,7 @@
             "damage": [
               {
                 "type": "Kinetic",
-                "val": "1d8"
+                "val": "1d4+4"
               }
             ],
             "range": [
@@ -1004,7 +1004,7 @@
             "on_hit": "Immobilize the enemy. The enemy needs to perform a Hull save to remove the javelin. (If the javelin gets returned though any means this effect is nullified)"
           }],
 
-    "tags": [{"id": "tg_ap"},{"id": "tg_thrown", "val": 5},{"id": "tg_limited", "val": 3},{"id": "tg_arcing"}]
+    "tags": [{"id": "tg_ap"},{"id": "tg_thrown", "val": 10},{"id": "tg_limited", "val": 3},{"id": "tg_arcing"}]
 
     
   }
