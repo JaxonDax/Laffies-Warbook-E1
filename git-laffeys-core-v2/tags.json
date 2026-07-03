@@ -13,5 +13,20 @@
         "id": "DAX_deadly",
         "name": "Deadly {VAL}",
         "description": "When rolling a crit add {VAL}d4 of bonus damage."
+      },
+      {
+        "id": "DAX_pilot_weapon",
+        "name": "Pilot Scale Weapon",
+        "description": "This weapon is sized for pilots and only deals half damage to mechs but gains +1 Accuracy anything size 1 or larger."
+      },
+      {
+        "id": "DAX_anti_mech_pilot_weapon",
+        "name": "Anti-Mech Pilot Weapon",
+        "description": "This weapon is sized for pilots howver it was made to be used against mechs. it gains -1 inaccuracy against any target 1/2 sized target. This weapons also requires the use of power armour."
+      },
+      {
+        "id": "DAX_power_armour",
+        "name": "Power armour",
+        "description": "A heavier and stronger version of any other armour class power armour give you the ability to equip and use heavy weaponry due to the weight and power requirements of those weapons."
       }
 ]

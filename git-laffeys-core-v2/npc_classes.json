@@ -1,3 +1,32 @@
 [
-    
+  {
+    "id": "LAFF_EmergentEscort",
+    "name": "Emergent Escort",
+    "role": "Controller",
+    "info": 
+    {
+      "flavor": "The pristine condition of this drone's armor suggests it has only recently been activated, perhaps even newly-manufactured. Even though it appears to be a relative newcomer to the swarm, there is little questioning that it bears the same deadly technology as its more elderly and experienced kin.",
+      "tactics": "404"
+    },
+    "stats": 
+    {
+      "armor": [0,0,0],
+      "hp": [9,12,15],
+      "evade": [5,7,9],
+      "edef": [5,7,9],
+      "heatcap": [3,6,9],
+      "speed": [10,15,20],
+      "sensor": [76667,76667,76667],
+      "save": [12,14,16],
+      "hull": [1,2,3],
+      "agility": [1,2,3],
+      "systems": [2,3,4],
+      "engineering": [2,3,4],
+      "size": [[0.5],[0.5],[0.5]],
+      "activations": [1,1,1]
+    },
+    "base_features": [""],
+    "optional_features": [""],
+    "power": 100
+  }
 ]

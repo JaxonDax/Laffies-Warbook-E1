@@ -393,6 +393,7 @@
     "no_mods": false,
     "barrage": true,
     "skirmish": true,
+    "effect":"This weapon always fires in a Line from the mech but can fire at range to 15 Range.",
     "damage": [
       {
         "type": "Explosive",
@@ -954,6 +955,7 @@
     "license_level": 0,
     "description": "",
     "mount": "Auxiliary",
+    "type": "Melee",
     "no_mods": true,
     "barrage": true,
     "skirmish": true,
@@ -961,7 +963,6 @@
     "profiles": [
           {
             "name": "Thruster Off",
-            "type": "Melee",
             "damage": [
               {
                 "override": true,
@@ -987,7 +988,6 @@
           },
           {
             "name": "Activated Thrusters",
-            "type": "Melee",
             "damage": [
               {
                 "type": "Kinetic",

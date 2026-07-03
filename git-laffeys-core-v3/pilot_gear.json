@@ -1,0 +1,982 @@
+[
+  {
+    "id": "DAX_Pilot_Weapon_Standard_Issue_Pistol",
+    "name": "KN109 Pistol",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_combat_knife",
+    "name": "Combat Knife",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "tg_thrown", "val": 3},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_energy_pistol",
+    "name": "EG108 Pistol",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_sawed_shotgun",
+    "name": "Sawed Off Shotgun",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Cone",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d4"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_power_knuckles",
+    "name": "Power Knuckles",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_hand_cannon",
+    "name": "Rey Dau Revolver",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "tg_ap"},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": "5"
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d4"
+      },
+      {
+        "type": "Energy",
+        "val": "2"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_Wrist_Rockets",
+    "name": "Wrist Rockets",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_assault_rifle",
+    "name": "KN2109 Assault Rifle",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_pump_shotgun",
+    "name": "Pump-Action Shotgun",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_reliable", "val": 2}
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_laser_rifle",
+    "name": "EG2108 Energy Rifle",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_ap"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d4+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_laser_rifle_pw",
+    "name": "EG2909 Energy Rifle",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_anti_mech_pilot_weapon"},{"id": "tg_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": "1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_AP_RPG",
+    "name": "Rocket-Propelled Grenade",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_ordnance"},{"id": "tg_loading"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_AT_RPG",
+    "name": "Anti Mech Rocket Launcer",
+    "type": "Weapon",
+    "description": "",
+    "effect": "This Weapon does not suffer a damage penalty to mechs",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_ordnance"},{"id": "tg_ap"},{"id": "tg_loading"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_DMR",
+    "name": "KN2109 Marksman Rifle",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_deadly", "val": "1"},{"id": "tg_accurate", "val": "1"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+1"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_Energy_katana",
+    "name": "Cobalt Katana",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_ap"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+3"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_chain_sword",
+    "name": "Chainsaw Sword",
+    "type": "Weapon",
+    "description": "",
+    "on_crit": "Your target becomes Shredded until the end of the current turn.",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_dwarf_hammer",
+    "name": "Dwarf Hammer",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_anti_mech_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_loading"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+4"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_Glaive",
+    "name": "Giant's Glaive",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_anti_mech_pilot_weapon"},{"id": "tg_pilot_weapon"}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d4+4"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_Grizz_fists",
+    "name": "Yarren Cross's Fists",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_Concealed_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_light_pilot_weapon"},{"id": "tg_exotic"},{"id": "DAX_deadly", "val": 2}
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d4"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_grenade_launcher",
+    "name": "Grenade Lancher",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_inaccurate"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d4+2"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_energy_bow",
+    "name": "Sagirius's Bow",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_exotic"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d4+4"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_heavy_hand_cannon",
+    "name": "Rey Dau Hand Cannon",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_anti_mech_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "DAX_light_pilot_weapon"},{"id": "tg_loading"}
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": "8"
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+2"
+      },
+      {
+        "type": "Explosive",
+        "val": "1d4"
+      }
+    ]
+  },
+  {
+    "id": "DAX_Pilot_Weapon_rail_gun",
+    "name": "Rail Sniper",
+    "type": "Weapon",
+    "description": "",
+    "tags": [
+      {"id": "DAX_anti_mech_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "tg_ap"}
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": "10"
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+1"
+      }
+    ]
+  },
+
+
+
+
+
+
+
+  {
+    "id": "DAX_light_hardsuit",
+    "name": "BAC Standard Light Armour",
+    "type": "Armor",
+    "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 6
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 12,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 6,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"}
+    ]
+  },
+  {
+    "id": "DAX_personal_shield",
+    "name": "Personal Shielding",
+    "type": "Armor",
+    "effect": "When you are hit by a ranged weapon, reduce the damage by 1d4+armor value. If the damage is not reduced to zero, the shield burns out and is unusable until the next Rest or Full Repair.",
+    "description": "Kinetic shields are a common choice for personal defense among Karrakin nobles. Despite lacking features considered vital by most pilots, such as strength-augmentation, mech interface components, and protection against environmental hazards, shields have a few notable advantages over hardsuits. Most importantly, their generator packs are compact and easily concealed, enabling discreet use and providing protection with minimal impact on the user’s fashion choices.",
+    "bonuses": [
+      {
+        "id": "pilot_armor",
+        "val": 2
+      },
+      {
+        "id": "pilot_hp",
+        "val": 0
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 10,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 10,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 4,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"}
+    ]
+  },
+  {
+    "id": "DAX_light_hardsuit_RICO",
+    "name": "Corran Katarn's Hardsuit",
+    "type": "Armor",
+    "effect": "Gain 6 Leadership Dice, which which is a d6, and gain the Issue Order Free Action.<br>You can’t use Leadership Dice from other characters as long as you have any remaining. If you have none, you regain 1 Leadership Die when you rest or regain all when you perform a Full Repair.<br>Leadership dice are consumed when expended.<br>additionally, you can issue a command as a reaction at the start of any other player’s turn, any number of times per round.<br>Allies that have your Leadership Dice can expend them to reduce damage by –1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack.",
+    "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 6
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 12,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 6,
+        "replace": true
+      }
+    ],
+        "actions": [
+          {
+            "name": "Issue Order",
+            "activation": "Free",
+            "detail": "1/turn, on your turn as a free action, you may issue an order to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene."
+          },
+          {
+            "name": "Issue Command",
+            "activation": "Reaction",
+            "frequency": "Unlimited",
+            "trigger": "Another player starts their turn.",
+            "detail": "You may issue a command to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene."
+          }
+        ],
+        "counters": [
+          {
+            "id": "Rico_Leader",
+            "name": "Leadership Dice",
+            "default_value": 6,
+            "min": 0,
+            "max": 6
+          }
+        ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "tg_exotic"}]
+  },
+  {
+    "id": "DAX_light_hardsuit_MUDKIP",
+    "name": "Dee Zaster's Hardsuit",
+    "type": "Armor",
+    "effect": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly towards the targeted character before the attack. This movement ignores engagement and doesn’t provoke reactions.<br>All your Concealable Pilot melee weapons gain Thrown 5, if they don’t have this property already – if they already have Thrown, it increases to Thrown 5. At the end of your turn, all weapons you have thrown this turn automatically return to you if you want.<br>1/round, when you hit a character with a melee attack, you may also throw an Concealable Pilot melee weapon as an attack against any character within Range as a free action. This attack can’t deal bonus damage.",
+    "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 6
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 12,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 6,
+        "replace": true
+      }
+    ],
+        "actions": [
+
+        ],
+        "counters": [
+
+        ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "tg_exotic"}]
+  },
+  {
+    "id": "DAX_light_hardsuit_OWLIE",
+    "name": "Eleanore Veymont's Hardsuit",
+    "type": "Armor",
+    "effect": "You gain tech actions as a pilot.",
+    "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 6
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 12,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 6,
+        "replace": true
+      }
+    ],
+        "actions": [
+      {
+        "name": "Jam Weapon",
+        "activation": "Invade",
+        "detail": "Enemy Target's weapons get jammed and cant get used for 1 round. An enemy may only be effected once by this invade."
+      },
+      {
+        "name": "SCAN",
+        "activation": "Quick Tech",
+        "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy. To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly: 1. Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on). 2. One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on. 3. Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech. Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update."
+      },
+      {
+        "name": "Lock On",
+        "activation": "Quick Tech",
+        "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points. To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition."
+      },
+      {
+        "name": "Fragment Signal",
+        "activation": "Invade",
+        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.<br><span class='horus--subtle'>[Feeding false truths to the enemy]</span>"
+      }
+        ],
+        "counters": [
+
+        ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "tg_exotic"}]
+  },
+  {
+    "id": "DAX_light_hardsuit_BONES",
+    "name": "Sagirius Locke's Hardsuit",
+    "type": "Armor",
+    "effect": "You carry a supply of custom ammunition that can be used with all your ranged weapons. Gain the Ammo Case system.<br> Once per turn, when you attack with a ranged weapon, you may expend one charge to apply one of the following effects to your attack: <ul><li> THUMPER: The attack gains KNOCKBACK 1 and deals Explosive damage.</li><li>SHOCK: The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 AP Energy Damage, whether the result is a hit or miss.</li><li>MAG: The attack gains ARCING and deals Kinetic damage.</li></ul><br><br>Upgrade your Ammo Case, gaining new ammunition types, each of which costs two charges rather than one.<br><ul><li>HELLFIRE (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a HULL save or be knocked PRONE.</li><li>Zeus Rounds (2 Charges) : The attack does no damage but target must succeed on a system save or be stunned untill the end of their next turn.</li><li>Icarus Rounds : The attack gains +1 accuracy to flying targets and on hit the target begins to fall</li><li>Stasis Webbing Rounds (2 Charges) : Target makes an Agility save and if failed becomes immobilized untill the end of their next turn</li><li>SABOT (2 charges): The attack gains AP and deals Kinetic damage.</li></ul><br><br>Upgrade your Ammo Case again. If you perform a critical hit using ammunition from your Ammo Case, you don’t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+    "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 6
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 12,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 6,
+        "replace": true
+      }
+    ],
+        "actions": [
+
+        ],
+        "counters": [
+          {
+            "id": "Bones_Ammo",
+            "name": "Custom Ammo",
+            "default_value": 10,
+            "min": 0,
+            "max": 10
+          }
+        ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "tg_exotic"}]
+  },
+  {
+    "id": "DAX_light_hardsuit_power",
+    "name": "BAC Standard Light Power Armour",
+    "type": "Armor",
+    "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 7
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 10,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 7,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 5,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "DAX_power_armour"}]
+  },
+
+
+
+
+
+
+  {
+    "id": "DAX_Assault_hardsuit",
+    "name": "BAC Standard Assault Armour",
+    "type": "Armor",
+    "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user’s strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 8
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 10,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 8,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 4,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"}
+    ]
+  },
+  {
+    "id": "DAX_Assault_hardsuit_power",
+    "name": "BAC Standard Assault Power Armour",
+    "type": "Armor",
+    "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user’s strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 9
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 8,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 9,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 3,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "DAX_power_armour"}]
+  },
+
+
+
+
+
+
+  {
+    "id": "DAX_heavy_hardsuit",
+    "name": "BAC Standard Heavy Power Armour",
+    "type": "Armor",
+    "description": "The heaviest hardsuits. They are always powered and up-armored with thick, composite armor. Heavy hardsuits often feature integrated weapons, powerful mobility suites, and – by augmenting their user’s strength – allow their user to field much heavier weapons than normal infantry can typically carry. Heavy hardsuits are in decline now that half-size chassis are popular, but they are still common among private militaries and middle-tier Diasporan armed forces.",
+    "bonuses": [
+      {
+        "id": "pilot_armor",
+        "val": 2
+      },
+      {
+        "id": "pilot_hp",
+        "val": 10
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 9,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 3,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "DAX_power_armour"}]
+  },
+  {
+    "id": "DAX_heavy_hardsuit_GRIZZ",
+    "name": "Yarren Cross's Hardsuit",
+    "type": "Armor",
+    "effect": "1/round, when you hit with a anti mech weapon, you can make another melee attack with the same weapon as a free action against a different character within Threat and line of sight. This attack deals half damage, if successful.<br>The first time in a round that you perform a critical hit with this or any other equipped anti mech melee weapon, you deal 3 Kinetic damage to all characters and objects of your choice within Threat, other than the one you just attacked.<br>1/round, when you miss with a melee attack, you reroll it against a different target within Threat and line of sight.",
+    "description": "The heaviest hardsuits. They are always powered and up-armored with thick, composite armor. Heavy hardsuits often feature integrated weapons, powerful mobility suites, and – by augmenting their user’s strength – allow their user to field much heavier weapons than normal infantry can typically carry. Heavy hardsuits are in decline now that half-size chassis are popular, but they are still common among private militaries and middle-tier Diasporan armed forces.",
+    "bonuses": [
+      {
+        "id": "pilot_armor",
+        "val": 2
+      },
+      {
+        "id": "pilot_hp",
+        "val": 10
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 6,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 9,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 3,
+        "replace": true
+      }
+    ],
+    "tags": [{"id": "tg_personal_armor"},{"id": "DAX_power_armour"},{"id": "tg_exotic"}]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "DAX_Grizz_Juice",
+    "name": "Jungle Juice",
+    "type": "Gear",
+    "effect": "Expend a charge to inject Jungle Juice into your body.",
+    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.",
+    "actions": [
+      {
+        "name": "Use Stim",
+        "activation": "Quick",
+        "detail": "Expend a charge for injecting Jungle Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times addisionaly increase melee fist damage by 1d8+Grit. Juice occasionally provokes rage in some users. Roll a D100. the double Digit will be how many minutes the effect will last (max 90 min). The Single Digit will determan how many of those minutes are spent in rage (max 10 Min)</li></ul>",
+        "pilot": true
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_gear"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  }
+]

@@ -4,7 +4,8 @@
   "name": "System Compatibility",
   "source": "GMS",
   "effect": "Gain +2 System Points",
-  "description": "by using wasted space you found you were able to put more into your mech than ever before."
+  "description": "by fine tuning and purging some safety features holding you back you found some CPU power spared for even more systems.",
+  "bonuses": [{"id": "sp", "val": 2}]
 },
 {
   "id": "DAX_Corebonus_Superheavy_Overclocking",
@@ -12,5 +13,20 @@
   "source": "HA",
   "effect": "You may use your superheavy weapon when you overcharge as a quick action but you roll your overcharge die again adding the additional heat. This does not trigger the next level of overcharge just the current level again.",
   "description": "HA’s R&D department has found a way to stress a mech’s reactor enough to allow it to fire a super-heavy rated weapon while overcharging. However, tests have shown that the limit of such a modification is typically twice every 10 hours for standard mechs, with more opportunities available if the pilot is skilled in engineering and has additional HA core modifications."
+},
+{
+  "id": "DAX_Corebonus_shock_shield",
+  "name": "Shock Shield",
+  "source": "GMS",
+  "effect": "Your mech gains resistance to AOE Damage.",
+  "description": "Your mech gains extra padding and shielding against attacks that are meant to spread over an area rather than attack single targets",
+  "active_effects": [{
+    "name": "Shock Shield Effect",
+    "detail": "Your mech gains resistance to AOE Damage.",
+    "add_resist": [{
+    "resistance": "aoe",
+    "target": "self"
+                }]
+                    }]
 }
 ]

@@ -1,0 +1,464 @@
+[
+  {
+    "id": "DAX_systems_base_hacking_kit_v2",
+    "name": "Base Hacking Kit V2",
+    "sp": "0",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": "0",
+    "effect": "Your Mech gains the ability to use basic hacking functions",
+    "description": "Made to give basic hacking actions in Foundry",
+    "tags": [{"id": "tg_unique"},{"id": "tg_indestructible"}],
+    "license_id": "",
+    "actions": [
+      {
+        "name": "BOLSTER",
+        "activation": "Quick Tech",
+        "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems. To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time."
+      },
+      {
+        "name": "SCAN",
+        "activation": "Quick Tech",
+        "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy. To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly: 1. Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on). 2. One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on. 3. Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech. Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update."
+      },
+      {
+        "name": "Lock On",
+        "activation": "Quick Tech",
+        "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points. To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition."
+      },
+      {
+        "name": "Fragment Signal",
+        "activation": "Invade",
+        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.<br><span class='horus--subtle'>[Feeding false truths to the enemy]</span>"
+      }
+    ]
+  },
+    {
+      "id": "DAX_damage_control",
+      "name": "Damage Control",
+      "source": "GMS",
+      "license": "Mariana",
+      "license_id": "DAX_FRAMES_Mariana",
+      "license_level": "1",
+      "effect": "When you loose a structure you may choose to activate the following effect: Ignore the effect from losing a structure before the structure die is cast. Once this has been activated mark the damage control as destroyed.",
+      "sp": "1",
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_unique"
+        }
+      ]
+    },
+    {
+      "id": "DAX_assault_damage_control",
+      "name": "Assault Damage Control",
+      "source": "GMS",
+      "license": "Mariana",
+      "license_id": "DAX_FRAMES_Mariana",
+      "license_level": "3",
+      "effect": "",
+      "sp": "3",
+      "description": "LORE",
+      "tags": [
+        {
+          "id": "tg_unique"
+        }
+      ],
+      "actions": [
+        {
+          "name": "Activate assault damage control",
+          "activation": "Reaction",
+          "frequency": "2/Mission", 
+          "trigger": "Mech is about to take any damage.", 
+          "detail": "Once activated the damage control gives the user resistance to all damage, HEAT and BURN till the end of the next round. Gain 5 HEAT once activated."
+        }
+      ]
+    },
+    {
+      "id": "jo_interception_protocol",
+      "name": "Interception Protocol",
+      "source": "GMS",
+      "license": "Castle",
+      "license_id": "JOOL_FRAMES_Castle",
+      "license_level": 3,
+      "effect": "As a Reaction, when an ally within Sensor Range is targeted by an attack and has Lock On, your mech can force the attack to target yourself instead.",
+      "type": "System",
+      "sp": 2,
+      "actions": [
+        {
+          "name": "Activate Interception Protocol",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "When an enemy attacks an ally and the enemy uses lock on thats on the ally.", 
+          "detail": "You may get attacked instead, having the enemy do an attack roll on you."
+        }
+      ]
+    },
+      {
+        "id": "jo_intergrated_jump_jets",
+        "name": "Intergrated Jump Jets",
+        "source": "GMS",
+        "license": "Castle",
+        "license_id": "JOOL_FRAMES_Castle",
+        "license_level": 3,
+        "effect": "As a Quick Action, you may jump up to 2 spaces in any direction, including vertically. Upon landing, all characters (enemies and allies) adjacent to you centered on your landing spot must pass a Hull save or be knocked Prone. This movement does not provoke reactions",
+        "type": "System",
+        "sp": 2,
+        "description": "These GMS-designed jump jets enable high-impact tactical mobility, allowing mechs to reposition without fear of retaliation. Upon landing, the shockwave from the impact destabilizes surrounding units, making it an invaluable tool for disrupting enemy formations or covering quick retreats.",
+        "actions": [
+          {
+            "name": "Goomba Stomp",
+            "detail": "jump up to 2 spaces in any direction, including vertically. Upon landing, all characters (enemies and allies) adjacent to you on your landing spot must pass a Hull save or be knocked Prone. This movement does not provoke reactions",
+            "activation": "Quick Action"
+          }
+        ],
+        "tags": [{"id": "tg_heat_self", "val": 1}]
+      },
+      {
+        "id": "DAX_reinforced_structure",
+        "name": "Reinforced Structure",
+        "source": "GMS",
+        "license": "GMS",
+        "license_level": "0",
+        "effect": "Gain 1 extra structure by sacrificing system space",
+        "sp": "2",
+        "description": "<br><span class='horus--subtle'>[Developed by GMS to cure stupid lancers]</span>",
+        "tags": [
+          {
+            "id": "tg_unique"
+          }, {"id": "tg_indestructible"}
+        ],
+        "bonuses": [
+          {
+            "id": "structure",
+            "val": 1
+          }
+        ]
+      },
+        {
+    "id": "DAX",
+    "name": "Salvo's Shell Box",
+    "source": "DAX",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "1/turn, When you attack with the Howitzer, Siege Cannon, Mortar, or Bolt Thrower, choose one of these weapons. You may expend charges to apply one of the following effects to your attack, paying the listed cost.",
+    "ammo": [
+      {
+        "name": "NUKA-Shells (1 Charge)",
+        "detail": "The attack gains +1d4 Explosive Damage, +1 Blast radius.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "Smoke Shells (1 Charge)",
+        "detail": "The attack deploys soft cover in the form of smoke in a BLAST 2 radius. Smoke lifts 2 rounds from deployment.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "WP Shells (1 Charge)",
+        "detail": "The attack deals double damage to biological targets, no damage to mechs but 1d4 HEAT to mechs.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "AP-G Shells (2 Charges)",
+        "detail": "The attack requires target to have Lock on. Deals Kinetic damage instead of explosive with an extra 1d6 of damage and gains armour piercing. The attack also only focuses on 1 target.",
+        "cost": 2,
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      },
+      {
+        "name": "S-532 Shells (2 Charges)",
+        "detail": "The attack changes to Blast 1, deals kinetic damage, inflicts Shredded to all hit targets until start of next round.",
+        "cost": 2,
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cannon"]
+      }
+    ],
+    "description": "<p><strong>UNION R&amp;D RESPONSE: REQUEST DENIED</strong><br><br><em>Mmm. As expected, <strong><em>Union's</em></strong> Research and Development division has... declined your requisition.</em><br><em>Bureaucracy, you understand. Forms. Protocols.</em><br><strong>But don’t worry, friend.</strong> <em>I have… <strong>connections.</strong> In high places.</em><br><em>Let’s just say I’ve ensured you’ll receive the item anyway.</em><br><em>I’m <strong>most</strong> interested in observing what you do with it.</em><br><em><strong>Make it count.</strong></em></p>"
+  },
+        {
+        "id": "DAX_personalisation_heat",
+        "name": "Personalisation Heat",
+        "source": "EXOTIC",
+        "license": "",
+        "effect": "Gain +1 HEAT Cap ASK THE GM TO USE THIS",
+        "sp": "0",
+        "description": "LORE",
+        "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"},{"id": "tg_exotic"}],
+        "bonuses": [
+          {
+            "id": "heatcap",
+            "val": 1
+          }
+        ]
+      },
+  {
+    "id": "laff_style_ammocase",
+    "name": "Estio's Ammo Case",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "LORE",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "effect": "1/turn, when you attack with a ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost.",
+    "ammo": [
+      {
+        "name": "A.I.S",
+        "detail": "Anti-Infantry-Shrappnel. Despite its name, Anti-Infantry Shrapnel is also designed to target smaller, more fragile mechs. When fired within the weapon's range, you can choose to detonate the round, creating a Blast 1 where the ammo detonates and a Cone 4 towards the target. Any target in cover is unaffected, but any target under size 1 not in cover takes double damage if hit.",
+        "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      }
+    ]
+  },
+    {
+      "id": "laff_bones_ammocase",
+      "name": "Leonidas' Ammo Case",
+      "source": "EXOTIC",
+      "license": "",
+      "license_id": "",
+      "license_level": 0,
+      "description": "LORE",
+      "sp": 1,
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 4
+        },
+        {
+          "id": "tg_turn",
+          "val": 1
+        },
+        {
+          "id": "tg_exotic"
+        }
+      ],
+      "effect": "1/turn, when you attack with a ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost. If you perform a critical hit using ammunition from your Ammo Case, you refund half the cost of any charges used. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+      "ammo": [
+        {
+          "name": "Zeus Rounds (2 Charges)",
+          "detail": "The attack does no damage but target must succeed on a system save or be stunned untill the end of their next turn.",
+          "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+          "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+        },
+        {
+          "name": "Icarus Rounds",
+          "detail": "The attack gains +1 accuracy to flying targets and on hit the target begins to fall",
+          "allowed_sizes": ["Main", "Heavy", "Superheavy"],
+          "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+        }
+      ]
+    },
+      {
+        "id": "LAFF_cheese_buzzdroid",
+        "name": "Buzz Droid",
+        "type": "Drone",
+        "sp": 2,
+        "license_id": "",
+        "source": "EXOTIC",
+        "license": "",
+        "license_level": 0,
+        "actions": [
+          {
+            "name": "Aid Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Removes Jammed or Shredded from the target. The drone is destroyed on use."
+          },
+          {
+            "name": "Sabotage Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target must make a Hull save. On failure, they take +2 Difficulty on checks and saves until the end of their next turn. This effect can be repeated with another Hull save until the target passes. The drone is destroyed on a successful save."
+          },
+          {
+            "name": "Rend Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target gains the Shredded condition until the end of their next turn. To extend this condition in future rounds, make a contested Engineering check. The drone is destroyed on a successful save."
+          },
+          {
+            "name": "Breach  Programing - Buzz Droid",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              }
+            ],
+            "detail": "Target gets a buzz droid thats focused on breaching the cockpit. Roll 1d3+1 to determine the rounds needed to breach the cockpit. The pilot is shredded(killed) if breached. The target or an allied mech can destroy one Buzz Droid per successful Engineering or Systems save."
+          },
+          {
+            "name": "Buzz Droid Swarm",
+            "activation": "Quick",
+            "range": [
+              {
+                "type": "Range",
+                "val": 8
+              },
+              {
+                "type": "Blast",
+                "val": 1
+              }
+            ],
+            "damage": [
+              {
+                "type": "Kinetic",
+                "val": "2"
+              },
+              {
+                "type": "Energy",
+                "val": "1"
+              }
+            ],
+            "detail": "Deploy a swarm thats blast 1. All enemies that enter or start their turn in the effected area take damage. The swarm acts as a drone"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_limited",
+            "val": 2
+          },
+          {
+            "id": "tg_unique"
+          },
+          {
+            "id": "tg_grenade"
+          },
+          {
+            "id": "tg_exotic"
+          },
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_drone"
+          }
+        ]
+      },
+    {
+      "id": "jo_kinetic_wake_emitter",
+      "name": "Kinetic Wake Emitter",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_FRAMES_Wayfarer",
+      "license_level": "1",
+      "effect": "The first time each turn when ever you move in a straight line you may activate this system as a free action. Choose one character adjacent to your movement path. That character must succeed on an Agility save or be KNOCKED PRONE.",
+      "sp": "1",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"}]
+    },
+    {
+      "id": "jo_burnout",
+      "name": "Burnout",
+      "source": "SSC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_FRAMES_Wayfarer",
+      "license_level": "3",
+      "effect": "When you END your movement, may activate this system as a free action. All characters in Burst 1 take 2 heat and 2 burn.",
+      "sp": "2",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"},{"id": "tg_heat_self", "val": 2},{"id": "tg_limited", "val": 3}]
+    },
+    {
+      "id": "jo_knights_couching",
+      "name": "Knights Couching",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_FRAMES_Wayfarer",
+      "license_level": "2",
+      "effect": "The first attack that hits with a MELEE weapon after moving deals +1d3 bonus kinetic damage",
+      "sp": "1",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"}]
+    },
+    {
+      "id": "jo_lane_denial_matrix",
+      "name": "Lane Denial Matrix",
+      "source": "SCC",
+      "license": "Wayfarer",
+      "license_id": "JOOL_FRAMES_Wayfarer",
+      "license_level": "3",
+      "effect": "",
+      "actions": 
+      [
+      {
+        "name": "Activate System",
+        "activation": "Quick",
+        "detail": "When you activate this system, designate a straight line of spaces up to your SPEED originating from your space. This line remains active until the start of your next turn. Gain the Lane Denial reaction."
+      },
+      {
+        "name": "Lane Denial",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character starts any movement inside the designated line, or enters the designated line.",
+        "detail": "Trigger Lane Denial. As a reaction, you immediately move to a free space adjacent to the triggering character, then SKIRMISH against the triggering character. "
+      }
+      ],
+      "sp": "3",
+      "description": "Lore",
+      "tags": [{"id": "tg_unique"}]
+    },
+    {
+        "id": "DAX_style",
+        "name": "Multi Lock's System",
+        "source": "EXOTIC",
+        "license": "",
+        "effect": "You cascade at 6 or lower but every time you barrage you are allowed to attack with 3 mounts.",
+        "sp": "0",
+        "description": "LORE",
+        "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"},{"id": "tg_exotic"}]
+      }
+
+
+
+
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "t2_gatherinformation",
+    "name": "T2: Gather Information",
+    "terse": "Team 2 downtime action",
+    "detail": "You take some time to explore the omninet or contact some people you know for some information. You could also even just go out yourself and search for the information on foot or listen in on bars. What ever you do describe your plan to the GM of where and/or what you are doing to gain this information.<br>Describe your plan and roll Investigate or Word on the Street:<br>",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 5,
+          "text": "If your plan was hostile against a faction roll Act Unseen or Unheard. On a 12 or lower you are spotted and dont gain anything. If you succeed gain easy to get information."
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "text": "You buy enough time, but the situation becomes precarious or desperate. Next time you get this result for the same situation, treat it as 9 or less."
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "text": "You buy as much time as you need, until the next downtime session. Next time you get this result for the same situation, treat it as 10-19."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "You buy as much time as you need, until the next downtime session. Next time you get this result for the same situation, treat it as 10-19."
+        }
+      ]
+    }
+  },
+  {
+    "id": "t2_rest",
+    "name": "T2: Rest",
+    "terse": "Team 2 downtime action",
+    "detail": "Take it easy and laze around before your next big mission. Describe how you are going to rest and gain a temporary +1 Mech skill point. The point expires at the end of the next mission.",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 20,
+          "text": "There is no roll"
+        }
+      ]
+    }
+  },
+  {
+    "id": "t2_get_connected",
+    "name": "T2: Get Connected",
+    "terse": "Team 2 downtime action",
+    "detail": "Call in favors, build bridges. You reach out to someone you know (or want to know) to secure future aid, unlock special missions, or improve your standing with a faction or individual. Describe your plan and roll Get a Hold of Something or Charm:",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 5,
+          "text": "On a 1-7: Your message lands wrong, the meeting goes sideways, or someone takes offense.<br>Roll Stay Cool or Threaten (your choice of approach). On a 12 or less, the contact refuses to help and you gain nothing. On a success, the contact is only barely willing to consider your request, and help will be limited or unreliable."
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "text": "On a 8-12: They’re willing to help, but it comes with costs and multiple conditions. If you’re seeking reputation, you gain access to a mission that awards 1 Reputation Point on completion."
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "text": "On a 18-22: They’re fully on board and help you with no immediate strings attached. If you’re seeking reputation, gain 1 Reputation Point immediately without completing a mission. If you do choose to take a mission anyway, you may negotiate additional rewards."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 23+: You’re offered a special faction-exclusive mission. This option is only available if you already have high reputation with the faction. Otherwise, treat this result as a 22 or less outcome."
+        }
+      ]
+    }
+  },
+  {
+    "id": "t2_creation",
+    "name": "T2: Invent, Create, Upgrade or Modifiy.",
+    "terse": "Team 2 downtime action",
+    "detail": "Begin a project to Invent, Create, Upgrade, or Modify pilot or mech equipment. Talk with the GM to define the project. You may Invent an item that does not yet exist, Create an item that exists but you do not own (or only have a single copy of, such as exotic equipment), or Upgrade or Modify equipment you already possess. The GM will assign <br>how many points are required to finish the project.<br>Describe your plan and roll Invent/Create.",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 5,
+          "text": "On a 1-7: Gain 0 progress. Gain +2 on your next roll for this DT action."
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "text": "On a 8-12: Gain 1 points of progress."
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "text": "On a 13-17: Gain 2 points of progress."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 18-22: Gain 3 points of progress.<br>On a 23+: Gain 4 points of progress."
+        }
+      ]
+    }
+  },
+  {
+    "id": "t2_selfimprovement",
+    "name": "T2: Workout, Train, Practice",
+    "terse": "Team 2 downtime action",
+    "detail": "Start improving yourself be it by yourself or with a trainer. You can only get a max of +4 of pilot and mech Skills. The it takes 4 points to get a level in pilot skill and 6 points fo a mech skill.<br>Describe your plan and roll D20+GRIT.",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 5,
+          "text": "On a 1-7: Gain 0 progress. Gain +2 on your next roll for this DT action."
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "text": "On a 8-12: Gain 1 points of progress."
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "text": "On a 13-17: Gain 2 points of progress."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 18-22: Gain 3 points of progress.<br>On a 23+: Gain 4 points of progress."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 23+: Gain 4 points of progress."
+        }
+      ]
+    }
+  },
+  {
+    "id": "t2_work",
+    "name": "T2: Do a side gig",
+    "terse": "Team 2 downtime action",
+    "detail": "You do a side mission and make some extra cash for yourself or the team. you gain the expected pay for your level divided by how many party members you have.<br>Choose 1 of the following skills for you to roll: Assault, Apply Fists to Faces,  Blow Something Up,  Hack or Fix or Take Someone Out.",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 5,
+          "text": "On a 1-7: You fail the mission and roll a 1d20. On a 1 you have died."
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "text": "On a 8-12: You Finish the mission but there is a consequence.<br>On a 13-17: You finish the mission normally."
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "text": "On a 18-22: You finish the mission and get reputation point."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 23+: You finish the mission and get an extra 25% bonus with an reputation point."
+        }
+      ]
+    }
+  },
+  {
+    "id": "t2_companytime",
+    "name": "T2: Get Organized",
+    "terse": "Team 2 downtime action",
+    "detail": "First time you choose this action you start a company and gain a stat block. Any action after the first you roll.<br>Describe your plan and roll Lead/Inspire.",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 5,
+          "text": "On a 1-7: Something causes a mess up for your company. Leaks, Spies, poor management or even a scandal. whatever it is your company loses a DT worth of income and you choose what other stat you lose by 1."
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "text": "On a 8-12: All stays stable so the company roll gets a +8 to its next DT roll. "
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "text": "On a 13-17: With your oversight the company grows and gains 1 point any a stat of your choosing."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 18-22: The company gains one DT worth of income and 1 point of any stat of your choosing."
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "text": "On a 23+: The company gains two DTs worth of income and 2 points of any stat of your choosing."
+        }
+      ]
+    }
+  }
+]
+

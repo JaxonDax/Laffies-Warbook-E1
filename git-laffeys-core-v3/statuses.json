@@ -1,0 +1,29 @@
+[
+{
+  "id": "DAX_STATUS_TAUNTED",
+  "name": "Taunted",
+  "type": "Condition",
+  "effects": "Taunted mechs gain a -2 Difficulty on attacking anything than the source.",
+  "terse": "-2 Difficulty attacking anything but the source.",
+  "icon_url": "https://wiki.leagueoflegends.com/en-us/images/Wolf%27s_Pact_profileicon.png?5a9b8"
+},
+{
+  "id": "DAX_STATUS_NEUT1",
+  "name": "Energy Core Neutralized 1",
+  "type": "Condition",
+  "effects": "Your mech is unable to overcharge.",
+  "terse": "Your mech is unable to overcharge.",
+  "icon_url": "https://wiki.eveuniversity.org/images/7/76/Icon_energy_neutralizer_i.png"
+},
+{
+  "id": "DAX_STATUS_NEUT2",
+  "name": "Energy Core Neutralized 2",
+  "type": "Condition",
+  "effects": "Your mech is unable to overcharge and will shutdown if it cant pass an engineering save at the end of its turn before any actions.",
+  "terse": "Your mech is unable to overcharge and pass an engineering save or shutdown.",
+  "icon_url": "https://wiki.eveuniversity.org/images/5/59/Vamp.png"
+}
+
+
+
+]

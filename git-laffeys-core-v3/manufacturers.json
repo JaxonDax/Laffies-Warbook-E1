@@ -1,0 +1,20 @@
+[
+  {
+    "id": "DAX",
+    "name": "Unknown Faction",
+    "logo_url": "https://i.imgur.com/AEoF4nb.png",
+    "light": "#991E2A",
+    "dark": "#db1a2d",
+    "quote": "Your Friend In High Places",
+    "description": "<br><span class='horus--subtle'>[Unknown Faction]</span>"
+  },
+    {
+    "id": "ACR",
+    "name": "ACRUX",
+    "logo_url": "https://i.imgur.com/AERMTKH.png",
+    "light": "#991E2A",
+    "dark": "#db1a2d",
+    "quote": "\\\\",
+    "description": "////"
+  }
+]
