@@ -16,17 +16,22 @@
         {
           "min": 6,
           "max": 10,
-          "text": "You buy enough time, but the situation becomes precarious or desperate. Next time you get this result for the same situation, treat it as 9 or less."
+          "text": "On a 8-12: You gain Easy to get information. Ask the GM 1 Question."
         },
         {
           "min": 11,
           "max": 15,
-          "text": "You buy as much time as you need, until the next downtime session. Next time you get this result for the same situation, treat it as 10-19."
+          "text": "On a 13-17: You gain Hard to get information. Ask the GM 2 Questions."
         },
         {
           "min": 16,
+          "max": 19,
+          "text": "On a 18-22: You gain Challenging to get information. Ask the GM 3 Questions."
+        },
+        {
+          "min": 20,
           "max": 20,
-          "text": "You buy as much time as you need, until the next downtime session. Next time you get this result for the same situation, treat it as 10-19."
+          "text": "On a 23+: You gain all the information you can realisticly get. Ask the GM all questions you have."
         }
       ]
     }
@@ -106,8 +111,13 @@
         },
         {
           "min": 16,
-          "max": 20,
-          "text": "On a 18-22: Gain 3 points of progress.<br>On a 23+: Gain 4 points of progress."
+          "max": 19,
+          "text": "On a 18-22: Gain 3 points of progress."
+        },
+        {
+          "min": 16,
+          "max": 19,
+          "text": "On a 23+: Gain 4 points of progress."
         }
       ]
     }
@@ -139,7 +149,7 @@
         {
           "min": 16,
           "max": 20,
-          "text": "On a 18-22: Gain 3 points of progress.<br>On a 23+: Gain 4 points of progress."
+          "text": "On a 18-22: Gain 3 points of progress."
         },
         {
           "min": 16,
@@ -166,12 +176,12 @@
         {
           "min": 6,
           "max": 10,
-          "text": "On a 8-12: You Finish the mission but there is a consequence.<br>On a 13-17: You finish the mission normally."
+          "text": "On a 8-12: You Finish the mission but there is a consequence."
         },
         {
           "min": 11,
           "max": 15,
-          "text": "On a 18-22: You finish the mission and get reputation point."
+          "text": "<br>On a 13-17: You finish the mission normally."
         },
         {
           "min": 16,

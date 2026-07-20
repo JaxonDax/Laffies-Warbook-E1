@@ -1,0 +1,247 @@
+========================================================================================
+                    CORPORATE TIER CAPS & STAFF EXPERIENCE RULES
+========================================================================================
+Your company is restricted by its current scale. To push your attributes higher and 
+unlock sophisticated manufacturing techniques, you must invest in infrastructure upgrades.
+
+[ 📈 STAT CAPS BY COMPANY TIER ]
+Your Tier dictates the absolute maximum limit for your operational attributes:
+ 👉 TIER I   : Attribute Stats are capped at a maximum of  5 / 5
+ 👉 TIER II  : Attribute Stats are capped at a maximum of 10 / 10
+ 👉 TIER III : Attribute Stats are capped at a maximum of 15 / 15
+
+[ 👥 STAFF EXPERIENCE (XP) & PROMOTIONS ]
+Your company's efficiency grows through the baseline competence of your crew.
+ ├─ Automatic Gain : The staff automatically gains +1 XP at the end of every turn loop.
+ ├─ GM Bonus XP     : The GM may award an extra +1 Staff XP for defensive combat victories.
+ └─ Breakthroughs   : At 5 Staff XP, the crew hits an operational milestone. Reset 
+                      XP to 0 and claim one Milestone Reward:
+                      👉 Add +1 to any Stat (Up to your current Tier Cap).
+                      👉 Save the Breakthrough toward a permanent Company Tier upgrade.
+
+[ 🚀 UPGRADING COMPANY TIER ]
+To scale up your entire operations, you must spend saved Breakthroughs and pay an expansion tax:
+ ├─ Upgrade to Tier II : Costs 3 Saved Breakthroughs AND 150,000 Manna.
+ └─ Upgrade to Tier III: Costs 3 Saved Breakthroughs AND 500,000 Manna.
+========================================================================================
+========================================================================================
+                     THE CORPORATE DOWNTIME LOOP (PHASES 1 - 4)
+========================================================================================
+[FLEET BASELINE CAPACITY: Sum of all owned ship Max Gross Yield values in Manna]
+
+----------------------------------------------------------------------------------------
+📌 PHASE 1: EXTRACTION PROTOCOL (The Harvest)
+----------------------------------------------------------------------------------------
+The player rolls 1d100 and adds the company's Extraction Modifier: (OPERATIONS x 5).
+
+*NOTE: The total roll CAN exceed 100% to reflect zero-waste mining or rare veins.*
+ ├─ Under 100% : Standard yield percentage of the fleet's baseline capacity.
+ └─ Over 100%  : Over-Extraction! Your crew found rare crystalline isotopes or achieved 
+                 perfect extraction efficiency, generating a bounty past peak capacity.
+                 (e.g., A total roll of 115 = 115% of the fleet's baseline capacity)
+
+----------------------------------------------------------------------------------------
+📌 PHASE 2: HAZARD EVALUATION (The Danger)
+----------------------------------------------------------------------------------------
+The GM rolls 1d100 and SUBTRACTS the fleet's Defense Modifier: (SECURITY x 5).
+
+ [Modified Roll] | SEVERITY        | IMPACT ON PHASE 1 BASE T0 ORE
+ ----------------+-----------------+----------------------------------------------------
+  01 - 70        | Clear Skies     | 0% Ore Loss. Operations run smoothly.
+  71 - 85        | Minor Incident  | 15% Ore Loss. (Equipment strain / clogged lines)
+  86 - 95        | Major Crisis    | 40% Ore Loss. (Structural damage / Raider skirmish)
+  96 - 100+      | Catastrophic    | 80% Ore Loss. *TRIGGER MECH COMBAT ENCOUNTER*
+ ---------------------------------------------------------------------------------------
+ *GM Note: If players deploy mechs and win the Catastrophic battle, they recover the lost ore!
+
+----------------------------------------------------------------------------------------
+📌 PHASE 3: MANUFACTURING & FACTORY PRODUCTION
+----------------------------------------------------------------------------------------
+Route raw ore through the factory decks to increase its value. All production is instant.
+👉 PRODUCTION INVESTMENT CAP: Max ore sent to machines cannot exceed (CAPITAL x 50,000 Manna).
+
+----------------------------------------------------------------------------------------
+📌 PHASE 4: THE MARKET & LIQUIDATION
+----------------------------------------------------------------------------------------
+Distribute your cargo safely to long-term contract clients (gated by INFLUENCE), and 
+dump any excess volume onto the uncontracted public open market.
+========================================================================================
+========================================================================================
+                 PHASE 3 LEDGER: PRODUCTION MULTIPLIERS 
+========================================================================================
+*Gating Limits: Tier I companies craft up to T2. Tier II up to T4. Tier III up to T5.*
+
+TIER & ITEM TYPE        | VALUE MULTIPLIER  | PROD. COST | SHORTCUT (From T0 Base)
+------------------------+-------------------+------------+------------------------------
+[T0] Raw Ore            | Baseline Value    | 0%         | x 1.00
+------------------------+-------------------+------------+------------------------------
+[T1] Heavy Industrial   | Prev Value x 1.3  | 20%        | x 1.04 of T0 value
+------------------------+-------------------+------------+------------------------------
+[T2] Advanced Systems   | Prev Value x 1.4  | 20%        | x 1.16 of T0 value
+------------------------+-------------------+------------+------------------------------
+[T3] Military Hardware  | Prev Value x 1.5  | 25%        | x 1.30 of T0 value
+------------------------+-------------------+------------+------------------------------
+[T4] NHP Components     | Prev Value x 1.6  | 25%        | x 1.56 of T0 value
+------------------------+-------------------+------------+------------------------------
+[T5] Paracausal Tech    | Prev Value x 2.0  | 30%        | x 2.18 of T0 value
+========================================================================================
+========================================================================================
+               PHASE 4 LEDGER: REGULAR CLIENT CONTRACTS & THE OPEN MARKET
+========================================================================================
+Your INFLUENCE stat determines how many Active Contract Slots your company maintains.
+(1 Slot per point of Influence). You may allocate cargo safely to Contracts before 
+rolling leftover inventory on the Open Market.
+
+[ 🤝 CONTRACT CATALOG ]
+Choose which regular clients fill your open slots. You can swap contracts at the 
+beginning of any downtime cycle.
+
+ TIER     | CLIENT CORPORATE NAME      | CONTRACT LIMITATION & GUARANTEED PAYOUT RATE
+ ---------+----------------------------+------------------------------------------------
+  TIER I  | Colonial Logistics Corp    | Buys up to 40,000 Manna of T0/T1 at locked 1.05x
+          | Local Heavy Industry       | Buys up to 30,000 Manna of T1/T2 at locked 1.10x
+ ---------+----------------------------+------------------------------------------------
+  TIER II | Regional Militia Fleet     | Buys up to 75,000 Manna of T2/T3 at locked 1.15x
+          | Sub-Sector Tech Conglom.   | Buys up to 60,000 Manna of T3/T4 at locked 1.20x
+ ---------+----------------------------+------------------------------------------------
+  TIER III| Interstellar Mega-Corp     | Buys up to 150,000 Manna of T4/T5 at locked 1.25x
+          | Karrakin Trade Baron       | Buys up to 100,000 Manna of ANY at locked 1.35x
+
+----------------------------------------------------------------------------------------
+[ 🌐 THE PUBLIC OPEN MARKET (RAW 1d100 - NO MODIFIERS) ]
+Dumping remaining cargo onto uncontracted public open exchanges. Roll a flat 1d100.
+
+ [d100 Roll] | MARKET STATUS      | PRICE MODIFIER | NARRATIVE IMPACT
+ ------------+--------------------+----------------+------------------------------------
+  01 - 10    | Market Crash       | x 0.75         | Sudden tariff spikes or sector panic.
+  11 - 25    | Minor Market Dip   | x 0.90         | Temporary local over-supply.
+  26 - 85    | STABLE DEMAND      | x 1.00         | Standard baseline galactic value.
+  86 - 95    | High Demand        | x 1.15         | Local colony experiencing growth.
+  96 - 100   | Extreme Scarcity   | x 1.30         | Supply lines cut; desperation buy.
+========================================================================================
+
+
+
+========================================================================================
+                         CORPORATE DOWNTIME TURN REPORT
+========================================================================================
+COMPANY NAME : [                      ]   |   TURN / CYCLE : # [    ]
+----------------------------------------------------------------------------------------
+
+📊 CURRENT COMPANY PROFILE
+ ├─ Company Tier : [   ] (I, II, or III)
+ ├─ Capital     : [   ]/5  |  Influence : [   ]/5
+ └─ Operations  : [   ]/5  |  Security  : [   ]/5
+
+----------------------------------------------------------------------------------------
+🛰️ PHASE 1: EXTRACTION
+----------------------------------------------------------------------------------------
+ ├─ Fleet Baseline Capacity : [              ] Manna
+ ├─ 1d100 Yield Roll        : [    ]
+ ├─ Operations Modifier     : + [    ] (Operations x 5)
+ ├─ TOTAL YIELD PERCENTAGE  : [    ] %
+ └─ 💰 BASE T0 ORE VALUE    : [              ] Manna
+    (*Formula: Baseline Capacity x Total Yield % as a decimal, e.g., 0.62*)
+
+----------------------------------------------------------------------------------------
+⚡ PHASE 2: HAZARDS
+----------------------------------------------------------------------------------------
+ ├─ 1d100 GM Hazard Roll    : [    ]
+ ├─ Security Modifier       : - [    ] (Security x 5)
+ ├─ ADJUSTED HAZARD ROLL    : [    ]
+ ├─ Hazard Severity Level   : [              ] (Clear / Minor / Major / Catastrophic)
+ ├─ Ore Loss Percentage     : [    ] % (0%, 15%, 40%, or 80%)
+ └─ 📦 REMAINING T0 ORE      : [              ] Manna
+    (*Formula: Base T0 Ore minus Ore Loss %*)
+
+----------------------------------------------------------------------------------------
+⚙️ PHASE 3: MANUFACTURING (FACTORY PRODUCTION)
+----------------------------------------------------------------------------------------
+ ├─ Capital Investment Cap  : [              ] Manna (Capital x 50,000)
+ ├─ Target Crafting Tier    : [ T   ] (T0 through T5)
+ ├─ Shortcut Multiplier     : [ x      ] (From Phase 3 reference ledger)
+ |
+ ├─ 🏭 ORE SENT TO FACTORY   : [              ] Manna (Cannot exceed Investment Cap)
+ ├─ 📦 LEFTOVER RAW T0 ORE  : [              ] Manna (Remaining T0 Ore minus Factory Ore)
+ |
+ └─ 💎 POST-PRODUCTION VALUE : [              ] Manna 
+    (*Formula: [Factory Ore x Multiplier] + Leftover Raw Ore*)
+
+----------------------------------------------------------------------------------------
+🏛️ PHASE 4: MARKET & LIQUIDATION (CONTRACTS & OPEN MARKET)
+----------------------------------------------------------------------------------------
+ ├─ Total Cargo to Liquidate: [              ] Manna (From Phase 3 Post-Production Value)
+ |
+ 🤝 CONTRACT SALES (INFLUENCE slots)
+  ├─ Client 1 Locked Payout: [              ] Manna sent to [Client Name] at [ x      ]
+  ├─ Client 2 Locked Payout: [              ] Manna sent to [Client Name] at [ x      ]
+  └─ Total Contract Profit : [              ] Manna
+ |
+ 🌐 OPEN MARKET SALES
+  ├─ Remaining Excess Cargo: [              ] Manna (Total Cargo minus Contract Cargo)
+  ├─ Flat 1d100 Market Roll: [    ] 
+  ├─ Open Market Modifier  : [ x      ] (From the Raw 1d100 Market Ledger)
+  └─ Total Open Market Profit: [              ] Manna
+ |
+ └─ 📈 GROSS DOWNTIME EARNED: [              ] Manna
+    (*Formula: Total Contract Profit + Total Open Market Profit*)
+
+----------------------------------------------------------------------------------------
+📈 END OF TURN MAINTENANCE, DEBT, & GROWTH
+----------------------------------------------------------------------------------------
+ ├─ Initial Gross Earnings  : [              ] Manna 
+ |
+ ├─ 🧾 DEBT SERVICE         : - [              ] Manna (Minimum payment = 10% of total debt)
+ |  └─ Remaining Company Debt Balance: [              ] Manna
+ |
+ ├─ 👥 INVESTOR DIVIDEND    : - [              ] Manna (If backing players own an equity %)
+ |
+ ├─ 🏦 NET TREASURY GAIN    : [              ] Manna (Earnings minus Debt and Dividends)
+ └─ 🏦 NEW TREASURY TOTAL   : [              ] Manna
+ 
+ ├─ Staff XP Tracker        : [   ] / 5  -> (+1 XP automatically added)
+ ├─ New Staff XP Total      : [   ] / 5 
+ └─ Milestone Achieved      : [ YES / NO ] (If 5/5, list stat upgraded or breakthrough saved)
+    └─ Breakthrough Action  : [                                                          ]
+========================================================================================
+
+
+
+========================================================================================
+                         CORPORATE MASTER LEDGER: [COMPANY NAME]
+========================================================================================
+🔄 CURRENT CYCLE: Turn # [   ]  |  📈 STAFF XP TRACKER: [ 0 / 5 ] (Saved Breakthroughs: 0)
+👑 COMPANY TIER : TIER I       |  🛡️ REPUTATION      : Unknown
+----------------------------------------------------------------------------------------
+
+📊 CORE ATTRIBUTES & MODIFIERS (CURRENT MAXIMUM CAP: BASED ON TIER)
+ ├─ OPERATIONS : [□□□□□] (0/5)  ->  Phase 1 Extraction: +(OPERATIONS x 5)% Yield
+ ├─ SECURITY   : [□□□□□] (0/5)  ->  Phase 2 Hazard Mitigation: -(SECURITY x 5) to GM Roll
+ ├─ INFLUENCE  : [□□□□□] (0/5)  ->  Active Contract Slots: [ ] Available
+ └─ CAPITAL    : [□□□□□] (0/5)  ->  Max Factory Investment: (CAPITAL x 50,000) Manna
+
+----------------------------------------------------------------------------------------
+🏦 FINANCIAL BALANCE SHEET
+ ├─ 💳 LIQUID TREASURY : [              ] Manna (Spendable cash in corporate vaults)
+ |
+ ├─ 🧾 OUTSTANDING DEBT: [              ] Manna
+ |  └─ Next Turn Minimum Debt Service: [              ] Manna 
+ |
+ └─ 👥 BACKER INVESTMENTS
+    └─ [Player Investor Name]: [          ] Manna Principal | Owed: [   ]% Per-Turn Dividend
+
+----------------------------------------------------------------------------------------
+🤝 ACTIVE CLIENT CONTRACTS
+ ├─ Slot 1: [                                ] | Cap: [      ] | Rate: [     ] | [ACTIVE]
+ ├─ Slot 2: [                                ] | Cap: [      ] | Rate: [     ] | [LOCKED]
+ └─ Slot 3: [                                ] | Cap: [      ] | Rate: [     ] | [LOCKED]
+
+----------------------------------------------------------------------------------------
+📦 THE FLEET WAREHOUSE (UNSOLD STOCK STORAGE)
+Optional: Cargo held in storage hulls if players choose not to sell immediately.
+
+ ├─ [ T   ] [Item Type/Name        ] : [              ] Manna Value
+ ├─ [ T   ] [Item Type/Name        ] : [              ] Manna Value
+ ├─ [ T   ] [Item Type/Name        ] : [              ] Manna Value
+ └─ [ T   ] [Item Type/Name        ] : [              ] Manna Value
+========================================================================================
