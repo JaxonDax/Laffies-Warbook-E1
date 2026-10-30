@@ -1,0 +1,86 @@
+[
+  {
+    "id": "DAX_NPC_RECONDRONET1",
+    "name": "R.O.G.E.R.",
+    "role": "Support",
+    "info": {
+      "flavor": "Remote Observation & Geospatial Electronic Reconnaissance Drone or rather R.O.G.E.R.",
+      "tactics": "HOW TO USE"
+    },
+    "stats": 
+    {
+      "armor": [0,1,1],
+      "hp": [8,8,12],
+      "structure": [2,2,3],
+      "stress": [1,1,2],
+      "evade": [14,14,12],
+      "edef": [5,7,10],
+      "heatcap": [4,4,6],
+      "speed": [10,13,15],
+      "sensor": [20,25,30],
+      "save": [10,12,13],
+      "hull": [-3,-2,0],
+      "agility": [3,4,5],
+      "systems": [2,3,5],
+      "engineering": [0,0,0],
+      "size": [[2],[2],[3]],
+      "activations": [1,1,1]
+    },
+    "base_features": [
+      "DAX_NPC_RECONDRONET1_LASERDES",
+      "DAX_NPC_RECONDRONET1_Trait_limits"
+    ],
+    "optional_features": [
+      "DAX_NPC_RECONDRONET1_HOVERDRONE",
+      "DAX_NPC_RECONDRONET1_Missilepods",
+      "DAX_NPC_RECONDRONET1_Fixedwing",
+      "DAX_NPC_RECONDRONET1_Trait_ExpandedBombBay",
+      "DAX_NPC_RECONDRONET1_Trait_ExpandedMissileBay",
+      "DAX_NPC_RECONDRONET1_WeaponSystem_BombBay"
+    ],
+    "power": 100
+  },
+  {
+    "id": "DAX_NPC_SUBALTERN_TEAM",
+    "name": "Plan B",
+    "role": "Striker",
+    "info": {
+      "flavor": "6 Subalterns. Subalten Team made from a shard of Tanuki",
+      "tactics": "HOW TO USE"
+    },
+    "stats": 
+    {
+      "armor": [1,0,0],
+      "hp": [18,1,1],
+      "structure": [1,0,0],
+      "stress": [1,0,0],
+      "evade": [8,0,0],
+      "edef": [8,0,0],
+      "heatcap": [4,0,0],
+      "speed": [6,0,0],
+      "sensor": [10,0,0],
+      "save": [10,0,0],
+      "hull": [0,0,0],
+      "agility": [3,0,0],
+      "systems": [1,0,0],
+      "engineering": [0,0,0],
+      "size": [[4],[0],[0]],
+      "activations": [1,1,1]
+    },
+    "base_features": [
+      "DAX_NPC_RECONDRONET1_LASERDES",
+      "DAX_NPC_RECONDRONET1_Trait_limits"
+    ],
+    "optional_features": [
+      "DAX_NPC_RECONDRONET1_HOVERDRONE",
+      "DAX_NPC_RECONDRONET1_Missilepods",
+      "DAX_NPC_RECONDRONET1_Fixedwing",
+      "DAX_NPC_RECONDRONET1_Trait_ExpandedBombBay",
+      "DAX_NPC_RECONDRONET1_Trait_ExpandedMissileBay",
+      "DAX_NPC_RECONDRONET1_WeaponSystem_BombBay"
+    ],
+    "power": 100
+  }
+
+
+]

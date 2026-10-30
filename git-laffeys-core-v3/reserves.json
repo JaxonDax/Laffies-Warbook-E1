@@ -1,0 +1,23 @@
+[
+  {
+    "id": "DAX_Commodities_Vaccines",
+    "name": "Trade Commodity: Vaccines",
+    "type": "Trade Commodities",
+    "label": "Commodities",
+    "description": "1 Storage Unit with Vaccines. Able to be sold to the public market for 70K Manna."
+  },
+  {
+    "id": "DAX_Commodities_falsecredit",
+    "name": "X Counterfeit Credits",
+    "type": "Trade Commodities",
+    "label": "Commodities",
+    "description": "X amount of counterfeit credits of the local currency in system. Some non offical channels might be intrested in being sold these at 1 Manna per 100 Credits."
+  },
+  {
+    "id": "DAX_Commodities_Synthetic_Synapses",
+    "name": "Synthetic Synapses",
+    "type": "Trade Commodities",
+    "label": "Commodities",
+    "description": "1 Storage Unit with Synthetic Synapses. Able to be sold to the public market for 90K Manna."
+  }
+]

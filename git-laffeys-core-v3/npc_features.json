@@ -1,0 +1,197 @@
+[
+{
+    "id": "DAX_NPC_RECONDRONET1_LASERDES",
+    "name": "laser Designator",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "R.O.G.E.R.",
+            "base": true
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "Attack Invisible target with -8 Flat Difficuty instead of Invisible 50/50",
+    "tags": [],
+    "weapon_type": "Utility",
+    "attack_bonus": [0,0,0],
+    "accuracy": [1,1,1],
+    "damage": [],
+    "range": [{"type": "Range","val": 30}],
+    "on_hit": "The target gains lock on, loses Invisible and Hidden",
+    "on_crit": "At T2 target gains Exposed untill it loses lock on. A character can only be affected by this once per scene."
+},
+{
+    "id": "DAX_NPC_RECONDRONET1_houndmissile",
+    "name": "Hound Missile",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "R.O.G.E.R.",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "Can only be fired at Altitude 20 or lower",
+    "tags": [{"id": "tg_seeking"}, {"id": "tg_limited", "val": "2/4/8"}],
+    "weapon_type": "Launcher",
+    "attack_bonus": [0,2,2],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Variable","val": "1d4+4"}],
+    "range": [{"type": "Range","val": 20}],
+    "on_hit": "",
+    "on_crit": ""
+},
+{
+    "id": "DAX_NPC_RECONDRONET1_laserguidedhemissile",
+    "name": "Laser Guided HE Missile",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "R.O.G.E.R.",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "Can only be fired at Altitude 20 or lower and if the target has lock on this missile does not miss",
+    "tags": [{"id": "tg_limited", "val": "1/2/4"}],
+    "weapon_type": "Launcher",
+    "attack_bonus": [0,0,0],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Explosive","val": "1d6+4"}],
+    "range": [{"type": "Range","val": 20}],
+    "on_hit": "",
+    "on_crit": ""
+},
+{
+    "id": "DAX_NPC_RECONDRONET1_Rocketpod",
+    "name": "Rocket Pods",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "R.O.G.E.R.",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "Can only be fired at Altitude 10 or lower | You may deploy the line attack X many spaces you are in the air I.E. If you are altitude 10 then you can start deploying the line 10 spaces from you.",
+    "tags": [{"id": "tg_limited", "val": "4/4/8"}],
+    "weapon_type": "Launcher",
+    "attack_bonus": [0,0,0],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Explosive","val": "1d4"}],
+    "range": [{"type": "Line","val": 5}],
+    "on_hit": "",
+    "on_crit": ""
+},
+{
+    "id": "DAX_NPC_RECONDRONET1_Rocketpod",
+    "name": "Torpedo",
+    "origin": 
+            {
+            "type": "Class",
+            "name": "R.O.G.E.R.",
+            "base": false
+            },
+    "locked": false,
+    "type": "Weapon",
+    "effect": " Can only be fired at Altitude 10 or lower",
+    "tags": [{"id": "tg_ap"},{"id": "tg_limited", "val": "1/1/2"}],
+    "weapon_type": "Launcher",
+    "attack_bonus": [2,2,3],
+    "accuracy": [0,0,0],
+    "damage": [{"type": "Explosive","val": "8"}],
+    "range": [{"type": "Range","val": "15"}],
+    "on_hit": "",
+    "on_crit": ""
+},
+{
+"id": "DAX_NPC_RECONDRONET1_HOVERDRONE",
+"name": "Drone Type: Hover ",
+"origin": 
+        {
+        "type": "Class",
+        "name": "R.O.G.E.R.",
+        "base": false
+        },
+"locked": false,
+"type": "Trait",
+"effect": "All movement is considered hovering. This drone can only hover as high as 5/10/13 off the ground and cant take fall damage.",
+"immunity": [],
+"tags": []
+},
+{
+"id": "DAX_NPC_RECONDRONET1_Trait_limits",
+"name": "R.O.G.E.R. Specs",
+"origin": 
+        {
+        "type": "Class",
+        "name": "R.O.G.E.R.",
+        "base": true
+        },
+"locked": true,
+"type": "Trait",
+"effect": "This drone has the capacity for 1/2/4 Weapon Systems and 2/2/4 Weapons. Also requires a Drone Type to be chosen: Fixed Wing or Hover ",
+"immunity": [],
+"tags": []
+},
+{
+"id": "DAX_NPC_RECONDRONET1_Fixedwing",
+"name": "Drone Type: Fixed Wing ",
+"origin": 
+        {
+        "type": "Class",
+        "name": "R.O.G.E.R.",
+        "base": false
+        },
+"locked": false,
+"type": "Trait",
+"effect": "All movement is considered flying and is required to move atleast half its normal movement rounded up or it starts falling at the end of its turn to which its Stunned till the end of combat.<br>All movement is required to be in a straight line.<br>At altitude 10 or lower gain 1 accuracy on offensive actions, at altitude 20 gain soft cover, at altitude 30 gain hard cover.",
+"immunity": [],
+"tags": []
+},
+{
+"id": "DAX_NPC_RECONDRONET1_Trait_ExpandedBombBay",
+"name": "Expanded System: Bomb Bay",
+"origin": 
+        {
+        "type": "Class",
+        "name": "R.O.G.E.R.",
+        "base": false
+        },
+"locked": false,
+"type": "Trait",
+"effect": "Have a Copy of a bomb bay as a system",
+"immunity": [],
+"tags": []
+},
+{
+"id": "DAX_NPC_RECONDRONET1_Trait_ExpandedMissileBay",
+"name": "Expanded System: Missile & Torpedo Bay",
+"origin": 
+        {
+        "type": "Class",
+        "name": "R.O.G.E.R.",
+        "base": false
+        },
+"locked": false,
+"type": "Trait",
+"effect": "Have a copy of a launcher weapon",
+"immunity": [],
+"tags": []
+},
+{
+"id": "DAX_NPC_RECONDRONET1_WeaponSystem_BombBay",
+"name": "Weapon System: Bomb Bay",
+"origin": 
+        {
+        "type": "Class",
+        "name": "R.O.G.E.R.",
+        "base": false
+        },
+"locked": false,
+"type": "System",
+"effect": "As a quick action you may choose which ordnance to use at a [X] cost and then mark the target area. The enemies will know the target area.<br>Bombs fall 10 spaces at the end of your turn. <br><br>Light Bomb [1] | Blast 1 1d6 Explosive <br>Medium Bomb [2] | Blast 2 1d6+4 Explosive <br>Heavy Bomb [3] | Blast 3 1d6+8 Explosive",
+"immunity": [],
+"tags": [{"id": "tg_limited","val": "3/6/9"}]
+}
+]

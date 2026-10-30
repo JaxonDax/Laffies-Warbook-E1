@@ -417,7 +417,7 @@
     "type": "Weapon",
     "description": "",
     "tags": [
-      {"id": "DAX_Concealed_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_light_pilot_weapon"},{"id": "tg_exotic"},{"id": "DAX_deadly", "val": 2}
+      {"id": "DAX_Concealed_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_light_pilot_weapon"},{"id": "tg_exotic"},{"id": "DAX_deadly", "val": 1}
     ],
     "range": [
       {
@@ -428,7 +428,7 @@
     "damage": [
       {
         "type": "kinetic",
-        "val": "1d4"
+        "val": "2"
       }
     ]
   },
@@ -524,6 +524,44 @@
       }
     ]
   },
+  {
+    "id": "DAX_Pilot_Weapon_Alvas_gauntlets",
+    "name": "Combat Gauntlet 'Fate Keeper'",
+    "type": "Weapon",
+    "description": "Combat Gauntlets made by Pandora Family R&D for Alva Pandora's Fiancé. When not in use the gauntlet transforms into a ring and 2 wrist bracelets that track location, health and near-touch surroundings. Works as a commlink, PDA with its touchscreen on the side. Each wrist bracelet also can be changed to become daggers if gauntless prove to be not suited.",
+    "tags": [
+      {"id": "DAX_pilot_weapon"},{"id": "tg_pilot_weapon"},{"id": "DAX_Concealed_pilot_weapon"},{"id": "DAX_light_pilot_weapon"}
+    ],
+    "range": [{"type": "Threat","val": 1}],
+    "damage": [{"type": "Energy","val": "1d3+3"}],
+    "bonuses": [{"id": "pilot_weapon_slots","val": 1}]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -533,7 +571,7 @@
 
   {
     "id": "DAX_light_hardsuit",
-    "name": "BAC Standard Light Armour",
+    "name": "BUC Standard Light Armour",
     "type": "Armor",
     "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
     "bonuses": [
@@ -778,7 +816,7 @@
   },
   {
     "id": "DAX_light_hardsuit_power",
-    "name": "BAC Standard Light Power Armour",
+    "name": "BUC Standard Light Power Armour",
     "type": "Armor",
     "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
     "bonuses": [
@@ -812,7 +850,7 @@
 
   {
     "id": "DAX_Assault_hardsuit",
-    "name": "BAC Standard Assault Armour",
+    "name": "BUC Standard Assault Armour",
     "type": "Armor",
     "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user’s strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
     "bonuses": [
@@ -841,7 +879,7 @@
   },
   {
     "id": "DAX_Assault_hardsuit_power",
-    "name": "BAC Standard Assault Power Armour",
+    "name": "BUC Standard Assault Power Armour",
     "type": "Armor",
     "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user’s strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
     "bonuses": [
@@ -875,7 +913,7 @@
 
   {
     "id": "DAX_heavy_hardsuit",
-    "name": "BAC Standard Heavy Power Armour",
+    "name": "BUC Standard Heavy Power Armour",
     "type": "Armor",
     "description": "The heaviest hardsuits. They are always powered and up-armored with thick, composite armor. Heavy hardsuits often feature integrated weapons, powerful mobility suites, and – by augmenting their user’s strength – allow their user to field much heavier weapons than normal infantry can typically carry. Heavy hardsuits are in decline now that half-size chassis are popular, but they are still common among private militaries and middle-tier Diasporan armed forces.",
     "bonuses": [
@@ -938,6 +976,18 @@
     ],
     "tags": [{"id": "tg_personal_armor"},{"id": "DAX_power_armour"},{"id": "tg_exotic"}]
   },
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

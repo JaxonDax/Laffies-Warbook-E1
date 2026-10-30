@@ -456,6 +456,36 @@
         "sp": "0",
         "description": "LORE",
         "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"},{"id": "tg_exotic"}]
+      },
+    {
+        "id": "DAX_twisted_fates_drive",
+        "name": "Twisted Fate Drive",
+        "source": "EXOTIC",
+        "license": "",
+        "effect": "As a protocol you may teleport up to a total of 50 spaces including grappled targets. Pilot character takes 3 stress.",
+        "sp": "4",
+        "description": "Reality conform to one string of fate where you are in another place within time and space though it effectively works like a teleport while giving you memories that dont add up to what you or others know.",
+        "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"},{"id": "tg_exotic"}]
+      },
+    {
+        "id": "DAX_systems_redudancy",
+        "name": "Systems Redundancy",
+        "source": "GMS",
+        "license": "",
+        "effect": "You may choose to ignore systems destruction as a result of the SYSTEM TRAUMA result when taking structure damage. This system can only be used once before each FULL REPAIR, and is not a valid target for system destruction.",
+        "sp": "2",
+        "description": "LORE",
+        "tags": [{"id": "tg_unique"}, {"id": "tg_indestructible"}]
+      },
+    {
+        "id": "DAX_breachers_tools",
+        "name": "Breaching Tools Kit",
+        "source": "GMS",
+        "license": "",
+        "effect": "Deal 10AP damage to objects, cover, terrain, and the environment. ",
+        "sp": "1",
+        "description": "Tools, Explosives, Drones and everything a engineer or breacher would need to get into an area. Tools come with structure analysis systems that allow users to avoid hazards while working.",
+        "tags": [{"id": "tg_unique"}]
       }
 
 

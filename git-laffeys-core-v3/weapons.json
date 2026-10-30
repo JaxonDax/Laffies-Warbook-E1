@@ -14,24 +14,14 @@
         "barrage": true,
         "skirmish": true,
         "effect": "You start with Kinetic magazine Loaded",
-        "actions": [
-          {
+        "actions": 
+          [{
             "name": "Swap Magazine",
             "activation": "Quick Action",
             "detail": "Reload your gun with a different magzine containing either Kinetic, Energy or Explosive Damage."
           }],
-        "damage": [
-          {
-            "type": "Variable",
-            "val": "1d6+2"
-          }
-        ],
-        "range": [
-          {
-            "type": "Range",
-            "val": 12
-          }
-        ],
+        "damage": [{"type": "Variable","val": "1d6+2"}],
+        "range": [{"type": "Range","val": 12}],
         "tags": [ {"id": "tg_reliable", "val": 3}, {"id": "tg_accurate"}, {"id": "DAX_upgraded", "val": 2}]
       },  
       {
@@ -49,28 +39,14 @@
         "barrage": true,
         "skirmish": true,
         "effect": "You start with Kinetic magazine Loaded",
-        "actions": [
-          {
+        "actions": 
+          [{
             "name": "Swap Magazine",
             "activation": "Free Action",
             "detail": "Reload your gun with a different magzine containing either Kinetic, Energy or Explosive Damage."
           }],
-        "damage": [
-          {
-            "type": "Variable",
-            "val": "1d3+1"
-          }
-        ],
-        "range": [
-          {
-            "type": "Range",
-            "val": 6
-          },
-          {
-            "type": "Threat",
-            "val": 3
-          }
-        ],
+        "damage": [{"type": "Variable","val": "1d3+1"}],
+        "range": [{"type": "Range","val": 6},{"type": "Threat","val": 3}],
         "tags": [ {"id": "tg_reliable", "val": 2}, {"id": "tg_accurate"}, {"id": "DAX_upgraded", "val": 2}]
       },
       {
@@ -86,79 +62,44 @@
         "sp": 1,
         "barrage": true,
         "skirmish": true,
-        "actions": [
-          {
-            "name": "Swap Magazine",
+        "type": "",
+        "actions": 
+        [
+          {"name": "Swap Magazine",
             "activation": "Quick Action",
             "detail": "Reload your gun with a different magzine containing a other damage type"
           },
-          {
-            "name": "Configure Weapon",
+
+          {"name": "Configure Weapon",
             "activation": "Full Action",
             "detail": "Change your weapon to any of the profiles"
           }
+          
         ],
-        "profiles": [
-          {
-            "name": "Basic Configuration",
-            "type": "Rifle",
-            "damage": [
-              {
-                "override": true,
-                "type": "Variable",
-                "val": "2d6+2"
-              }
-            ],
-            "range": [
-              {
-                "override": true,
-                "type": "Range",
-                "val": "12"
-              }
-            ],
+        "profiles": 
+        [
+          {"name": "Basic Configuration",
+            "damage": [{"override": true,"type": "Variable","val": "2d6+2"}],
+            "range": [{"override": true,"type": "Range","val": "12"}],
+            "type": [{"override": true,"type": "Rifle"}],
             "effect": "Basic Rifle Configuration. You start with Kinetic magazine Loaded",
-            "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]
-          },
-          {
-            "name": "Sniper Configuration",
-            "type": "Rifle",
-            "damage": [
-              {
-                "type": "Variable",
-                "val": "1d6+6"
-              }
-            ],
-            "range": [
-              {
-                "type": "Range",
-                "val": "20"
-              }
-            ],
+            "tags": [ {"id": "tg_reliable", "val": 4}, {"id": "tg_accurate"}]},
+
+          {"name": "Sniper Configuration",
+            "damage": [{"type": "Variable","val": "1d6+6"}],
+            "range": [{"type": "Range","val": "20"}],
+            "type": [{"override": true,"type": "Rifle"}],
             "effect": "Sniper Rifle Configuration. You start with Kinetic magazine Loaded",
-            "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]
-          },
-          {
-            "name": "Shot Gun Configuration",
-            "type": "CQB",
-            "damage": [
-              {
-                "type": "Variable",
-                "val": "3d4"
-              }
-            ],
-            "range": [
-              {
-                "type": "Cone",
-                "val": "5"
-              },
-              {
-                "type": "Threat",
-                "val": "3"
-              }
-            ],
+            "tags": [ {"id": "tg_ap"}, {"id": "tg_accurate"}]},
+
+          {"name": "Shot Gun Configuration",
+            "damage": [{"type": "Variable","val": "3d4"}],
+            "range": [{"type": "Cone","val": "5"},{"type": "Threat","val": "3"}],
+            "type": [{"override": true,"type": "CQB"}],
             "effect": "Shot Gun Configuration. You start with Kinetic magazine Loaded",
-            "tags": [{"id": "tg_reliable", "val": 2}, {"id": "tg_knockback", "val": 2} ]
-          }]
+            "tags": [{"id": "tg_reliable", "val": 2}, {"id": "tg_knockback", "val": 2}]}
+          
+        ]
       },
       {
         "id": "DAX_combat_shotgun_mk2",
@@ -189,7 +130,7 @@
         ],
         "range": [
           {
-            "type": "cone",
+            "type": "Cone",
             "val": 5
           },
           {
@@ -850,10 +791,10 @@
         "barrage": true,
         "skirmish": false,
         "tags": [{"id": "tg_ordnance"}, {"id": "tg_exotic"}, {"id": "DAX_upgraded", "val": 2}],
+        "type": "",
         "profiles": [
           {
             "name": "Standard",
-            "type": "CQB",
             "damage": [
               {
                 "override": true,
@@ -890,7 +831,6 @@
           },
           {
             "name": "Super Charged",
-            "type": "CQB",
             "damage": [
               {
                 "type": "Energy",
@@ -977,7 +917,7 @@
                 "val": "2"
               }
             ],
-            "on_crit": "Immobilize the enemy. The enemy needs to perform a Hull save to remove the javelin. (If the javelin gets returned though any means this effect is nullified)",
+            "on_crit": "Immobilize the enemy. The enemy needs to perform a Hull check to remove the javelin. (If the javelin gets returned though any means this effect is nullified). Another character may remove the javelin using a quick action while adjacent.",
           "actions": [
           {
             "name": "Activate Thrusters",
@@ -1007,6 +947,44 @@
     "tags": [{"id": "tg_ap"},{"id": "tg_thrown", "val": 10},{"id": "tg_limited", "val": 3},{"id": "tg_arcing"}]
 
     
+  },
+  {
+    "id": "DAX_heatseeker_swords",
+    "name": "Heat Seeker Twin Swords",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "A set of twin swords using experemental technology that saps the heat of the target to create shields for its wielder. Reportedly pilots who wield this sword have heard whispers comming from the sword. Regular maintenance after fights seems to solve that issue",
+    "mount": "Heavy",
+    "type": "Melee",
+    "no_mods": false,
+    "sp": 2,
+    "barrage": false,
+    "skirmish": true,
+    "on_hit": "Remove target heat and gain overshield equal to the amount of heat removed",
+    "damage": [{"type": "Energy","val": "3d4+2"}],
+    "range": [{"type": "Threat","val": 2}],
+    "tags": [{"id": "tg_limited", "val": 4},{"id": "tg_ap"},{"id": "tg_overkill"},{"id": "tg_exotic"} ]
+  },
+  {
+    "id": "DAX_crusader_Pile_bunker",
+    "name": "Pile Bunker",
+    "source": "EXOTIC",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "A big tungsten spike loaded into a kinetic launcher, once colliding with any types of metal it pierces though, useally straight though the target.",
+    "mount": "Heavy",
+    "type": "Melee",
+    "no_mods": false,
+    "sp": 2,
+    "barrage": false,
+    "skirmish": true,
+    "on_hit": "",
+    "damage": [{"type": "Kinetic","val": "2d6"}],
+    "range": [{"type": "Threat","val": 1}],
+    "tags": [{"id": "tg_loading"},{"id": "tg_ap"},{"id": "tg_exotic"} ]
   }
   
 

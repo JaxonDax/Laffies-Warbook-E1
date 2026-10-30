@@ -1,0 +1,12 @@
+[
+{
+  "id": "DAX_STATUS_TAUNTED",
+  "name": "Taunted",
+  "type": "Condition",
+  "effects": "Taunted mechs gain a -2 Difficulty on attacking anything than the source.",
+  "terse": "-2 Difficulty attacking anything but the source.",
+  "icon_url": "https://wiki.leagueoflegends.com/en-us/images/Wolf%27s_Pact_profileicon.png?5a9b8"
+}
+
+
+]

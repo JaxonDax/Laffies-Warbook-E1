@@ -1,0 +1,332 @@
+[
+{
+  "id": "DAX_talents_lucky_bastard",
+  "name": "Lucky Bastard",
+  "description": "Is luck a talent? some say it is. Luck helps you with surviving on the field or making impossible shots.",
+  "ranks": 
+        [
+        {
+        "name": "Fortune’s Favor",
+        "description": "Twice per full repair you may add a +1 to any roll you make.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": 
+        [
+            {
+            "id": "DAX_talents_lucky_bastard_rank_I",
+            "name": "Lucky Clover",
+            "default_value": "2",
+            "min": "0",
+            "max": "2"
+            }
+        ],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Good Fortune",
+        "description": "Twice per full repair you may use a reaction to have an attacker reroll their attack against you.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": 
+        [
+            {
+            "id": "DAX_talents_lucky_bastard_rank_II",
+            "name": "Good Fortune",
+            "default_value": "2",
+            "min": "0",
+            "max": "2"
+            }
+        ],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Spreading Luck",
+        "description": "Any allied characters adjacent to you get  accuracy  on any saving rolls.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "A talent focused on the roll of the dice."
+},
+{
+  "id": "DAX_talents_guerrilla",
+  "name": "Guerrilla",
+  "description": "War isn't fair, so why shouldn't you fight the same way? Leave notions of honorable combat to the would-be knights and champions, you're here to get work done. In the shadows, in the split-second flash of lightning before the thunder comes, hit and run, strike and fade. They may hate you, but they'll learn to fear you all the same.",
+  "ranks": 
+        [
+        {
+        "name": "Fighting Ghosts",
+        "description": "You may Boost without losing Hidden, and whenever you Disengage attacks against you are made at +1 Difficulty until the end of your next turn.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Go to Ground",
+        "description": "If you end your turn in cover which you did not begin your turn in, all ranged attacks against you receive +1 Difficulty until the end of your next turn.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Run and Gun",
+        "description": "At the beginning of each scene, before anyone acts you may move up to your speed. If you end this movement in cover, you automatically become Hidden, and until the end of your next turn the first attack roll you make while Hidden gains +1 Accuracy.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "Use hit-and-run tactics to strike from Hiding and enhance your defense"
+},
+{
+  "id": "DAX_talents_cyborg",
+  "name": "Cyborg",
+  "description": "Some mechanics claim they can talk to their machines - but you take it literally. more than just cosmetic changes your augments mean your mech is like an extention of your body. was it a back-ally surgeon or a blacksite engineer? did you pay in manna or blood? was it your decision or someone else's? either way there is no going back now.",
+  "ranks": 
+        [
+        {
+        "name": "Neural Link",
+        "description": "When a hostile character attacks you as a reaction on your turn roll a 1d6. On a 4+ the attack misses.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Volition Override",
+        "description": "When your mech is Stunned or Jammed you may still move up to half of your speed as a standard move and take one quick action. All actions, saves, have a +2 difficulty and cause you to take 1 Heat.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Full Cerebral Sync",
+        "description": "When your mech is destroyed you may choose to keep it active though sheer force of will. You are instead recuded to 1 HP. You can not recover or lose HP while this effect is active. At the end of each of your turns whenever you take damage roll 1d20+Grit. on a 10+ your mech remains active otherwise it is immediately destroyed. at the end of each of your turns while this ability is active you gain +1 cumulative difficulty on subsequent rolls. You may only use this ability once per full repair.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "Becoming closer with your mech has never becomes easier as you are connected in more ways than one."
+},
+{
+  "id": "DAX_talents_bruiser",
+  "name": "Bruiser",
+  "description": "Look, it's simple; you have a mech, your mech has a hammer, and the whole world is made of nails. Now all you need to do is hit someone as hard as you can. If they're still moving afterwards? You hit'em again. And maybe a third time for good measure. All the fancy footwork in the world won't help you when both your legs are broken.",
+  "ranks": 
+        [
+        {
+        "name": "Reckless Swing",
+        "description": "1/round you may choose to gain +1 Accuracy on an attack with a melee weapon on your turn. Until the start of your next turn, the next attack made against you gains +1 Accuracy.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Payback",
+        "description": "When you take structure damage, your next melee attack deals +1d6 bonus damage on hit.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Take Your Best Shot",
+        "description": "1/scene as a free action, you may choose a hostile character within line of sight to immediately make an attack against you. That character must be able to attack you, or they cannot be chosen. Afterwards, whether this attack hits or misses, you may make an attack against them with a non-Superheavy melee weapon. You may then allow that character to make another attack against you if they wish, repeating this process until one of you has been destroyed or until they decline to attack you any further.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "Hit harder with melee attacks by opening yourself up to reprisal"
+},
+{
+  "id": "DAX_Talents_Battle_Buddy",
+  "name": "Battle Buddy",
+  "description": "Out here in the cold void, wrapped in steel and surrounded by fire, the only thing keeping you alive is the pilot beside you. They’re more than a comrade, they’re your brother or sister in arms. You don’t survive orbital drops, plasma storms, or enemy swarm assaults without someone watching your six. Maybe you grew up in the same station, maybe you signed on with the corps together, or maybe you were the only survivors when your squad got wiped in a blaze of railgun fire. Now, when the call to drop comes in and the cockpit seals shut, there’s no one else you want in the mech at your flank. You trust them with your life and they trust you with theirs. Alone, you're a war machine. Together, you're a legend written in fire and metal.",
+  "ranks": 
+        [
+        {
+        "name": "I got your six",
+        "description": "When you take this talent, choose another pilot (hopefully a PC, but NPCs are fine if your GM allows it) to be your Battle Buddy. Any mech skill checks and saves either character makes while you they are in your line of sight gain a +1 flat bonus . If both characters have this talent, this increases to +2, but additional characters with this talent can’t increase it any further. Between missions, you can replace your Battle Buddy with a new one, but only if your relationship with them has changed.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Team Work",
+        "description": "Gain the <b>Set Up</b> Action and the <b>Take Opportunity</b> Reaction.",
+        "exclusive": "",
+        "actions": 
+        [
+                    {
+            "name": "Take Opportunity",
+            "activation": "Reaction",
+            "frequency": "1/scene",
+            "trigger": " Battle buddy uses the <b>Set Up</b> action and hits the enemy.",
+            "detail": "You may use your reaction to attack as a skirmish allowing you to automatically hit the enemy."
+          },
+          {
+            "name": "Set Up (Skirmish/Barrage)",
+            "activation": "Other",
+            "frequency": "1/scene",
+            "detail": "When you attack as a Skirmish or Barrage you may use set up. You deal only half your damage when you hit and stagger the enemy. This also allows your battle buddy may use the Take Opportunity reaction."
+          }
+        ],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Dream Team",
+        "description": "Allows you to use Take Opportunity 2/scene instead of 1/scene. Also when performing a Crit with Set Up you dont do half damage anymore. You can not be forced to attack your battle buddy though hacks.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "Become a dream team with another pilot."
+},
+{
+  "id": "DAX_Talents_street_fighter",
+  "name": "Street Fighter",
+  "description": "Fighting games have always been your passion. maybe an inspiration to how you fight.",
+  "ranks": 
+        [
+        {
+        "name": "Combo maker",
+        "description": "When you hit an melee attack gain 1 combo die. When you miss any melee attack or dont melee attack an enemy for a round lose all combo die. The next melee weapon hit with 3 or more combo die can all be used for max damage with an extra 1d4 bonus damage per stacked (max 12) combo die. All combo die expire at the end of the scene.",
+        "exclusive": "",
+        "actions": 
+        [
+            {
+            "id": "DAX_Talents_street_fighter_I",
+            "name": "Combo Die",
+            "default_value": "0",
+            "min": "0",
+            "max": "12"
+            }
+        ],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Keeping Momentum",
+        "description": "You do not lose any combo die if you dont attack in a round and relieable allows you to stack 1 combo die once a round. Heavy weapon hits grant 2 points instead of 1.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        },
+        {
+        "name": "Finishing Move",
+        "description": "using 6 or more combo die allows you to do a finishing move guaranteeing an hit and a enemy structure loss if the total damage was not enough. This does not bypass immunity to damage types.",
+        "exclusive": "",
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "active_effects": []
+        }
+        ],
+  "terse": "Fighting was always more fun when it keeps the rush going."
+}
+]

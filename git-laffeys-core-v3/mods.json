@@ -25,5 +25,21 @@
         "sp": 1,
         "description": "This advanced weapon mod embeds a micro-targeting system that activates upon critical strikes, marking enemies for follow-up attacks.",
         "effect": "Whenever you get a crit the target gains lock-on. This does not work for AOE attacks. "
+      },
+      {
+        "id": "DAX_walkingarmoury_compatibility",
+        "name": "Omni-Caliber System",
+        "source": "EXOTIC",
+        "license": "",
+        "license_id": "",
+        "sp": 0,
+        "description": "Lore", 
+        "effect": "Allows the modified weapon to use any ammo type. (works with walking armoury and other ammo cases)", 
+        "tags": [{"id": "tg_exotic"}],
+        "allowed_types": ["Cannon", "Rifle", "Launcher", "CQB", "Nexus"],
+        "allowed_sizes": ["Heavy", "Superheavy", "Aux", "Main"], 
+        "restricted_types": ["Melee"],
+        "restricted_sizes": [], 
+        "added_tags": []
       }
 ]
